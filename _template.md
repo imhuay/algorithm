@@ -1,29 +1,23 @@
-<summary><b>问题中文名（问题英文名）</b>
+### 问题名
 
-- Tag: 
-- Src: LeetCode
+<!-- Tag:  -->
 
-</summary>
-
-<summary><b>问题描述</b>
+<summary><b>问题描述</b></summary>
 
 ```txt
 
 ```
 
-</summary>
 
-<summary><b>算法简述</b>
+<details><summary><b>算法简述</b></summary>
 
 ```txt
-1. 1；
-2. 2
+
 ```
 
-</summary>
+</details>
 
-
-<summary><b>代码</b>
+<details><summary><b>代码</b></summary>
 
 **python**
 - 时间复杂度：`O()`，空间复杂度：`O()`
@@ -31,11 +25,11 @@
 
 ```
 
-</summary>
+</details>
 
-<summary><b>备忘</b>
+<details><summary><b>备忘</b></summary>
 
 1. 1
 2. 2
 
-</summary> 
+</details>
