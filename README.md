@@ -18,6 +18,7 @@ Algorithm Studies
 <details><summary><b> 专题-双指针(滑动窗口) <a href="专题-双指针(滑动窗口).md">¶</a></b></summary>
 
 - [三数之和（3Sum）](专题-双指针(滑动窗口).md#三数之和3sum)
+- [两数相加](专题-双指针(滑动窗口).md#两数相加)
 - [最接近的三数之和（3Sum Closest）](专题-双指针(滑动窗口).md#最接近的三数之和3sum-closest)
 
 </details>
@@ -25,6 +26,12 @@ Algorithm Studies
 <details><summary><b> 专题-哈希表 <a href="专题-哈希表.md">¶</a></b></summary>
 
 - [两数之和](专题-哈希表.md#两数之和)
+
+</details>
+
+<details><summary><b> 专题-字符串 <a href="专题-字符串.md">¶</a></b></summary>
+
+- [两数之和](专题-字符串.md#两数之和)
 
 </details>
 
