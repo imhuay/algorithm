@@ -1,7 +1,7 @@
 ### 最接近的三数之和（3Sum Closest）
 > 16. 最接近的三数之和 - 力扣（LeetCode） | https://leetcode-cn.com/problems/3sum-closest/
 
-Tag: 双指针
+<!-- Tag: 双指针 -->
 
 **问题简述**
 ```text
