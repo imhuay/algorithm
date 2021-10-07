@@ -28,15 +28,9 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 专题-深度优先搜索 <a href="专题-深度优先搜索.md">¶</a></b></summary>
+<details><summary><b> 专题-深度优先搜索（递归） <a href="专题-深度优先搜索（递归）.md">¶</a></b></summary>
 
-- [路径总和 III](专题-深度优先搜索.md#路径总和-iii)
-
-</details>
-
-<details><summary><b> 专题-递归 <a href="专题-递归.md">¶</a></b></summary>
-
-- [路径总和 III](专题-递归.md#路径总和-iii)
+- [路径总和 III](专题-深度优先搜索（递归）.md#路径总和-iii)
 
 </details>
 
