@@ -15,11 +15,14 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 专题-双指针(滑动窗口) <a href="专题-双指针(滑动窗口).md">¶</a></b></summary>
+<details><summary><b> 专题-双指针(首尾) <a href="专题-双指针(首尾).md">¶</a></b></summary>
 
-- [LeetCode_Medium_0015_三数之和](专题-双指针(滑动窗口).md#三数之和3sum)
-- [LeetCode_Medium_0016_最接近的三数之和](专题-双指针(滑动窗口).md#最接近的三数之和3sum-closest)
-- [LeetCode_Medium_0086_分隔链表](专题-双指针(滑动窗口).md#两数相加)
+- [LeetCode_Easy_0167_两数之和2(输入有序数组)](专题-双指针(首尾).md#两数之和-ii-输入有序数组)
+- [LeetCode_Hard_0042_接雨水](专题-双指针(首尾).md#题目名)
+- [LeetCode_Medium_0011_盛最多水的容器](专题-双指针(首尾).md#盛最多水的容器)
+- [LeetCode_Medium_0015_三数之和](专题-双指针(首尾).md#三数之和3sum)
+- [LeetCode_Medium_0016_最接近的三数之和](专题-双指针(首尾).md#最接近的三数之和3sum-closest)
+- [LeetCode_Medium_0611_有效三角形的个数](专题-双指针(首尾).md#有效三角形的个数)
 
 </details>
 
@@ -50,5 +53,6 @@ Algorithm Studies
 <details><summary><b> 专题-链表 <a href="专题-链表.md">¶</a></b></summary>
 
 - [LeetCode_Medium_0002_两数相加](专题-链表.md#两数相加)
+- [LeetCode_Medium_0086_分隔链表](专题-链表.md#两数相加)
 
 </details>

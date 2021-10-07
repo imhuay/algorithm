@@ -1,6 +1,6 @@
 ### 两数之和 II - 输入有序数组
 
-<!-- Tag: 双指针 -->
+<!-- Tag: 双指针(首尾) -->
 
 <summary><b>问题简述</b></summary>
 
@@ -34,7 +34,7 @@
 示例 3：
     输入：numbers = [-1,0], target = -1
     输出：[1,2]
- 
+
 
 提示：
     2 <= numbers.length <= 3 * 10^4
@@ -53,8 +53,6 @@
 
 <details><summary><b>Python</b></summary>
 
-**python**
-- 时间复杂度：`O()`，空间复杂度：`O()`
 ```python
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:

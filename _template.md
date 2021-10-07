@@ -1,35 +1,29 @@
-### 问题名
+### 题目名
 
 <!-- Tag:  -->
 
-<summary><b>问题描述</b></summary>
+<summary><b>问题简述</b></summary>
 
 ```txt
-
+xxx
 ```
 
+<summary><b>思路</b></summary>
 
-<details><summary><b>算法简述</b></summary>
+- xxx
+
+<details><summary><b>题目描述</b></summary>
 
 ```txt
-
 ```
 
 </details>
 
-<details><summary><b>代码</b></summary>
 
-**python**
-- 时间复杂度：`O()`，空间复杂度：`O()`
+<details><summary><b>Python</b></summary>
+
 ```python
-
 ```
 
 </details>
 
-<details><summary><b>备忘</b></summary>
-
-1. 1
-2. 2
-
-</details>
