@@ -9,6 +9,12 @@ Algorithm Studies
 
 </details>
 
+<details><summary><b> 专题-位运算 <a href="专题-位运算.md">¶</a></b></summary>
+
+- [LeetCode_Medium_0187_重复的DNA序列](专题-位运算.md#重复的dna序列)
+
+</details>
+
 <details><summary><b> 专题-前缀和 <a href="专题-前缀和.md">¶</a></b></summary>
 
 - [LeetCode_Medium_0437_路径总和3](专题-前缀和.md#路径总和-iii)
@@ -29,6 +35,7 @@ Algorithm Studies
 <details><summary><b> 专题-哈希表 <a href="专题-哈希表.md">¶</a></b></summary>
 
 - [LeetCode_Easy_0001_两数之和](专题-哈希表.md#两数之和)
+- [LeetCode_Medium_0187_重复的DNA序列](专题-哈希表.md#重复的dna序列)
 
 </details>
 
