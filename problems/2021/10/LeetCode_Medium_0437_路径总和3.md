@@ -27,7 +27,7 @@
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 ```
 
-<div align="center"><img src="../_assets/pathsum3-1-tree.jpeg" height="300" /></div>
+<div align="center"><img src="../../../_assets/pathsum3-1-tree.jpeg" height="300" /></div>
 
 
 <details><summary><b>解法1：双重递归</b></summary>
