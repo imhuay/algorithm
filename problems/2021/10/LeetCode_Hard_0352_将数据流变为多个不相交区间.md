@@ -96,64 +96,49 @@ class SummaryRanges:
     - 情况4：存在两个个区间 `[l0, r0]` 和 `[l1, r1]` 满足 `r0 + 1 == val == l1 - 1`，即加入 val 后，会合并为一个区间 `[l0, r1]`
     - 情况5：以上均不满足，加入后 val 单独成为一个区间；
 
+- 这里使用了 `SortedDict` 降低了代码难度，也可以使用一个有序数组来模拟；
+
 - 时间复杂度: `addNum O(NlgN)`、`getIntervals O(N)`；
-- 空间复杂度: `O(N)`
+- 空间复杂度: `O(N)`；
+
 
 ```python
 from sortedcontainers import SortedDict
+from bisect import bisect_right, bisect_left
 
 class SummaryRanges:
 
     def __init__(self):
-        self.intervals = SortedDict()  # {l: r}
+        self.ret = SortedDict()  # {l: r}
+        # 加入首尾两个哨兵，防止区间不存在的情况，这样会徒增很多判断
+        self.ret[-10] = -10
+        self.ret[10010] = 10010
 
     def addNum(self, val: int) -> None:
-        intervals_ = self.intervals
-        keys_ = self.intervals.keys()
-        values_ = self.intervals.values()
+        ret = self.ret
+        L = list(self.ret.keys())
+        R = list(self.ret.values())
 
-        # 二分查找
-        # 找到 l1 最小的且满足 l1 > val 的区间 interval1 = [l1, r1]
-        # 如果不存在这样的区间，interval1 为 len(intervals)
-        interval1 = intervals_.bisect_right(val)
-        # 找到 l0 最大的且满足 l0 <= val 的区间 interval0 = [l0, r0]
-        # 在有序集合中，interval0 就是 interval1 的前一个区间
-        # 如果不存在这样的区间，interval0 为尾迭代器
-        interval0 = (len(intervals_) if interval1 == 0 else interval1 - 1)
+        # 二分找出 val 的相邻区间
+        idx = bisect_left(L, val)  # idx = ret.bisect_left(val)
+        pre = L[idx - 1], R[idx - 1]
+        nxt = L[idx], R[idx]
 
-        if interval0 != len(intervals_) and keys_[interval0] <= val <= values_[interval0]:
-            # 情况一
-            return
-        else:
-            left_aside = (interval0 != len(intervals_) and values_[interval0] + 1 == val)
-            right_aside = (interval1 != len(intervals_) and keys_[interval1] - 1 == val)
-            if left_aside and right_aside:
-                # 情况四
-                left, right = keys_[interval0], values_[interval1]
-                intervals_.popitem(interval1)
-                intervals_.popitem(interval0)
-                intervals_[left] = right
-            elif left_aside:
-                # 情况二
-                intervals_[keys_[interval0]] += 1
-            elif right_aside:
-                # 情况三
-                right = values_[interval1]
-                intervals_.popitem(interval1)
-                intervals_[val] = right
-            else:
-                # 情况五
-                intervals_[val] = val
+        if pre[0] <= val <= pre[1] or nxt[0] <= val <= nxt[1]:  # 情况1
+            pass
+        elif pre[1] + 1 == val == nxt[0] - 1:  # 情况4
+            ret.pop(nxt[0])
+            ret[pre[0]] = nxt[1]
+        elif pre[1] + 1 == val:  # 情况2
+            ret[pre[0]] = val
+        elif nxt[0] - 1 == val:  # 情况3
+            ret.pop(nxt[0])
+            ret[val] = nxt[1]
+        else:  # 情况5
+            ret[val] = val
 
     def getIntervals(self) -> List[List[int]]:
-        # 这里实际上返回的是 List[Tuple[int, int]] 类型
-        # 但 Python 的类型提示不是强制的，因此也可以通过
-        return list(self.intervals.items())
-
-作者：LeetCode-Solution
-链接：https://leetcode-cn.com/problems/data-stream-as-disjoint-intervals/solution/jiang-shu-ju-liu-bian-wei-duo-ge-bu-xian-hm1r/
-来源：力扣（LeetCode）
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+        return list(self.ret.items())[1:-1]  # 去除两个哨兵
 ```
 
 - 上面的代码中用到了 `SortedDict`，示例：
