@@ -1,0 +1,177 @@
+### 将数据流变为多个不相交区间
+
+<!-- Tag: 二分查找、模拟 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+给你一个由非负整数 a1, a2, ..., an 组成的数据流输入，请你将到目前为止看到的数字总结为不相交的区间列表。
+
+实现 SummaryRanges 类：
+    SummaryRanges() 使用一个空数据流初始化对象。
+    void addNum(int val) 向数据流中加入整数 val 。
+    int[][] getIntervals() 以不相交区间 [starti, endi] 的列表形式返回对数据流中整数的总结。
+
+进阶：如果存在大量合并，并且与数据流的大小相比，不相交区间的数量很小，该怎么办?
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/data-stream-as-disjoint-intervals
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+**“进阶”说明**：保证“合并”操作的复杂度，按题目的意思应该是确保`addNum`操作的复杂度，`getIntervals`可以宽松一点；
+
+<details><summary><b>示例</b></summary>
+
+```txt
+输入：
+    ["SummaryRanges", "addNum", "getIntervals", "addNum", "getIntervals", "addNum", "getIntervals", "addNum", "getIntervals", "addNum", "getIntervals"]
+[[], [1], [], [3], [], [7], [], [2], [], [6], []]
+输出：
+    [null, null, [[1, 1]], null, [[1, 1], [3, 3]], null, [[1, 1], [3, 3], [7, 7]], null, [[1, 3], [7, 7]], null, [[1, 3], [6, 7]]]
+
+解释：
+    SummaryRanges summaryRanges = new SummaryRanges();
+    summaryRanges.addNum(1);      // arr = [1]
+    summaryRanges.getIntervals(); // 返回 [[1, 1]]
+    summaryRanges.addNum(3);      // arr = [1, 3]
+    summaryRanges.getIntervals(); // 返回 [[1, 1], [3, 3]]
+    summaryRanges.addNum(7);      // arr = [1, 3, 7]
+    summaryRanges.getIntervals(); // 返回 [[1, 1], [3, 3], [7, 7]]
+    summaryRanges.addNum(2);      // arr = [1, 2, 3, 7]
+    summaryRanges.getIntervals(); // 返回 [[1, 3], [7, 7]]
+    summaryRanges.addNum(6);      // arr = [1, 2, 3, 6, 7]
+    summaryRanges.getIntervals(); // 返回 [[1, 3], [6, 7]]
+
+提示：
+    0 <= val <= 10^4
+    最多调用 addNum 和 getIntervals 方法 3 * 10^4 次
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/data-stream-as-disjoint-intervals
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+</details>
+
+
+<details><summary><b>思路1：暴力求解（Python）</b></summary>
+
+- 每次 `getIntervals` 时，先对数组排序，然后依次找出每个不相交的区间；
+
+```python
+class SummaryRanges:
+
+    def __init__(self):
+        self.ls = []
+
+    def addNum(self, val: int) -> None:
+        """"""
+        self.ls.append(val)
+
+    def getIntervals(self) -> List[List[int]]:
+        """"""
+        ls = sorted(self.ls)
+        ret = []
+        l = ls[0]
+        for i in range(1, len(ls)):
+            if ls[i] - ls[i-1] > 1:  # 判断是否需要合并
+                ret.append([l, ls[i-1]])
+                l = ls[i]
+        
+        ret.append([l, ls[-1]])
+
+        return ret
+```
+
+</details>
+
+
+<details><summary><b>思路2：分情况讨论（模拟，Python）</b></summary>
+
+- 明确每次 `addNum` 时，区间会发生那些变化：
+    - 情况1：存在一个区间 `[l, r]` 满足 `l <= val <= r`；
+    - 情况2：存在一个区间 `[l, r]` 满足 `r + 1 == val`；
+    - 情况3：存在一个区间 `[l, r]` 满足 `l - 1 == val`；
+    - 情况4：存在两个个区间 `[l0, r0]` 和 `[l1, r1]` 满足 `r0 + 1 == val == l1 - 1`，即加入 val 后，会合并为一个区间 `[l0, r1]`
+    - 情况5：以上均不满足，加入后 val 单独成为一个区间；
+
+- 时间复杂度: `addNum O(NlgN)`、`getIntervals O(N)`；
+- 空间复杂度: `O(N)`
+
+```python
+from sortedcontainers import SortedDict
+
+class SummaryRanges:
+
+    def __init__(self):
+        self.intervals = SortedDict()  # {l: r}
+
+    def addNum(self, val: int) -> None:
+        intervals_ = self.intervals
+        keys_ = self.intervals.keys()
+        values_ = self.intervals.values()
+
+        # 二分查找
+        # 找到 l1 最小的且满足 l1 > val 的区间 interval1 = [l1, r1]
+        # 如果不存在这样的区间，interval1 为 len(intervals)
+        interval1 = intervals_.bisect_right(val)
+        # 找到 l0 最大的且满足 l0 <= val 的区间 interval0 = [l0, r0]
+        # 在有序集合中，interval0 就是 interval1 的前一个区间
+        # 如果不存在这样的区间，interval0 为尾迭代器
+        interval0 = (len(intervals_) if interval1 == 0 else interval1 - 1)
+
+        if interval0 != len(intervals_) and keys_[interval0] <= val <= values_[interval0]:
+            # 情况一
+            return
+        else:
+            left_aside = (interval0 != len(intervals_) and values_[interval0] + 1 == val)
+            right_aside = (interval1 != len(intervals_) and keys_[interval1] - 1 == val)
+            if left_aside and right_aside:
+                # 情况四
+                left, right = keys_[interval0], values_[interval1]
+                intervals_.popitem(interval1)
+                intervals_.popitem(interval0)
+                intervals_[left] = right
+            elif left_aside:
+                # 情况二
+                intervals_[keys_[interval0]] += 1
+            elif right_aside:
+                # 情况三
+                right = values_[interval1]
+                intervals_.popitem(interval1)
+                intervals_[val] = right
+            else:
+                # 情况五
+                intervals_[val] = val
+
+    def getIntervals(self) -> List[List[int]]:
+        # 这里实际上返回的是 List[Tuple[int, int]] 类型
+        # 但 Python 的类型提示不是强制的，因此也可以通过
+        return list(self.intervals.items())
+
+作者：LeetCode-Solution
+链接：https://leetcode-cn.com/problems/data-stream-as-disjoint-intervals/solution/jiang-shu-ju-liu-bian-wei-duo-ge-bu-xian-hm1r/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+```
+
+- 上面的代码中用到了 `SortedDict`，示例：
+
+```python
+>>> d = SortedDict()
+>>> d[3] = 33
+>>> d[2] = 22
+>>> d[4] = 44
+>>> d[6] = 66
+>>> d[7] = 77
+>>> d
+SortedDict({2: 22, 3: 33, 4: 44, 6: 66, 7: 77})
+>>> d.bisect_left(4)  # 二分查找返回的是插入位置
+2
+>>> d.bisect_right(4)  # left 和 right 的区别是如果插入值已存在，则 left 会插到前面，right 会插到后面
+3
+```
+
+</details>
+
