@@ -5,6 +5,7 @@ Algorithm Studies
 
 <details><summary><b> 专题-二分查找 <a href="topics/专题-二分查找.md">¶</a></b></summary>
 
+- [两数相除 (LeetCode, Medium, No.0029, 2021-10)](topics/专题-二分查找.md#两数相除-leetcode-medium-no0029-2021-10)
 - [将数据流变为多个不相交区间 (LeetCode, Hard, No.0352, 2021-10)](topics/专题-二分查找.md#将数据流变为多个不相交区间-leetcode-hard-no0352-2021-10)
 - [排列硬币 (LeetCode, Easy, No.0441, 2021-10)](topics/专题-二分查找.md#排列硬币-leetcode-easy-no0441-2021-10)
 
@@ -20,6 +21,7 @@ Algorithm Studies
 
 <details><summary><b> 专题-位运算 <a href="topics/专题-位运算.md">¶</a></b></summary>
 
+- [两数相除 (LeetCode, Medium, No.0029, 2021-10)](topics/专题-位运算.md#两数相除-leetcode-medium-no0029-2021-10)
 - [重复的DNA序列 (LeetCode, Medium, No.0187, 2021-10)](topics/专题-位运算.md#重复的dna序列-leetcode-medium-no0187-2021-10)
 
 </details>
