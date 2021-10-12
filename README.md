@@ -3,11 +3,12 @@ Algorithm Studies
 
 <font color="LightGrey"><i> `This README is Auto-generated` </i></font>
 
-<details><summary><b> 专题-二分查找 (3) <a href="topics/专题-二分查找.md">¶</a></b></summary>
+<details><summary><b> 专题-二分查找 (4) <a href="topics/专题-二分查找.md">¶</a></b></summary>
 
 - [两数相除 (LeetCode, Medium, No.0029, 2021-10)](topics/专题-二分查找.md#两数相除-leetcode-medium-no0029-2021-10)
 - [将数据流变为多个不相交区间 (LeetCode, Hard, No.0352, 2021-10)](topics/专题-二分查找.md#将数据流变为多个不相交区间-leetcode-hard-no0352-2021-10)
 - [排列硬币 (LeetCode, Easy, No.0441, 2021-10)](topics/专题-二分查找.md#排列硬币-leetcode-easy-no0441-2021-10)
+- [搜索旋转排序数组 (LeetCode, Medium, No.0033, 2021-10)](topics/专题-二分查找.md#搜索旋转排序数组-leetcode-medium-no0033-2021-10)
 
 </details>
 
