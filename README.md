@@ -33,14 +33,14 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 专题-双指针(首尾) (6) <a href="topics/专题-双指针(首尾).md">¶</a></b></summary>
+<details><summary><b> 专题-双指针(滑动窗口) (6) <a href="topics/专题-双指针(滑动窗口).md">¶</a></b></summary>
 
-- [三数之和 (LeetCode, Medium, No.0015, 2021-10)](topics/专题-双指针(首尾).md#三数之和-leetcode-medium-no0015-2021-10)
-- [两数之和2(输入有序数组) (LeetCode, Easy, No.0167, 2021-10)](topics/专题-双指针(首尾).md#两数之和2输入有序数组-leetcode-easy-no0167-2021-10)
-- [接雨水 (LeetCode, Hard, No.0042, 2021-10)](topics/专题-双指针(首尾).md#接雨水-leetcode-hard-no0042-2021-10)
-- [最接近的三数之和 (LeetCode, Medium, No.0016, 2021-10)](topics/专题-双指针(首尾).md#最接近的三数之和-leetcode-medium-no0016-2021-10)
-- [有效三角形的个数 (LeetCode, Medium, No.0611, 2021-10)](topics/专题-双指针(首尾).md#有效三角形的个数-leetcode-medium-no0611-2021-10)
-- [盛最多水的容器 (LeetCode, Medium, No.0011, 2021-10)](topics/专题-双指针(首尾).md#盛最多水的容器-leetcode-medium-no0011-2021-10)
+- [三数之和 (LeetCode, Medium, No.0015, 2021-10)](topics/专题-双指针(滑动窗口).md#三数之和-leetcode-medium-no0015-2021-10)
+- [两数之和2(输入有序数组) (LeetCode, Easy, No.0167, 2021-10)](topics/专题-双指针(滑动窗口).md#两数之和2输入有序数组-leetcode-easy-no0167-2021-10)
+- [接雨水 (LeetCode, Hard, No.0042, 2021-10)](topics/专题-双指针(滑动窗口).md#接雨水-leetcode-hard-no0042-2021-10)
+- [最接近的三数之和 (LeetCode, Medium, No.0016, 2021-10)](topics/专题-双指针(滑动窗口).md#最接近的三数之和-leetcode-medium-no0016-2021-10)
+- [有效三角形的个数 (LeetCode, Medium, No.0611, 2021-10)](topics/专题-双指针(滑动窗口).md#有效三角形的个数-leetcode-medium-no0611-2021-10)
+- [盛最多水的容器 (LeetCode, Medium, No.0011, 2021-10)](topics/专题-双指针(滑动窗口).md#盛最多水的容器-leetcode-medium-no0011-2021-10)
 
 </details>
 
