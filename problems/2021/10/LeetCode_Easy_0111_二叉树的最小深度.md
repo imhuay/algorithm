@@ -1,6 +1,6 @@
 ### 二叉树的最大深度
 
-<!-- Tag: 二叉树，dfs -->
+<!-- Tag: 二叉树，DFS -->
 
 <summary><b>问题简述</b></summary>
 
