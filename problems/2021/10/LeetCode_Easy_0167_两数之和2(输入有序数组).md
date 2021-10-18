@@ -1,6 +1,6 @@
 ### 两数之和 II - 输入有序数组
 
-<!-- Tag: 双指针(首尾) -->
+<!-- Tag: 首尾双指针 -->
 
 <summary><b>问题简述</b></summary>
 
@@ -9,10 +9,6 @@
 
 假定题目一定有一个解。
 ```
-
-<summary><b>思路</b></summary>
-
-- 有序数组搜索，考虑首尾双指针，对向遍历；
 
 <details><summary><b>题目描述</b></summary>
 
@@ -51,7 +47,7 @@
 </details>
 
 
-<details><summary><b>Python</b></summary>
+<details><summary><b>双指针（Python）</b></summary>
 
 ```python
 class Solution:
