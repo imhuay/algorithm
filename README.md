@@ -9,9 +9,10 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 基础-模拟 (1) <a href="topics/基础-模拟.md">¶</a></b></summary>
+<details><summary><b> 基础-模拟 (2) <a href="topics/基础-模拟.md">¶</a></b></summary>
 
 - [将数据流变为多个不相交区间 (LeetCode, No.0352, 困难, 2021-10)](topics/基础-模拟.md#将数据流变为多个不相交区间-leetcode-no0352-困难-2021-10)
+- [最长回文子串 (LeetCode, No.0005, 中等, 2021-10)](topics/基础-模拟.md#最长回文子串-leetcode-no0005-中等-2021-10)
 
 </details>
 
@@ -90,8 +91,9 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 算法-动态规划 (1) <a href="topics/算法-动态规划.md">¶</a></b></summary>
+<details><summary><b> 算法-动态规划 (2) <a href="topics/算法-动态规划.md">¶</a></b></summary>
 
+- [最长回文子串 (LeetCode, No.0005, 中等, 2021-10)](topics/算法-动态规划.md#最长回文子串-leetcode-no0005-中等-2021-10)
 - [连续子数组的最大和 (剑指Offer, No.0042, 简单, 2021-10)](topics/算法-动态规划.md#连续子数组的最大和-剑指offer-no0042-简单-2021-10)
 
 </details>
