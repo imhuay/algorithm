@@ -99,6 +99,12 @@ Algorithm Studies
 
 </details>
 
+<details><summary><b> 算法-排序 (1) <a href="topics/算法-排序.md">¶</a></b></summary>
+
+- [数组中的第K大的数字 (剑指Offer2, No.0076, 中等, 2021-10)](topics/算法-排序.md#数组中的第k大的数字-剑指offer2-no0076-中等-2021-10)
+
+</details>
+
 <details><summary><b> 算法-深度优先搜索 (2) <a href="topics/算法-深度优先搜索.md">¶</a></b></summary>
 
 - [二叉树的最小深度 (LeetCode, No.0111, 简单, 2021-10)](topics/算法-深度优先搜索.md#二叉树的最小深度-leetcode-no0111-简单-2021-10)
