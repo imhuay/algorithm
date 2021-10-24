@@ -125,8 +125,9 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 题集-剑指Offer2 (1) <a href="topics/题集-剑指Offer2.md">¶</a></b></summary>
+<details><summary><b> 题集-剑指Offer2 (2) <a href="topics/题集-剑指Offer2.md">¶</a></b></summary>
 
 - [山峰数组的顶部 (剑指Offer2, No.0069, 简单, 2021-10)](topics/题集-剑指Offer2.md#山峰数组的顶部-剑指offer2-no0069-简单-2021-10)
+- [数组中的第K大的数字 (剑指Offer2, No.0076, 中等, 2021-10)](topics/题集-剑指Offer2.md#数组中的第k大的数字-剑指offer2-no0076-中等-2021-10)
 
 </details>
