@@ -85,8 +85,9 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 算法-分治 (1) <a href="topics/算法-分治.md">¶</a></b></summary>
+<details><summary><b> 算法-分治 (2) <a href="topics/算法-分治.md">¶</a></b></summary>
 
+- [数组中的第K大的数字 (剑指Offer2, No.0076, 中等, 2021-10)](topics/算法-分治.md#数组中的第k大的数字-剑指offer2-no0076-中等-2021-10)
 - [连续子数组的最大和 (剑指Offer, No.0042, 简单, 2021-10)](topics/算法-分治.md#连续子数组的最大和-剑指offer-no0042-简单-2021-10)
 
 </details>
@@ -95,12 +96,6 @@ Algorithm Studies
 
 - [最长回文子串 (LeetCode, No.0005, 中等, 2021-10)](topics/算法-动态规划.md#最长回文子串-leetcode-no0005-中等-2021-10)
 - [连续子数组的最大和 (剑指Offer, No.0042, 简单, 2021-10)](topics/算法-动态规划.md#连续子数组的最大和-剑指offer-no0042-简单-2021-10)
-
-</details>
-
-<details><summary><b> 算法-排序 (1) <a href="topics/算法-排序.md">¶</a></b></summary>
-
-- [数组中的第K大的数字 (剑指Offer2, No.0076, 中等, 2021-10)](topics/算法-排序.md#数组中的第k大的数字-剑指offer2-no0076-中等-2021-10)
 
 </details>
 
