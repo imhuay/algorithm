@@ -18,7 +18,7 @@ Problems Index
 [![分治](https://img.shields.io/badge/分治-lightgray.svg)](算法-分治.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 
-<!-- Tag: 前缀和、DP、分治、剑指Offer -->
+<!-- Tag: 前缀和、DP、分治 -->
 
 <summary><b>问题简述</b></summary>
 
