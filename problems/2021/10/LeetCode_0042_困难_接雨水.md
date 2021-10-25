@@ -22,8 +22,6 @@
 
 <details><summary><b>思路1：双指针(Python)</b></summary>
 
-- 
-
 ```Python
 class Solution:
     def trap(self, height: List[int]) -> int:
