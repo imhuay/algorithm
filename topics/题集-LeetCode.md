@@ -1114,10 +1114,9 @@ public:
 
 
 [![二分](https://img.shields.io/badge/二分-lightgray.svg)](算法-二分查找.md)
-[![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 
-<!-- Tag: 二分、模拟 -->
+<!-- Tag: 二分 -->
 
 <summary><b>问题简述</b></summary>
 
@@ -1205,8 +1204,10 @@ class Solution:
 </details>
 
 
-<details><summary><b>思路2：模拟——Z字搜索（Python）</b></summary>
+<details><summary><b>思路2：模拟二分（Python）</b></summary>
 
+- **二分搜索的核心**是将搜索区域分成两个部分，且这两个部分具有相反的性质，每次可以排除一半左右搜索区域；
+- 对本题来说，如果从**右上角**开始遍历，则有：所有左边的值都比当前值小，所有下方的值都比当前值大；
 - 时间复杂度：`O(M+N)`
 
 ```python
@@ -1217,12 +1218,11 @@ class Solution:
         while i < m and j >= 0:
             if matrix[i][j] == target:
                 return True
-            elif matrix[i][j] > target:  # 横向往前退一格
+            elif matrix[i][j] > target:  # 比当前值大，横向往左进一格
                 j -= 1
-            else:  # matrix[i][j] < target 时纵向往下进一格
+            else:  # matrix[i][j] < target 比当前值小，纵向往下进一格
                 i += 1
         return False
-
 ```
 
 </details>

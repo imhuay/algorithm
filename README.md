@@ -9,10 +9,9 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 基础-模拟 (3) <a href="topics/基础-模拟.md">¶</a></b></summary>
+<details><summary><b> 基础-模拟 (2) <a href="topics/基础-模拟.md">¶</a></b></summary>
 
 - [将数据流变为多个不相交区间 (LeetCode, No.0352, 困难, 2021-10)](topics/基础-模拟.md#将数据流变为多个不相交区间-leetcode-no0352-困难-2021-10)
-- [搜索二维矩阵2 (LeetCode, No.0240, 中等, 2021-10)](topics/基础-模拟.md#搜索二维矩阵2-leetcode-no0240-中等-2021-10)
 - [最长回文子串 (LeetCode, No.0005, 中等, 2021-10)](topics/基础-模拟.md#最长回文子串-leetcode-no0005-中等-2021-10)
 
 </details>
