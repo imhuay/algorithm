@@ -68,6 +68,12 @@ Algorithm Studies
 
 </details>
 
+<details><summary><b> 数据结构-栈(单调栈) (1) <a href="topics/数据结构-栈(单调栈).md">¶</a></b></summary>
+
+- [下一个更大元素 (LeetCode, No.0496, 简单, 2021-11)](topics/数据结构-栈(单调栈).md#下一个更大元素-leetcode-no0496-简单-2021-11)
+
+</details>
+
 <details><summary><b> 数据结构-链表 (2) <a href="topics/数据结构-链表.md">¶</a></b></summary>
 
 - [两数相加 (LeetCode, No.0002, 中等, 2021-10)](topics/数据结构-链表.md#两数相加-leetcode-no0002-中等-2021-10)
@@ -120,9 +126,10 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 题集-LeetCode (21) <a href="topics/题集-LeetCode.md">¶</a></b></summary>
+<details><summary><b> 题集-LeetCode (22) <a href="topics/题集-LeetCode.md">¶</a></b></summary>
 
 - [三数之和 (LeetCode, No.0015, 中等, 2021-10)](topics/题集-LeetCode.md#三数之和-leetcode-no0015-中等-2021-10)
+- [下一个更大元素 (LeetCode, No.0496, 简单, 2021-11)](topics/题集-LeetCode.md#下一个更大元素-leetcode-no0496-简单-2021-11)
 - [两数之和 (LeetCode, No.0001, 简单, 2021-10)](topics/题集-LeetCode.md#两数之和-leetcode-no0001-简单-2021-10)
 - [两数之和2(输入有序数组) (LeetCode, No.0167, 简单, 2021-10)](topics/题集-LeetCode.md#两数之和2输入有序数组-leetcode-no0167-简单-2021-10)
 - [两数相加 (LeetCode, No.0002, 中等, 2021-10)](topics/题集-LeetCode.md#两数相加-leetcode-no0002-中等-2021-10)
