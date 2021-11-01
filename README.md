@@ -56,9 +56,9 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 数据结构-优先队列(堆) (1) <a href="topics/数据结构-优先队列(堆).md">¶</a></b></summary>
+<details><summary><b> 数据结构-堆(优先队列) (1) <a href="topics/数据结构-堆(优先队列).md">¶</a></b></summary>
 
-- [数组中的第K大的数字 (剑指Offer2, No.0076, 中等, 2021-10)](topics/数据结构-优先队列(堆).md#数组中的第k大的数字-剑指offer2-no0076-中等-2021-10)
+- [数组中的第K大的数字 (剑指Offer2, No.0076, 中等, 2021-10)](topics/数据结构-堆(优先队列).md#数组中的第k大的数字-剑指offer2-no0076-中等-2021-10)
 
 </details>
 
