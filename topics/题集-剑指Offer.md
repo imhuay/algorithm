@@ -6,11 +6,12 @@
 
 Problems Index
 ---
-- [连续子数组的最大和 (剑指Offer, No.0042, 简单, 2021-10)](#连续子数组的最大和-剑指offer-no0042-简单-2021-10)
+- [`No.0042` 连续子数组的最大和 (剑指Offer, 简单, 2021-10)](#no0042-连续子数组的最大和-剑指offer-简单-2021-10)
+- [`No.0055` 二叉树的深度 (剑指Offer, 简单, 2021-11)](#no0055-二叉树的深度-剑指offer-简单-2021-11)
 
 ---
 
-### 连续子数组的最大和 (剑指Offer, No.0042, 简单, 2021-10)
+### `No.0042` 连续子数组的最大和 (剑指Offer, 简单, 2021-10)
 
 
 [![前缀和](https://img.shields.io/badge/前缀和-lightgray.svg)](技巧-前缀和.md)
@@ -107,6 +108,42 @@ class Solution:
 <details><summary><b>分治（Python）</b></summary>
 
 TODO
+
+</details>
+
+---
+### `No.0055` 二叉树的深度 (剑指Offer, 简单, 2021-11)
+
+
+[![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树(二叉树).md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+
+<!-- Tag: 二叉树 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+xxx
+```
+
+<summary><b>思路</b></summary>
+
+- xxx
+
+<details><summary><b>题目描述</b></summary>
+
+```txt
+```
+
+<!-- <div align="center"><img src="./_assets/xxx.png" height="300" /></div> -->
+
+</details>
+
+
+<details><summary><b>Python</b></summary>
+
+```python
+```
 
 </details>
 
