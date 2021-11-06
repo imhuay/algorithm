@@ -50,7 +50,7 @@ Algorithm Studies
 
 <details><summary><b> 数据结构-堆(优先队列) (1) <a href="topics/数据结构-堆(优先队列).md">¶</a></b></summary>
 
-- [`No.0076` 数组中的第K大的数字 (剑指Offer2, 中等, 2021-10)](topics/数据结构-堆(优先队列).md#no0076-数组中的第k大的数字-剑指offer2-中等-2021-10)
+- [`No.0076` 数组中的第K大的数字 (剑指Offer(突击版), 中等, 2021-10)](topics/数据结构-堆(优先队列).md#no0076-数组中的第k大的数字-剑指offer突击版-中等-2021-10)
 
 </details>
 
@@ -88,7 +88,7 @@ Algorithm Studies
 
 - [`No.0029` 两数相除 (LeetCode, 中等, 2021-10)](topics/算法-二分查找.md#no0029-两数相除-leetcode-中等-2021-10)
 - [`No.0033` 搜索旋转排序数组 (LeetCode, 中等, 2021-10)](topics/算法-二分查找.md#no0033-搜索旋转排序数组-leetcode-中等-2021-10)
-- [`No.0069` 山峰数组的顶部 (剑指Offer2, 简单, 2021-10)](topics/算法-二分查找.md#no0069-山峰数组的顶部-剑指offer2-简单-2021-10)
+- [`No.0069` 山峰数组的顶部 (剑指Offer(突击版), 简单, 2021-10)](topics/算法-二分查找.md#no0069-山峰数组的顶部-剑指offer突击版-简单-2021-10)
 - [`No.0240` 搜索二维矩阵2 (LeetCode, 中等, 2021-10)](topics/算法-二分查找.md#no0240-搜索二维矩阵2-leetcode-中等-2021-10)
 - [`No.0352` 将数据流变为多个不相交区间 (LeetCode, 困难, 2021-10)](topics/算法-二分查找.md#no0352-将数据流变为多个不相交区间-leetcode-困难-2021-10)
 - [`No.0441` 排列硬币 (LeetCode, 简单, 2021-10)](topics/算法-二分查找.md#no0441-排列硬币-leetcode-简单-2021-10)
@@ -98,7 +98,7 @@ Algorithm Studies
 <details><summary><b> 算法-分治 (2) <a href="topics/算法-分治.md">¶</a></b></summary>
 
 - [`No.0042` 连续子数组的最大和 (剑指Offer, 简单, 2021-10)](topics/算法-分治.md#no0042-连续子数组的最大和-剑指offer-简单-2021-10)
-- [`No.0076` 数组中的第K大的数字 (剑指Offer2, 中等, 2021-10)](topics/算法-分治.md#no0076-数组中的第k大的数字-剑指offer2-中等-2021-10)
+- [`No.0076` 数组中的第K大的数字 (剑指Offer(突击版), 中等, 2021-10)](topics/算法-分治.md#no0076-数组中的第k大的数字-剑指offer突击版-中等-2021-10)
 
 </details>
 
@@ -111,7 +111,7 @@ Algorithm Studies
 
 <details><summary><b> 算法-排序 (1) <a href="topics/算法-排序.md">¶</a></b></summary>
 
-- [`No.0076` 数组中的第K大的数字 (剑指Offer2, 中等, 2021-10)](topics/算法-排序.md#no0076-数组中的第k大的数字-剑指offer2-中等-2021-10)
+- [`No.0076` 数组中的第K大的数字 (剑指Offer(突击版), 中等, 2021-10)](topics/算法-排序.md#no0076-数组中的第k大的数字-剑指offer突击版-中等-2021-10)
 
 </details>
 
@@ -168,9 +168,9 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 题集-剑指Offer2 (2) <a href="topics/题集-剑指Offer2.md">¶</a></b></summary>
+<details><summary><b> 题集-剑指Offer(突击版) (2) <a href="topics/题集-剑指Offer(突击版).md">¶</a></b></summary>
 
-- [`No.0069` 山峰数组的顶部 (剑指Offer2, 简单, 2021-10)](topics/题集-剑指Offer2.md#no0069-山峰数组的顶部-剑指offer2-简单-2021-10)
-- [`No.0076` 数组中的第K大的数字 (剑指Offer2, 中等, 2021-10)](topics/题集-剑指Offer2.md#no0076-数组中的第k大的数字-剑指offer2-中等-2021-10)
+- [`No.0069` 山峰数组的顶部 (剑指Offer(突击版), 简单, 2021-10)](topics/题集-剑指Offer(突击版).md#no0069-山峰数组的顶部-剑指offer突击版-简单-2021-10)
+- [`No.0076` 数组中的第K大的数字 (剑指Offer(突击版), 中等, 2021-10)](topics/题集-剑指Offer(突击版).md#no0076-数组中的第k大的数字-剑指offer突击版-中等-2021-10)
 
 </details>
