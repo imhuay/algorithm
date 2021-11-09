@@ -11,6 +11,7 @@ Problems Index
 - [`No.0028` 对称的二叉树 (剑指Offer, 简单, 2021-11)](#no0028-对称的二叉树-剑指offer-简单-2021-11)
 - [`No.0032` 层序遍历二叉树 (剑指Offer, 中等, 2021-11)](#no0032-层序遍历二叉树-剑指offer-中等-2021-11)
 - [`No.0042` 连续子数组的最大和 (剑指Offer, 简单, 2021-10)](#no0042-连续子数组的最大和-剑指offer-简单-2021-10)
+- [`No.0054` 二叉搜索树的第k大节点 (剑指Offer, 简单, 2021-11)](#no0054-二叉搜索树的第k大节点-剑指offer-简单-2021-11)
 - [`No.0055` 二叉树的深度 (剑指Offer, 简单, 2021-11)](#no0055-二叉树的深度-剑指offer-简单-2021-11)
 
 ---
@@ -504,6 +505,101 @@ class Solution:
 <details><summary><b>分治（Python）</b></summary>
 
 TODO
+
+</details>
+
+---
+### `No.0054` 二叉搜索树的第k大节点 (剑指Offer, 简单, 2021-11)
+
+
+[![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树(二叉树).md)
+[![dfs](https://img.shields.io/badge/dfs-lightgray.svg)](算法-深度优先搜索.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+
+<!-- Tag: 二叉树、dfs -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+给定一棵二叉搜索树，请找出其中第k大的节点。
+```
+
+<summary><b>思路</b></summary>
+
+- 二叉搜索树的性质：中序遍历的结果为递增序列；
+- 为了得到第 K 大，需要递减序列，“反向”中序遍历即可：即按“右中左”的顺序深度搜索；
+- 利用辅助变量提前结束搜索；
+
+<details><summary><b>题目描述</b></summary>
+
+```txt
+给定一棵二叉搜索树，请找出其中第k大的节点。
+
+示例 1:
+    输入: root = [3,1,4,null,2], k = 1
+     3
+    / \
+   1   4
+    \
+     2
+    输出: 4
+示例 2:
+    输入: root = [5,3,6,2,4,null,null,1], k = 3
+        5
+       / \
+      3   6
+     / \
+    2   4
+   /
+  1
+    输出: 4
+
+限制：
+    1 ≤ k ≤ 二叉搜索树元素个数
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+<!-- <div align="center"><img src="./_assets/xxx.png" height="300" /></div> -->
+
+</details>
+
+
+<details><summary><b>思路：反向中序遍历（C++）</b></summary>
+
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+    int k;
+    int ret;
+public:
+    int kthLargest(TreeNode* root, int k) {
+        this->k = k;
+        inOrder(root);
+        return this->ret;
+    }
+
+    void inOrder(TreeNode* node) {
+        if (node == nullptr) return;
+
+        inOrder(node->right);  // 先遍历右子树
+        if (this->k == 0) return;
+        this->k -= 1;
+        if (this->k == 0) this->ret = node->val;
+        inOrder(node->left);
+    }
+};
+```
 
 </details>
 
