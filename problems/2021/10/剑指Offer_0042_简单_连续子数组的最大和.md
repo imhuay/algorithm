@@ -84,10 +84,3 @@ class Solution:
 ```
 
 </details>
-
-
-<details><summary><b>分治（Python）</b></summary>
-
-TODO
-
-</details>
