@@ -105,17 +105,17 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 算法-分治 (2) <a href="topics/算法-分治.md">¶</a></b></summary>
+<details><summary><b> 算法-分治 (1) <a href="topics/算法-分治.md">¶</a></b></summary>
 
-- [`No.0042` 连续子数组的最大和 (剑指Offer, 简单, 2021-10)](topics/算法-分治.md#no0042-连续子数组的最大和-剑指offer-简单-2021-10)
 - [`No.0076` 数组中的第K大的数字 (剑指Offer(突击版), 中等, 2021-10)](topics/算法-分治.md#no0076-数组中的第k大的数字-剑指offer突击版-中等-2021-10)
 
 </details>
 
-<details><summary><b> 算法-动态规划 (2) <a href="topics/算法-动态规划.md">¶</a></b></summary>
+<details><summary><b> 算法-动态规划 (3) <a href="topics/算法-动态规划.md">¶</a></b></summary>
 
 - [`No.0005` 最长回文子串 (LeetCode, 中等, 2021-10)](topics/算法-动态规划.md#no0005-最长回文子串-leetcode-中等-2021-10)
 - [`No.0042` 连续子数组的最大和 (剑指Offer, 简单, 2021-10)](topics/算法-动态规划.md#no0042-连续子数组的最大和-剑指offer-简单-2021-10)
+- [`No.0047` 礼物的最大价值 (剑指Offer, 中等, 2021-11)](topics/算法-动态规划.md#no0047-礼物的最大价值-剑指offer-中等-2021-11)
 
 </details>
 
@@ -171,13 +171,14 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 题集-剑指Offer (8) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
+<details><summary><b> 题集-剑指Offer (9) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
 
 - [`No.0026` 树的子结构 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0026-树的子结构-剑指offer-中等-2021-11)
 - [`No.0027` 二叉树的镜像 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0027-二叉树的镜像-剑指offer-简单-2021-11)
 - [`No.0028` 对称的二叉树 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0028-对称的二叉树-剑指offer-简单-2021-11)
 - [`No.0032` 层序遍历二叉树 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0032-层序遍历二叉树-剑指offer-中等-2021-11)
 - [`No.0042` 连续子数组的最大和 (剑指Offer, 简单, 2021-10)](topics/题集-剑指Offer.md#no0042-连续子数组的最大和-剑指offer-简单-2021-10)
+- [`No.0047` 礼物的最大价值 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0047-礼物的最大价值-剑指offer-中等-2021-11)
 - [`No.0054` 二叉搜索树的第k大节点 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0054-二叉搜索树的第k大节点-剑指offer-简单-2021-11)
 - [`No.0055` 二叉树的深度 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0055-二叉树的深度-剑指offer-简单-2021-11)
 - [`No.0063` 买卖股票的最佳时机 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0063-买卖股票的最佳时机-剑指offer-中等-2021-11)
