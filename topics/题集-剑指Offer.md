@@ -15,6 +15,7 @@ Problems Index
 - [`No.0054` 二叉搜索树的第k大节点 (剑指Offer, 简单, 2021-11)](#no0054-二叉搜索树的第k大节点-剑指offer-简单-2021-11)
 - [`No.0055` 二叉树的深度 (剑指Offer, 简单, 2021-11)](#no0055-二叉树的深度-剑指offer-简单-2021-11)
 - [`No.0063` 买卖股票的最佳时机 (剑指Offer, 中等, 2021-11)](#no0063-买卖股票的最佳时机-剑指offer-中等-2021-11)
+- [`No.0067` 把字符串转换成整数 (剑指Offer, 中等, 2021-11)](#no0067-把字符串转换成整数-剑指offer-中等-2021-11)
 
 ---
 
@@ -829,6 +830,114 @@ class Solution:
             ret = max(ret, p - min_p)
         
         return ret
+```
+
+</details>
+
+---
+### `No.0067` 把字符串转换成整数 (剑指Offer, 中等, 2021-11)
+
+
+[![字符串](https://img.shields.io/badge/字符串-lightgray.svg)](数据结构-字符串.md)
+[![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+
+<!-- Tag: 字符串、模拟 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+写一个函数 strToInt(string s)，实现把字符串转换成整数这个功能。不能使用 atoi 或者其他类似的库函数。
+```
+
+<summary><b>思路</b></summary>
+
+- 把字符串当做数组，依次遍历每个字符，根据题目要求执行每一步操作；
+- 注意一些细节：如正负号、char 与 int 的互转、越界判断等，详见下方代码；
+
+<details><summary><b>题目描述</b></summary>
+
+```txt
+写一个函数 strToInt(string s)，实现把字符串转换成整数这个功能。不能使用 atoi 或者其他类似的库函数。
+
+首先，该函数会根据需要丢弃无用的开头空格字符，直到寻找到第一个非空格的字符为止。
+
+当我们寻找到的第一个非空字符为正或者负号时，则将该符号与之后面尽可能多的连续数字组合起来，作为该整数的正负号；假如第一个非空字符是数字，则直接将其与之后连续的数字字符组合起来，形成整数。
+
+该字符串除了有效的整数部分之后也可能会存在多余的字符，这些字符可以被忽略，它们对于函数不应该造成影响。
+
+注意：假如该字符串中的第一个非空格字符不是一个有效整数字符、字符串为空或字符串仅包含空白字符时，则你的函数不需要进行转换。
+
+在任何情况下，若函数不能进行有效的转换时，请返回 0。
+
+说明：
+    假设我们的环境只能存储 32 位大小的有符号整数，那么其数值范围为 [−231,  231 − 1]。如果数值超过这个范围，请返回  INT_MAX (231 − 1) 或 INT_MIN (−231) 。
+
+示例 1:
+    输入: "42"
+    输出: 42
+示例 2:
+    输入: "   -42"
+    输出: -42
+    解释: 第一个非空白字符为 '-', 它是一个负号。
+         我们尽可能将负号与后面所有连续出现的数字组合起来，最后得到 -42 。
+示例 3:
+    输入: "4193 with words"
+    输出: 4193
+    解释: 转换截止于数字 '3' ，因为它的下一个字符不为数字。
+示例 4:
+    输入: "words and 987"
+    输出: 0
+    解释: 第一个非空字符是 'w', 但它不是数字或正、负号。
+        因此无法执行有效的转换。
+示例 5:
+    输入: "-91283472332"
+    输出: -2147483648
+    解释: 数字 "-91283472332" 超过 32 位有符号整数范围。 
+         因此返回 INT_MIN (−231) 。
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+<!-- <div align="center"><img src="./_assets/xxx.png" height="300" /></div> -->
+
+</details>
+
+
+<details><summary><b>代码（C++）</b></summary>
+
+```cpp
+class Solution {
+public:
+    int strToInt(string str) {
+        int n = str.length();
+        if (n < 1) return 0;
+        
+        int ret = 0;
+        int p = 0;      // 模拟指针
+        int sign = 1;   // 正负
+        
+        while (isspace(str[p])) 
+            p++;  // 跳过前置空格
+        
+        if (str[p] == '-') sign = -1;
+        if (str[p] == '-' || str[p] == '+') p++;
+        
+        while (str[p] >= '0' && str[p] <= '9') {
+            int new_ret = ret * 10 + str[p] - '0';
+            if (new_ret / 10 != ret) {  // 越界判断
+                return sign > 0? INT_MAX : INT_MIN;
+            }
+            ret = new_ret;
+            p++;
+        }
+        
+        return sign * ret;
+    }
+};
+
 ```
 
 </details>
