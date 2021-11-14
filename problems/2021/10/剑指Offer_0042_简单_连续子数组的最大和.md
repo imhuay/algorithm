@@ -33,7 +33,7 @@
 </details>
 
 
-<details><summary><b>动态规划（Python）</b></summary>
+<details><summary><b>代码：动态规划（Python）</b></summary>
 
 - **状态定义**：记 `dp[i]` 表示以元素 `nums[i]` 结尾的连续子数组最大和；
 - **转移方程**：
@@ -63,7 +63,7 @@ class Solution:
 </details>
 
 
-<details><summary><b>前缀和（Python）</b></summary>
+<details><summary><b>代码：前缀和（Python）</b></summary>
 
 - 最大连续子数组 = 最大前缀和 - 最小前缀和
 

@@ -17,12 +17,12 @@ xxx
 ```txt
 ```
 
-<!-- <div align="center"><img src="./_assets/xxx.png" height="300" /></div> -->
+<!-- <div align="center"><img src="../../../_assets/xxx.png" height="300" /></div> -->
 
 </details>
 
 
-<details><summary><b>Python</b></summary>
+<details><summary><b>代码（Python）</b></summary>
 
 ```python
 ```
