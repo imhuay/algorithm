@@ -3,8 +3,9 @@ Algorithm Studies
 
 <font color="LightGrey"><i> `This README is Auto-generated` </i></font>
 
-<details><summary><b> 基础-数学 (1) <a href="topics/基础-数学.md">¶</a></b></summary>
+<details><summary><b> 基础-数学 (2) <a href="topics/基础-数学.md">¶</a></b></summary>
 
+- [`No.0044` 数字序列中某一位的数字 (剑指Offer, 中等, 2021-11)](topics/基础-数学.md#no0044-数字序列中某一位的数字-剑指offer-中等-2021-11)
 - [`No.0441` 排列硬币 (LeetCode, 简单, 2021-10)](topics/基础-数学.md#no0441-排列硬币-leetcode-简单-2021-10)
 
 </details>
@@ -136,12 +137,13 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 算法-递归(迭代) (6) <a href="topics/算法-递归(迭代).md">¶</a></b></summary>
+<details><summary><b> 算法-递归(迭代) (7) <a href="topics/算法-递归(迭代).md">¶</a></b></summary>
 
 - [`No.0021` 合并两个有序链表 (LeetCode, 简单, 2021-10)](topics/算法-递归(迭代).md#no0021-合并两个有序链表-leetcode-简单-2021-10)
 - [`No.0026` 树的子结构 (剑指Offer, 中等, 2021-11)](topics/算法-递归(迭代).md#no0026-树的子结构-剑指offer-中等-2021-11)
 - [`No.0027` 二叉树的镜像 (剑指Offer, 简单, 2021-11)](topics/算法-递归(迭代).md#no0027-二叉树的镜像-剑指offer-简单-2021-11)
 - [`No.0028` 对称的二叉树 (剑指Offer, 简单, 2021-11)](topics/算法-递归(迭代).md#no0028-对称的二叉树-剑指offer-简单-2021-11)
+- [`No.0044` 数字序列中某一位的数字 (剑指Offer, 中等, 2021-11)](topics/算法-递归(迭代).md#no0044-数字序列中某一位的数字-剑指offer-中等-2021-11)
 - [`No.0055` 二叉树的深度 (剑指Offer, 简单, 2021-11)](topics/算法-递归(迭代).md#no0055-二叉树的深度-剑指offer-简单-2021-11)
 - [`No.0104` 二叉树的最大深度 (LeetCode, 简单, 2021-10)](topics/算法-递归(迭代).md#no0104-二叉树的最大深度-leetcode-简单-2021-10)
 
@@ -174,13 +176,14 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 题集-剑指Offer (11) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
+<details><summary><b> 题集-剑指Offer (12) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
 
 - [`No.0026` 树的子结构 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0026-树的子结构-剑指offer-中等-2021-11)
 - [`No.0027` 二叉树的镜像 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0027-二叉树的镜像-剑指offer-简单-2021-11)
 - [`No.0028` 对称的二叉树 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0028-对称的二叉树-剑指offer-简单-2021-11)
 - [`No.0032` 层序遍历二叉树 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0032-层序遍历二叉树-剑指offer-中等-2021-11)
 - [`No.0042` 连续子数组的最大和 (剑指Offer, 简单, 2021-10)](topics/题集-剑指Offer.md#no0042-连续子数组的最大和-剑指offer-简单-2021-10)
+- [`No.0044` 数字序列中某一位的数字 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0044-数字序列中某一位的数字-剑指offer-中等-2021-11)
 - [`No.0047` 礼物的最大价值 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0047-礼物的最大价值-剑指offer-中等-2021-11)
 - [`No.0048` 最长不含重复字符的子字符串 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0048-最长不含重复字符的子字符串-剑指offer-中等-2021-11)
 - [`No.0054` 二叉搜索树的第k大节点 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0054-二叉搜索树的第k大节点-剑指offer-简单-2021-11)
