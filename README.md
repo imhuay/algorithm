@@ -64,9 +64,10 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 数据结构-栈(单调栈) (2) <a href="topics/数据结构-栈(单调栈).md">¶</a></b></summary>
+<details><summary><b> 数据结构-栈(单调栈) (3) <a href="topics/数据结构-栈(单调栈).md">¶</a></b></summary>
 
 - [`No.0006` 从尾到头打印链表 (剑指Offer, 简单, 2021-11)](topics/数据结构-栈(单调栈).md#no0006-从尾到头打印链表-剑指offer-简单-2021-11)
+- [`No.0009` 用两个栈实现队列 (剑指Offer, 简单, 2021-11)](topics/数据结构-栈(单调栈).md#no0009-用两个栈实现队列-剑指offer-简单-2021-11)
 - [`No.0496` 下一个更大元素 (LeetCode, 简单, 2021-11)](topics/数据结构-栈(单调栈).md#no0496-下一个更大元素-leetcode-简单-2021-11)
 
 </details>
@@ -93,8 +94,9 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 数据结构-队列 (1) <a href="topics/数据结构-队列.md">¶</a></b></summary>
+<details><summary><b> 数据结构-队列 (2) <a href="topics/数据结构-队列.md">¶</a></b></summary>
 
+- [`No.0009` 用两个栈实现队列 (剑指Offer, 简单, 2021-11)](topics/数据结构-队列.md#no0009-用两个栈实现队列-剑指offer-简单-2021-11)
 - [`No.0032` 层序遍历二叉树 (剑指Offer, 中等, 2021-11)](topics/数据结构-队列.md#no0032-层序遍历二叉树-剑指offer-中等-2021-11)
 
 </details>
@@ -180,9 +182,10 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 题集-剑指Offer (13) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
+<details><summary><b> 题集-剑指Offer (14) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
 
 - [`No.0006` 从尾到头打印链表 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0006-从尾到头打印链表-剑指offer-简单-2021-11)
+- [`No.0009` 用两个栈实现队列 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0009-用两个栈实现队列-剑指offer-简单-2021-11)
 - [`No.0026` 树的子结构 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0026-树的子结构-剑指offer-中等-2021-11)
 - [`No.0027` 二叉树的镜像 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0027-二叉树的镜像-剑指offer-简单-2021-11)
 - [`No.0028` 对称的二叉树 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0028-对称的二叉树-剑指offer-简单-2021-11)
