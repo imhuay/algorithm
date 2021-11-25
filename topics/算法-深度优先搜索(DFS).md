@@ -17,9 +17,9 @@ Problems Index
 
 
 [![链表](https://img.shields.io/badge/链表-lightgray.svg)](数据结构-链表.md)
-[![栈](https://img.shields.io/badge/栈-lightgray.svg)](数据结构-栈(单调栈).md)
-[![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索.md)
-[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归(迭代).md)
+[![栈](https://img.shields.io/badge/栈-lightgray.svg)](数据结构-栈(单调栈)、队列.md)
+[![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索(DFS).md)
+[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 
 <!-- Tag: 链表、栈、DFS、递归 -->
@@ -111,8 +111,8 @@ class Solution:
 ### `No.0054` 二叉搜索树的第k大节点 (剑指Offer, 简单, 2021-11)
 
 
-[![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树(二叉树).md)
-[![dfs](https://img.shields.io/badge/dfs-lightgray.svg)](算法-深度优先搜索.md)
+[![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
+[![dfs](https://img.shields.io/badge/dfs-lightgray.svg)](算法-深度优先搜索(DFS).md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 
 <!-- Tag: 二叉树、dfs -->
@@ -206,8 +206,8 @@ public:
 ### `No.0111` 二叉树的最小深度 (LeetCode, 简单, 2021-10)
 
 
-[![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树(二叉树).md)
-[![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索.md)
+[![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
+[![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索(DFS).md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 
 <!-- Tag: 二叉树，DFS -->
@@ -271,8 +271,8 @@ class Solution:
 ### `No.0437` 路径总和3 (LeetCode, 中等, 2021-10)
 
 
-[![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树(二叉树).md)
-[![深度优先搜索](https://img.shields.io/badge/深度优先搜索-lightgray.svg)](算法-深度优先搜索.md)
+[![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
+[![深度优先搜索](https://img.shields.io/badge/深度优先搜索-lightgray.svg)](算法-深度优先搜索(DFS).md)
 [![前缀和](https://img.shields.io/badge/前缀和-lightgray.svg)](技巧-前缀和.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 

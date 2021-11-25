@@ -14,7 +14,7 @@ Problems Index
 ### `No.0001` 两数之和 (LeetCode, 简单, 2021-10)
 
 
-[![哈希表](https://img.shields.io/badge/哈希表-lightgray.svg)](技巧-哈希表.md)
+[![哈希表](https://img.shields.io/badge/哈希表-lightgray.svg)](技巧-哈希表(Hash).md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 
 <!-- Tag: 哈希表 -->
@@ -77,7 +77,7 @@ class Solution:
 ### `No.0187` 重复的DNA序列 (LeetCode, 中等, 2021-10)
 
 
-[![哈希表](https://img.shields.io/badge/哈希表-lightgray.svg)](技巧-哈希表.md)
+[![哈希表](https://img.shields.io/badge/哈希表-lightgray.svg)](技巧-哈希表(Hash).md)
 [![位运算](https://img.shields.io/badge/位运算-lightgray.svg)](技巧-位运算.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 

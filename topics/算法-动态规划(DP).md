@@ -1,4 +1,4 @@
-# 动态规划
+# 动态规划、DP
 
 [Problems Index](#problems-index)
 
@@ -35,8 +35,8 @@ Problems Index
 ### `No.0005` 最长回文子串 (LeetCode, 中等, 2021-10)
 
 
-[![DP](https://img.shields.io/badge/DP-lightgray.svg)](算法-动态规划.md)
-[![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟.md)
+[![DP](https://img.shields.io/badge/DP-lightgray.svg)](算法-动态规划(DP).md)
+[![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟、数学、找规律.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 
 <!-- Tag: DP、模拟 -->
@@ -137,7 +137,7 @@ public:
 
 
 [![前缀和](https://img.shields.io/badge/前缀和-lightgray.svg)](技巧-前缀和.md)
-[![动态规划](https://img.shields.io/badge/动态规划-lightgray.svg)](算法-动态规划.md)
+[![动态规划](https://img.shields.io/badge/动态规划-lightgray.svg)](算法-动态规划(DP).md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 
 <!-- Tag: 前缀和、动态规划 -->
@@ -229,7 +229,7 @@ class Solution:
 ### `No.0047` 礼物的最大价值 (剑指Offer, 中等, 2021-11)
 
 
-[![动态规划](https://img.shields.io/badge/动态规划-lightgray.svg)](算法-动态规划.md)
+[![动态规划](https://img.shields.io/badge/动态规划-lightgray.svg)](算法-动态规划(DP).md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 
 <!-- Tag: 动态规划 -->
@@ -321,7 +321,7 @@ class Solution:
 ### `No.0048` 最长不含重复字符的子字符串 (剑指Offer, 中等, 2021-11)
 
 
-[![动态规划](https://img.shields.io/badge/动态规划-lightgray.svg)](算法-动态规划.md)
+[![动态规划](https://img.shields.io/badge/动态规划-lightgray.svg)](算法-动态规划(DP).md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 
 <!-- Tag: 动态规划 -->
