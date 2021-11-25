@@ -1,3 +1,1 @@
-# LeetCode
-
 <!-- Tag: LeetCode -->

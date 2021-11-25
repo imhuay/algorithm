@@ -1,4 +1,4 @@
-# 动态规划、DP
+# 动态规划(DP)
 
 [Problems Index](#problems-index)
 

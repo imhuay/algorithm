@@ -1,4 +1,4 @@
-# 剑指Offer（突击版）
+# 剑指Offer(突击版)
 
 [Problems Index](#problems-index)
 

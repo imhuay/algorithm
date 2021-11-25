@@ -1,4 +1,4 @@
-# 哈希表
+# 哈希表(Hash)
 
 [Problems Index](#problems-index)
 
