@@ -3,7 +3,7 @@ Algorithm Studies
 
 <font color="LightGrey"><i> `This README is Auto-generated` </i></font>
 
-<details><summary><b> 基础-模拟、数学、找规律 (6) <a href="topics/基础-模拟、数学、找规律.md">¶</a></b></summary>
+<details><summary><b> 基础-模拟、数学、找规律 (7) <a href="topics/基础-模拟、数学、找规律.md">¶</a></b></summary>
 
 - [`No.0005` 最长回文子串 (LeetCode, 中等, 2021-10)](topics/基础-模拟、数学、找规律.md#no0005-最长回文子串-leetcode-中等-2021-10)
 - [`No.0044` 数字序列中某一位的数字 (剑指Offer, 中等, 2021-11)](topics/基础-模拟、数学、找规律.md#no0044-数字序列中某一位的数字-剑指offer-中等-2021-11)
@@ -11,6 +11,7 @@ Algorithm Studies
 - [`No.0067` 把字符串转换成整数 (剑指Offer, 中等, 2021-11)](topics/基础-模拟、数学、找规律.md#no0067-把字符串转换成整数-剑指offer-中等-2021-11)
 - [`No.0352` 将数据流变为多个不相交区间 (LeetCode, 困难, 2021-10)](topics/基础-模拟、数学、找规律.md#no0352-将数据流变为多个不相交区间-leetcode-困难-2021-10)
 - [`No.0441` 排列硬币 (LeetCode, 简单, 2021-10)](topics/基础-模拟、数学、找规律.md#no0441-排列硬币-leetcode-简单-2021-10)
+- [`No.0859` 亲密字符串 (LeetCode, 简单, 2021-11)](topics/基础-模拟、数学、找规律.md#no0859-亲密字符串-leetcode-简单-2021-11)
 
 </details>
 
@@ -52,10 +53,11 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 数据结构-字符串、数组 (2) <a href="topics/数据结构-字符串、数组.md">¶</a></b></summary>
+<details><summary><b> 数据结构-字符串、数组 (3) <a href="topics/数据结构-字符串、数组.md">¶</a></b></summary>
 
 - [`No.0067` 把字符串转换成整数 (剑指Offer, 中等, 2021-11)](topics/数据结构-字符串、数组.md#no0067-把字符串转换成整数-剑指offer-中等-2021-11)
 - [`No.0434` 字符串中的单词数 (LeetCode, 简单, 2021-10)](topics/数据结构-字符串、数组.md#no0434-字符串中的单词数-leetcode-简单-2021-10)
+- [`No.0859` 亲密字符串 (LeetCode, 简单, 2021-11)](topics/数据结构-字符串、数组.md#no0859-亲密字符串-leetcode-简单-2021-11)
 
 </details>
 
@@ -145,7 +147,7 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 题集-LeetCode (22) <a href="topics/题集-LeetCode.md">¶</a></b></summary>
+<details><summary><b> 题集-LeetCode (23) <a href="topics/题集-LeetCode.md">¶</a></b></summary>
 
 - [`No.0001` 两数之和 (LeetCode, 简单, 2021-10)](topics/题集-LeetCode.md#no0001-两数之和-leetcode-简单-2021-10)
 - [`No.0002` 两数相加 (LeetCode, 中等, 2021-10)](topics/题集-LeetCode.md#no0002-两数相加-leetcode-中等-2021-10)
@@ -169,6 +171,7 @@ Algorithm Studies
 - [`No.0441` 排列硬币 (LeetCode, 简单, 2021-10)](topics/题集-LeetCode.md#no0441-排列硬币-leetcode-简单-2021-10)
 - [`No.0496` 下一个更大元素 (LeetCode, 简单, 2021-11)](topics/题集-LeetCode.md#no0496-下一个更大元素-leetcode-简单-2021-11)
 - [`No.0611` 有效三角形的个数 (LeetCode, 中等, 2021-10)](topics/题集-LeetCode.md#no0611-有效三角形的个数-leetcode-中等-2021-10)
+- [`No.0859` 亲密字符串 (LeetCode, 简单, 2021-11)](topics/题集-LeetCode.md#no0859-亲密字符串-leetcode-简单-2021-11)
 
 </details>
 
