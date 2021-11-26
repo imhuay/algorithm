@@ -22,7 +22,7 @@ xxx
 </details>
 
 
-<details><summary><b>代码（Python）</b></summary>
+<details><summary><b>Python</b></summary>
 
 ```python
 ```
