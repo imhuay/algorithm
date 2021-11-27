@@ -182,7 +182,7 @@ class Solution:
 ### `No.0005` 最长回文子串 (LeetCode, 中等, 2021-10)
 
 
-[![DP](https://img.shields.io/badge/DP-lightgray.svg)](算法-动态规划(DP).md)
+[![DP](https://img.shields.io/badge/DP-lightgray.svg)](算法-动态规划(DP、记忆化搜索).md)
 [![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟、数学、找规律.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: DP、模拟 -->
