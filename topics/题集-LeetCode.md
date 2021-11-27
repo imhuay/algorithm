@@ -556,7 +556,7 @@ class Solution:
 ### `No.0021` 合并两个有序链表 (LeetCode, 简单, 2021-10)
 
 
-[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
+[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归(迭代)、分治.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 递归 -->
 
@@ -999,7 +999,7 @@ class Solution:
 
 
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
-[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
+[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归(迭代)、分治.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 二叉树，递归 -->
 

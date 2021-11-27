@@ -7,7 +7,10 @@
 Problems Index
 ---
 - [`No.0003` 数组中重复的数字 (剑指Offer, 简单, 2021-11)](#no0003-数组中重复的数字-剑指offer-简单-2021-11)
+- [`No.0004` 二维数组中的查找 (剑指Offer, 中等, 2021-11)](#no0004-二维数组中的查找-剑指offer-中等-2021-11)
+- [`No.0005` 替换空格 (剑指Offer, 简单, 2021-11)](#no0005-替换空格-剑指offer-简单-2021-11)
 - [`No.0006` 从尾到头打印链表 (剑指Offer, 简单, 2021-11)](#no0006-从尾到头打印链表-剑指offer-简单-2021-11)
+- [`No.0007` 重建二叉树 (剑指Offer, 中等, 2021-11)](#no0007-重建二叉树-剑指offer-中等-2021-11)
 - [`No.0009` 用两个栈实现队列 (剑指Offer, 简单, 2021-11)](#no0009-用两个栈实现队列-剑指offer-简单-2021-11)
 - [`No.0026` 树的子结构 (剑指Offer, 中等, 2021-11)](#no0026-树的子结构-剑指offer-中等-2021-11)
 - [`No.0027` 二叉树的镜像 (剑指Offer, 简单, 2021-11)](#no0027-二叉树的镜像-剑指offer-简单-2021-11)
@@ -34,16 +37,31 @@ Problems Index
 <summary><b>问题简述</b></summary>
 
 ```txt
-找出数组中重复的数字。
+找出数组中任意一个重复的数字。
 ```
 
 <summary><b>思路</b></summary>
 
-- xxx
+- 遍历数组，保存见过的数字，当遇到出现过的数字即返回
 
 <details><summary><b>题目描述</b></summary>
 
 ```txt
+找出数组中重复的数字。
+
+在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。
+
+示例 1：
+    输入：
+    [2, 3, 1, 0, 2, 5, 3]
+    输出：2 或 3 
+
+限制：
+    2 <= n <= 100000
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 ```
 
 <!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
@@ -54,6 +72,181 @@ Problems Index
 <details><summary><b>Python</b></summary>
 
 ```python
+class Solution:
+    def findRepeatNumber(self, nums: List[int]) -> int:
+        tb = set()
+        for i in nums:
+            if i in tb:
+                return i
+            tb.add(i)
+```
+
+</details>
+
+---
+### `No.0004` 二维数组中的查找 (剑指Offer, 中等, 2021-11)
+
+
+[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分查找.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 二分查找 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+一个 n * m 的二维数组，每一行从左到右递增，每一列从上到下递增。
+输入一个整数，判断该数组中是否含有该整数。
+```
+
+<summary><b>思路</b></summary>
+
+- 法1）对每一行做二分查找，时间复杂度`O(N*logM)`
+- 法2）从左下角开始查找，打标目标值往右，小于目标值往上；
+
+<details><summary><b>题目描述</b></summary>
+
+```txt
+在一个 n * m 的二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个高效的函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
+
+示例:
+    现有矩阵 matrix 如下：
+    [
+    [1,   4,  7, 11, 15],
+    [2,   5,  8, 12, 19],
+    [3,   6,  9, 16, 22],
+    [10, 13, 14, 17, 24],
+    [18, 21, 23, 26, 30]
+    ]
+    给定 target = 5，返回 true。
+    给定 target = 20，返回 false。
+
+限制：
+    0 <= n <= 1000
+    0 <= m <= 1000
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+</details>
+
+
+<details><summary><b>Python：法2</b></summary>
+
+```python
+class Solution:
+    def findNumberIn2DArray(self, matrix: List[List[int]], target: int) -> bool:
+        if len(matrix) < 1:
+            return False
+
+        n, m = len(matrix), len(matrix[0])
+        i, j = n - 1, 0
+
+        while i >= 0 and j <= m - 1:
+            if matrix[i][j] == target:
+                return True
+            elif matrix[i][j] > target:
+                i -= 1
+            else:  # matrix[i][j] < target:
+                j += 1
+
+        return False
+```
+
+</details>
+
+---
+### `No.0005` 替换空格 (剑指Offer, 简单, 2021-11)
+
+
+[![字符串](https://img.shields.io/badge/字符串-lightgray.svg)](数据结构-字符串、数组.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 字符串 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+实现一个函数，把字符串 s 中的每个空格替换成"%20"。
+```
+
+<summary><b>思路</b></summary>
+
+- Python、Java 中的字符串都是不可变类型，所以始终要申请新的容器；那么问题就很简单，替换拼接即可；
+- C++ 中 string 是可变类型，因此可以尝试原地替换；
+
+<details><summary><b>题目描述</b></summary>
+
+```txt
+请实现一个函数，把字符串 s 中的每个空格替换成"%20"。
+
+示例 1：
+    输入：s = "We are happy."
+    输出："We%20are%20happy."
+
+限制：
+    0 <= s 的长度 <= 10000
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+</details>
+
+
+<details><summary><b>Python</b></summary>
+
+```python
+class Solution:
+    def replaceSpace(self, s: str) -> str:
+        buf = []
+        for c in s:
+            if c == ' ':
+                buf.append('%20')
+            else:
+                buf.append(c)
+        
+        return ''.join(buf)
+```
+
+</details>
+
+<details><summary><b>C++：原地替换</b></summary>
+
+```cpp
+class Solution {
+public:
+    string replaceSpace(string s) {
+        // 统计空格数量
+        int space_cnt = 0;
+        for (char c : s) {
+            if (c == ' ') space_cnt++;
+        }
+        // 修改 s 长度
+        int i = s.size() - 1;  // 原来的长度
+        s.resize(s.size() + 2 * space_cnt);        
+        int j = s.size() - 1;  // 新的长度
+        // 倒序遍历修改
+        while (i < j) {
+            if (s[i] != ' ')
+                s[j] = s[i];
+            else {
+                s[j - 2] = '%';
+                s[j - 1] = '2';
+                s[j] = '0';
+                j -= 2;
+            }
+            i--;
+            j--;
+        }
+        return s;
+    }
+};
 ```
 
 </details>
@@ -65,7 +258,7 @@ Problems Index
 [![链表](https://img.shields.io/badge/链表-lightgray.svg)](数据结构-链表.md)
 [![栈](https://img.shields.io/badge/栈-lightgray.svg)](数据结构-栈(单调栈)、队列.md)
 [![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索(DFS).md)
-[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
+[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归(迭代)、分治.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 <!-- Tag: 链表、栈、DFS、递归 -->
 
@@ -148,6 +341,55 @@ class Solution:
         ret.append(head.val)
 
         return ret
+```
+
+</details>
+
+---
+### `No.0007` 重建二叉树 (剑指Offer, 中等, 2021-11)
+
+
+[![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
+[![分治](https://img.shields.io/badge/分治-lightgray.svg)](算法-递归(迭代)、分治.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 二叉树、分治 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+给出二叉树前序遍历和中序遍历的结果，重建该二叉树并返回其根节点。
+```
+
+<summary><b>思路</b></summary>
+
+- xxx
+
+<details><summary><b>题目描述</b></summary>
+
+```txt
+输入某二叉树的前序遍历和中序遍历的结果，请构建该二叉树并返回其根节点。
+假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
+
+示例 1:
+    Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
+    Output: [3,9,20,null,null,15,7]
+示例 2:
+    Input: preorder = [-1], inorder = [-1]
+    Output: [-1]
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+</details>
+
+
+<details><summary><b>Python</b></summary>
+
+```python
 ```
 
 </details>
@@ -239,7 +481,7 @@ class CQueue:
 
 
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
-[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
+[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归(迭代)、分治.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 <!-- Tag: 二叉树、递归 -->
 
@@ -343,7 +585,7 @@ public:
 
 
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
-[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
+[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归(迭代)、分治.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 <!-- Tag: 二叉树、递归 -->
 
@@ -428,7 +670,7 @@ class Solution:
 
 
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
-[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
+[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归(迭代)、分治.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 <!-- Tag: 二叉树、递归 -->
 
@@ -719,7 +961,7 @@ class Solution:
 
 
 [![数学](https://img.shields.io/badge/数学-lightgray.svg)](基础-模拟、数学、找规律.md)
-[![迭代](https://img.shields.io/badge/迭代-lightgray.svg)](算法-递归、迭代.md)
+[![迭代](https://img.shields.io/badge/迭代-lightgray.svg)](算法-递归(迭代)、分治.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 <!-- Tag: 数学、迭代 -->
 
@@ -1066,7 +1308,7 @@ public:
 
 
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
-[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
+[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归(迭代)、分治.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 <!-- Tag: 二叉树、递归 -->
 
