@@ -38,7 +38,6 @@ Problems Index
 [![DP](https://img.shields.io/badge/DP-lightgray.svg)](算法-动态规划(DP).md)
 [![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟、数学、找规律.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: DP、模拟 -->
 
 <summary><b>问题简述</b></summary>
@@ -139,7 +138,6 @@ public:
 [![前缀和](https://img.shields.io/badge/前缀和-lightgray.svg)](技巧-前缀和.md)
 [![动态规划](https://img.shields.io/badge/动态规划-lightgray.svg)](算法-动态规划(DP).md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 前缀和、动态规划 -->
 
 <summary><b>问题简述</b></summary>
@@ -231,7 +229,6 @@ class Solution:
 
 [![动态规划](https://img.shields.io/badge/动态规划-lightgray.svg)](算法-动态规划(DP).md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 动态规划 -->
 
 <summary><b>问题简述</b></summary>
@@ -323,7 +320,6 @@ class Solution:
 
 [![动态规划](https://img.shields.io/badge/动态规划-lightgray.svg)](算法-动态规划(DP).md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 动态规划 -->
 
 <summary><b>问题简述</b></summary>

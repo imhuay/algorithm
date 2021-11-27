@@ -1,5 +1,3 @@
-### 最接近的三数之和（3Sum Closest）
-
 <!-- Tag: 双指针 -->
 
 <summary><b>问题简述</b></summary> 

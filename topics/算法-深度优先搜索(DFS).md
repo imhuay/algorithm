@@ -21,7 +21,6 @@ Problems Index
 [![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索(DFS).md)
 [![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 链表、栈、DFS、递归 -->
 
 <summary><b>问题简述</b></summary>
@@ -114,7 +113,6 @@ class Solution:
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
 [![dfs](https://img.shields.io/badge/dfs-lightgray.svg)](算法-深度优先搜索(DFS).md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 二叉树、dfs -->
 
 <summary><b>问题简述</b></summary>
@@ -209,7 +207,6 @@ public:
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
 [![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索(DFS).md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 二叉树，DFS -->
 
 <summary><b>问题简述</b></summary>
@@ -275,7 +272,6 @@ class Solution:
 [![深度优先搜索](https://img.shields.io/badge/深度优先搜索-lightgray.svg)](算法-深度优先搜索(DFS).md)
 [![前缀和](https://img.shields.io/badge/前缀和-lightgray.svg)](技巧-前缀和.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 二叉树、深度优先搜索、前缀和 -->
 
 <summary><b>问题描述</b></summary>

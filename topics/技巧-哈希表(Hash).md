@@ -7,6 +7,7 @@
 Problems Index
 ---
 - [`No.0001` 两数之和 (LeetCode, 简单, 2021-10)](#no0001-两数之和-leetcode-简单-2021-10)
+- [`No.0003` 数组中重复的数字 (剑指Offer, 简单, 2021-11)](#no0003-数组中重复的数字-剑指offer-简单-2021-11)
 - [`No.0187` 重复的DNA序列 (LeetCode, 中等, 2021-10)](#no0187-重复的dna序列-leetcode-中等-2021-10)
 
 ---
@@ -16,7 +17,6 @@ Problems Index
 
 [![哈希表](https://img.shields.io/badge/哈希表-lightgray.svg)](技巧-哈希表(Hash).md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 哈希表 -->
 
 <summary><b>问题描述</b></summary>
@@ -74,13 +74,47 @@ class Solution:
 </details>
 
 ---
+### `No.0003` 数组中重复的数字 (剑指Offer, 简单, 2021-11)
+
+
+[![哈希表](https://img.shields.io/badge/哈希表-lightgray.svg)](技巧-哈希表(Hash).md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 哈希表 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+找出数组中重复的数字。
+```
+
+<summary><b>思路</b></summary>
+
+- xxx
+
+<details><summary><b>题目描述</b></summary>
+
+```txt
+```
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+</details>
+
+
+<details><summary><b>Python</b></summary>
+
+```python
+```
+
+</details>
+
+---
 ### `No.0187` 重复的DNA序列 (LeetCode, 中等, 2021-10)
 
 
 [![哈希表](https://img.shields.io/badge/哈希表-lightgray.svg)](技巧-哈希表(Hash).md)
 [![位运算](https://img.shields.io/badge/位运算-lightgray.svg)](技巧-位运算.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 哈希表、位运算 -->
 
 <summary><b>问题简述</b></summary>

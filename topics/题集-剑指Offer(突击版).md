@@ -16,7 +16,6 @@ Problems Index
 
 [![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分查找.md)
 [![剑指Offer(突击版)](https://img.shields.io/badge/剑指Offer(突击版)-lightgray.svg)](题集-剑指Offer(突击版).md)
-
 <!-- Tag: 二分查找 -->
 
 <summary><b>问题简述</b></summary>
@@ -103,7 +102,6 @@ class Solution:
 [![分治](https://img.shields.io/badge/分治-lightgray.svg)](算法-分治.md)
 [![快排](https://img.shields.io/badge/快排-lightgray.svg)](算法-排序(快排).md)
 [![剑指Offer(突击版)](https://img.shields.io/badge/剑指Offer(突击版)-lightgray.svg)](题集-剑指Offer(突击版).md)
-
 <!-- Tag: 堆、分治、快排 -->
 
 <summary><b>问题简述</b></summary>

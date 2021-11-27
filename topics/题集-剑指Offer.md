@@ -6,6 +6,7 @@
 
 Problems Index
 ---
+- [`No.0003` 数组中重复的数字 (剑指Offer, 简单, 2021-11)](#no0003-数组中重复的数字-剑指offer-简单-2021-11)
 - [`No.0006` 从尾到头打印链表 (剑指Offer, 简单, 2021-11)](#no0006-从尾到头打印链表-剑指offer-简单-2021-11)
 - [`No.0009` 用两个栈实现队列 (剑指Offer, 简单, 2021-11)](#no0009-用两个栈实现队列-剑指offer-简单-2021-11)
 - [`No.0026` 树的子结构 (剑指Offer, 中等, 2021-11)](#no0026-树的子结构-剑指offer-中等-2021-11)
@@ -23,6 +24,41 @@ Problems Index
 
 ---
 
+### `No.0003` 数组中重复的数字 (剑指Offer, 简单, 2021-11)
+
+
+[![哈希表](https://img.shields.io/badge/哈希表-lightgray.svg)](技巧-哈希表(Hash).md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 哈希表 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+找出数组中重复的数字。
+```
+
+<summary><b>思路</b></summary>
+
+- xxx
+
+<details><summary><b>题目描述</b></summary>
+
+```txt
+```
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+</details>
+
+
+<details><summary><b>Python</b></summary>
+
+```python
+```
+
+</details>
+
+---
 ### `No.0006` 从尾到头打印链表 (剑指Offer, 简单, 2021-11)
 
 
@@ -31,7 +67,6 @@ Problems Index
 [![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索(DFS).md)
 [![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 链表、栈、DFS、递归 -->
 
 <summary><b>问题简述</b></summary>
@@ -124,7 +159,6 @@ class Solution:
 [![栈](https://img.shields.io/badge/栈-lightgray.svg)](数据结构-栈(单调栈)、队列.md)
 [![队列](https://img.shields.io/badge/队列-lightgray.svg)](数据结构-栈(单调栈)、队列.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 栈、队列 -->
 
 <summary><b>问题简述</b></summary>
@@ -207,7 +241,6 @@ class CQueue:
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
 [![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 二叉树、递归 -->
 
 <summary><b>问题简述</b></summary>
@@ -312,7 +345,6 @@ public:
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
 [![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 二叉树、递归 -->
 
 <summary><b>问题简述</b></summary>
@@ -398,7 +430,6 @@ class Solution:
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
 [![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 二叉树、递归 -->
 
 <summary><b>问题简述</b></summary>
@@ -502,7 +533,6 @@ public:
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
 [![队列](https://img.shields.io/badge/队列-lightgray.svg)](数据结构-栈(单调栈)、队列.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 二叉树、队列 -->
 
 <summary><b>问题简述</b></summary>
@@ -599,7 +629,6 @@ public:
 [![前缀和](https://img.shields.io/badge/前缀和-lightgray.svg)](技巧-前缀和.md)
 [![动态规划](https://img.shields.io/badge/动态规划-lightgray.svg)](算法-动态规划(DP).md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 前缀和、动态规划 -->
 
 <summary><b>问题简述</b></summary>
@@ -692,7 +721,6 @@ class Solution:
 [![数学](https://img.shields.io/badge/数学-lightgray.svg)](基础-模拟、数学、找规律.md)
 [![迭代](https://img.shields.io/badge/迭代-lightgray.svg)](算法-递归、迭代.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 数学、迭代 -->
 
 <summary><b>问题简述</b></summary>
@@ -760,7 +788,6 @@ class Solution:
 
 [![动态规划](https://img.shields.io/badge/动态规划-lightgray.svg)](算法-动态规划(DP).md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 动态规划 -->
 
 <summary><b>问题简述</b></summary>
@@ -852,7 +879,6 @@ class Solution:
 
 [![动态规划](https://img.shields.io/badge/动态规划-lightgray.svg)](算法-动态规划(DP).md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 动态规划 -->
 
 <summary><b>问题简述</b></summary>
@@ -948,7 +974,6 @@ class Solution:
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
 [![dfs](https://img.shields.io/badge/dfs-lightgray.svg)](算法-深度优先搜索(DFS).md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 二叉树、dfs -->
 
 <summary><b>问题简述</b></summary>
@@ -1043,7 +1068,6 @@ public:
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
 [![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 二叉树、递归 -->
 
 <summary><b>问题简述</b></summary>
@@ -1114,7 +1138,6 @@ public:
 
 [![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟、数学、找规律.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 模拟 -->
 
 <summary><b>问题简述</b></summary>
@@ -1187,7 +1210,6 @@ class Solution:
 [![字符串](https://img.shields.io/badge/字符串-lightgray.svg)](数据结构-字符串、数组.md)
 [![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟、数学、找规律.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-
 <!-- Tag: 字符串、模拟 -->
 
 <summary><b>问题简述</b></summary>

@@ -40,9 +40,10 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 技巧-哈希表(Hash) (2) <a href="topics/技巧-哈希表(Hash).md">¶</a></b></summary>
+<details><summary><b> 技巧-哈希表(Hash) (3) <a href="topics/技巧-哈希表(Hash).md">¶</a></b></summary>
 
 - [`No.0001` 两数之和 (LeetCode, 简单, 2021-10)](topics/技巧-哈希表(Hash).md#no0001-两数之和-leetcode-简单-2021-10)
+- [`No.0003` 数组中重复的数字 (剑指Offer, 简单, 2021-11)](topics/技巧-哈希表(Hash).md#no0003-数组中重复的数字-剑指offer-简单-2021-11)
 - [`No.0187` 重复的DNA序列 (LeetCode, 中等, 2021-10)](topics/技巧-哈希表(Hash).md#no0187-重复的dna序列-leetcode-中等-2021-10)
 
 </details>
@@ -175,8 +176,9 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 题集-剑指Offer (14) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
+<details><summary><b> 题集-剑指Offer (15) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
 
+- [`No.0003` 数组中重复的数字 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0003-数组中重复的数字-剑指offer-简单-2021-11)
 - [`No.0006` 从尾到头打印链表 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0006-从尾到头打印链表-剑指offer-简单-2021-11)
 - [`No.0009` 用两个栈实现队列 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0009-用两个栈实现队列-剑指offer-简单-2021-11)
 - [`No.0026` 树的子结构 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0026-树的子结构-剑指offer-中等-2021-11)

@@ -37,7 +37,6 @@ Problems Index
 
 [![哈希表](https://img.shields.io/badge/哈希表-lightgray.svg)](技巧-哈希表(Hash).md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 哈希表 -->
 
 <summary><b>问题描述</b></summary>
@@ -100,7 +99,6 @@ class Solution:
 
 [![链表](https://img.shields.io/badge/链表-lightgray.svg)](数据结构-链表.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 链表 -->
 
 <summary><b>问题描述</b></summary>
@@ -187,7 +185,6 @@ class Solution:
 [![DP](https://img.shields.io/badge/DP-lightgray.svg)](算法-动态规划(DP).md)
 [![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟、数学、找规律.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: DP、模拟 -->
 
 <summary><b>问题简述</b></summary>
@@ -287,7 +284,6 @@ public:
 
 [![双指针](https://img.shields.io/badge/双指针-lightgray.svg)](技巧-双指针、滑动窗口.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 双指针 -->
 
 <summary><b>问题简述</b></summary>
@@ -344,7 +340,6 @@ class Solution:
 
 [![双指针](https://img.shields.io/badge/双指针-lightgray.svg)](技巧-双指针、滑动窗口.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 双指针 -->
 
 <summary><b>问题简述</b></summary> 
@@ -448,7 +443,6 @@ class Solution:
 
 [![双指针](https://img.shields.io/badge/双指针-lightgray.svg)](技巧-双指针、滑动窗口.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 双指针 -->
 
 <summary><b>问题简述</b></summary> 
@@ -564,7 +558,6 @@ class Solution:
 
 [![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 递归 -->
 
 <summary><b>问题描述</b></summary>
@@ -659,7 +652,6 @@ class Solution:
 [![位运算](https://img.shields.io/badge/位运算-lightgray.svg)](技巧-位运算.md)
 [![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分查找.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 位运算、二分查找 -->
 
 <summary><b>问题简述</b></summary>
@@ -748,7 +740,6 @@ class Solution:
 
 [![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分查找.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 二分查找 -->
 
 <summary><b>问题简述</b></summary>
@@ -844,7 +835,6 @@ class Solution:
 
 [![双指针](https://img.shields.io/badge/双指针-lightgray.svg)](技巧-双指针、滑动窗口.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 双指针 -->
 
 <summary><b>问题简述</b></summary>
@@ -930,7 +920,6 @@ public:
 
 [![链表](https://img.shields.io/badge/链表-lightgray.svg)](数据结构-链表.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 链表 -->
 
 <summary><b>问题描述</b></summary>
@@ -1012,7 +1001,6 @@ class Solution:
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
 [![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归、迭代.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 二叉树，递归 -->
 
 <summary><b>问题简述</b></summary>
@@ -1067,7 +1055,6 @@ class Solution:
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
 [![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索(DFS).md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 二叉树，DFS -->
 
 <summary><b>问题简述</b></summary>
@@ -1131,7 +1118,6 @@ class Solution:
 
 [![双指针](https://img.shields.io/badge/双指针-lightgray.svg)](技巧-双指针、滑动窗口.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 双指针 -->
 
 <summary><b>问题简述</b></summary>
@@ -1207,7 +1193,6 @@ class Solution:
 [![哈希表](https://img.shields.io/badge/哈希表-lightgray.svg)](技巧-哈希表(Hash).md)
 [![位运算](https://img.shields.io/badge/位运算-lightgray.svg)](技巧-位运算.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 哈希表、位运算 -->
 
 <summary><b>问题简述</b></summary>
@@ -1345,7 +1330,6 @@ class Solution:
 
 [![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分查找.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 二分查找 -->
 
 <summary><b>问题简述</b></summary>
@@ -1464,7 +1448,6 @@ class Solution:
 [![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分查找.md)
 [![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟、数学、找规律.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 二分查找、模拟 -->
 
 <summary><b>问题简述</b></summary>
@@ -1631,7 +1614,6 @@ SortedDict({2: 22, 3: 33, 4: 44, 6: 66, 7: 77})
 
 [![字符串](https://img.shields.io/badge/字符串-lightgray.svg)](数据结构-字符串、数组.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 字符串 -->
 
 <summary><b>问题描述</b></summary>
@@ -1679,7 +1661,6 @@ class Solution:
 [![深度优先搜索](https://img.shields.io/badge/深度优先搜索-lightgray.svg)](算法-深度优先搜索(DFS).md)
 [![前缀和](https://img.shields.io/badge/前缀和-lightgray.svg)](技巧-前缀和.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 二叉树、深度优先搜索、前缀和 -->
 
 <summary><b>问题描述</b></summary>
@@ -1804,7 +1785,6 @@ class Solution:
 [![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分查找.md)
 [![数学](https://img.shields.io/badge/数学-lightgray.svg)](基础-模拟、数学、找规律.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 二分查找、数学 -->
 
 <summary><b>问题简述</b></summary>
@@ -1870,7 +1850,6 @@ class Solution:
 
 [![单调栈](https://img.shields.io/badge/单调栈-lightgray.svg)](数据结构-栈(单调栈)、队列.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 单调栈 -->
 
 <summary><b>问题简述</b></summary>
@@ -1949,7 +1928,6 @@ class Solution:
 
 [![双指针](https://img.shields.io/badge/双指针-lightgray.svg)](技巧-双指针、滑动窗口.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 双指针 -->
 
 <summary><b>问题简述</b></summary> 
@@ -2023,7 +2001,6 @@ class Solution:
 [![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟、数学、找规律.md)
 [![字符串](https://img.shields.io/badge/字符串-lightgray.svg)](数据结构-字符串、数组.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
-
 <!-- Tag: 模拟、字符串 -->
 
 <summary><b>问题简述</b></summary>
