@@ -669,7 +669,7 @@ class Solution:
 
 
 [![位运算](https://img.shields.io/badge/位运算-lightgray.svg)](技巧-位运算.md)
-[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分查找.md)
+[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分法.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 位运算、二分查找 -->
 
@@ -759,7 +759,7 @@ class Solution:
 ### `No.0033` 搜索旋转排序数组 (LeetCode, 中等, 2021-10)
 
 
-[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分查找.md)
+[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分法.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 二分查找 -->
 
@@ -1351,7 +1351,7 @@ class Solution:
 ### `No.0240` 搜索二维矩阵2 (LeetCode, 中等, 2021-10)
 
 
-[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分查找.md)
+[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分法.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 二分查找 -->
 
@@ -1470,7 +1470,7 @@ class Solution:
 ### `No.0352` 将数据流变为多个不相交区间 (LeetCode, 困难, 2021-10)
 
 
-[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分查找.md)
+[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分法.md)
 [![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟、数学、找规律.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 二分查找、模拟 -->
@@ -1812,7 +1812,7 @@ class Solution:
 ### `No.0441` 排列硬币 (LeetCode, 简单, 2021-10)
 
 
-[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分查找.md)
+[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分法.md)
 [![数学](https://img.shields.io/badge/数学-lightgray.svg)](基础-模拟、数学、找规律.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 二分查找、数学 -->

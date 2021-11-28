@@ -17,6 +17,9 @@ Problems Index
 - [`No.0011` 旋转数组的最小数字 (剑指Offer, 简单, 2021-11)](#no0011-旋转数组的最小数字-剑指offer-简单-2021-11)
 - [`No.0012` 矩阵中的路径 (剑指Offer, 中等, 2021-11)](#no0012-矩阵中的路径-剑指offer-中等-2021-11)
 - [`No.0013` 机器人的运动范围 (剑指Offer, 中等, 2021-11)](#no0013-机器人的运动范围-剑指offer-中等-2021-11)
+- [`No.0014` 剪绳子1 (剑指Offer, 中等, 2021-11)](#no0014-剪绳子1-剑指offer-中等-2021-11)
+- [`No.0015` 二进制中1的个数 (剑指Offer, 简单, 2021-11)](#no0015-二进制中1的个数-剑指offer-简单-2021-11)
+- [`No.0016` 数值的整数次方（快速幂） (剑指Offer, 中等, 2021-11)](#no0016-数值的整数次方快速幂-剑指offer-中等-2021-11)
 - [`No.0026` 树的子结构 (剑指Offer, 中等, 2021-11)](#no0026-树的子结构-剑指offer-中等-2021-11)
 - [`No.0027` 二叉树的镜像 (剑指Offer, 简单, 2021-11)](#no0027-二叉树的镜像-剑指offer-简单-2021-11)
 - [`No.0028` 对称的二叉树 (剑指Offer, 简单, 2021-11)](#no0028-对称的二叉树-剑指offer-简单-2021-11)
@@ -92,7 +95,7 @@ class Solution:
 ### `No.0004` 二维数组中的查找 (剑指Offer, 中等, 2021-11)
 
 
-[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分查找.md)
+[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分法.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 <!-- Tag: 二分查找 -->
 
@@ -679,7 +682,7 @@ class Solution:
 ### `No.0011` 旋转数组的最小数字 (剑指Offer, 简单, 2021-11)
 
 
-[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分查找.md)
+[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分法.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 <!-- Tag: 二分查找 -->
 
@@ -898,6 +901,268 @@ class Solution:
 
         visited = set()
         return dfs(0, 0)
+```
+
+</details>
+
+---
+### `No.0014` 剪绳子1 (剑指Offer, 中等, 2021-11)
+
+
+[![动态规划](https://img.shields.io/badge/动态规划-lightgray.svg)](算法-动态规划(DP、记忆化搜索).md)
+[![贪心](https://img.shields.io/badge/贪心-lightgray.svg)](技巧-贪心.md)
+[![数学](https://img.shields.io/badge/数学-lightgray.svg)](基础-模拟、数学、找规律.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 动态规划、贪心、数学 -->
+
+<summary><b>问题描述</b></summary>
+
+```txt
+给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n都是整数，n>1并且m>1），每段绳子的长度记为 k[0],k[1]...k[m-1] 。请问 k[0]*k[1]*...*k[m-1] 可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。
+
+示例 1：
+    输入: 2
+    输出: 1
+    解释: 2 = 1 + 1, 1 × 1 = 1
+示例 2:
+    输入: 10
+    输出: 36
+    解释: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36
+提示：
+    2 <= n <= 58
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/jian-sheng-zi-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+<summary><b>思路</b></summary>
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+法1）动态规划
+- 在不使用任何数学结论的前提下，可以把本题当做纯 DP 来做，只是复杂度会比较高：
+
+<details><summary><b>Python：动态规划</b></summary>
+
+```python
+class Solution:
+    def cuttingRope(self, n: int) -> int:
+        # 对于 n = 2、3 的情况，直接硬编码
+        if n == 2:
+            return 1
+        if n == 3:
+            return 2
+
+        # 状态定义：dp[i] 表示长度为 i 的最大乘积，其中 i > 3（注意 i 的范围）
+        #   当 i <= 3 时，不满足该定义，此时不剪才是最大值
+        # 初始状态（dp[0] 仅用于占位）
+        dp = [0,1,2,3] + [0] * (n - 3) 
+
+        for i in range(4, n + 1):
+            for j in range(2, i):
+                dp[i] = max(dp[i], dp[i-j] * dp[j])
+
+        return dp[n]
+```
+
+</details>
+
+法2）贪心
+- 数学上可证：尽可能按长度为 3 切，如果剩余 4，则按 2、2 切；
+  > 证明见：[剪绳子1（数学推导 / 贪心思想，清晰图解）](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/solution/mian-shi-ti-14-i-jian-sheng-zi-tan-xin-si-xiang-by/)
+
+<details><summary><b>Python：贪心</b></summary>
+
+```python
+class Solution:
+    def cuttingRope(self, n: int) -> int:
+        import math
+        if n <= 3:
+            return n - 1
+        
+        a, b = n // 3, n % 3
+        if b == 1:
+            return int(math.pow(3, a - 1) * 4)
+        elif b == 2:
+            return int(math.pow(3, a) * 2)
+        else:
+            return int(math.pow(3, a))
+```
+
+</details>
+
+---
+### `No.0015` 二进制中1的个数 (剑指Offer, 简单, 2021-11)
+
+
+[![位运算](https://img.shields.io/badge/位运算-lightgray.svg)](技巧-位运算.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 位运算 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+输入是一个无符号整数，返回其二进制表达式中数字位数为 '1' 的个数
+```
+
+<details><summary><b>详细描述</b></summary>
+
+```txt
+编写一个函数，输入是一个无符号整数（以二进制串的形式），返回其二进制表达式中数字位数为 '1' 的个数（也被称为 汉明重量).）。
+
+提示：
+    请注意，在某些语言（如 Java）中，没有无符号整数类型。在这种情况下，输入和输出都将被指定为有符号整数类型，并且不应影响您的实现，因为无论整数是有符号的还是无符号的，其内部的二进制表示形式都是相同的。
+    在 Java 中，编译器使用 二进制补码 记法来表示有符号整数。因此，在上面的 示例 3 中，输入表示有符号整数 -3。
+
+示例 1：
+    输入：n = 11 (控制台输入 00000000000000000000000000001011)
+    输出：3
+    解释：输入的二进制串 00000000000000000000000000001011 中，共有三位为 '1'。
+示例 2：
+    输入：n = 128 (控制台输入 00000000000000000000000010000000)
+    输出：1
+    解释：输入的二进制串 00000000000000000000000010000000 中，共有一位为 '1'。
+示例 3：
+    输入：n = 4294967293 (控制台输入 11111111111111111111111111111101，部分语言中 n = -3）
+    输出：31
+    解释：输入的二进制串 11111111111111111111111111111101 中，共有 31 位为 '1'。
+
+提示：
+    输入必须是长度为 32 的 二进制串 。
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+</details>
+
+<summary><b>思路</b></summary>
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+<details><summary><b>Python：法1</b></summary>
+
+```python
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        ret = 0
+        while n:
+            # if n % 2 == 1:  # 是奇数
+            #     ret += 1
+            ret += n & 1  # 同上等价
+            n >>= 1
+
+        return ret
+```
+
+</details>
+
+<details><summary><b>Python：法2</b></summary>
+
+```python
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        res = 0
+        while n:
+            res += 1
+            n &= n - 1  # 消去最右边的 1，能循环几次就有几个 1
+        return res
+```
+
+图解：
+
+<div align="center"><img src="../_assets/剑指Offer_0015_简单_二进制中1的个数.png" height="300" /></div>
+
+
+</details>
+
+---
+### `No.0016` 数值的整数次方（快速幂） (剑指Offer, 中等, 2021-11)
+
+
+[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归(迭代)、分治.md)
+[![二分法](https://img.shields.io/badge/二分法-lightgray.svg)](算法-二分法.md)
+[![经典](https://img.shields.io/badge/经典-lightgray.svg)](题集-经典问题&代码.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 递归、二分法、经典 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+实现快速幂算法，即 pow(x, n)，不使用库函数；
+```
+
+<details><summary><b>详细描述</b></summary>
+
+```txt
+实现 pow(x, n) ，即计算 x 的 n 次幂函数（即，xn）。不得使用库函数，同时不需要考虑大数问题。
+
+示例 1：
+    输入：x = 2.00000, n = 10
+    输出：1024.00000
+示例 2：
+    输入：x = 2.10000, n = 3
+    输出：9.26100
+示例 3：
+    输入：x = 2.00000, n = -2
+    输出：0.25000
+    解释：2-2 = 1/22 = 1/4 = 0.25
+
+提示：
+    -100.0 < x < 100.0
+    -2^31 <= n <= 2^31-1
+    -10^4 <= x^n <= 10^4
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+</details>
+
+<summary><b>思路</b></summary>
+
+- 直接连乘 n 次会报超时；
+- 从二分角度理解快速幂
+
+    ```python
+    3^20      
+    = (3^2)^10       # 当指数为偶数时，对指数除2取整，底数平方
+    = (9^2)^5   
+    = (81^2)^2 * 81  # 当指数为奇数时，对指数除2取整，底数平方，同时再乘一个当前的底数（这里是 81）
+    = (6561^2)^1 * 81
+    = 43046721^0 * 81 * 43046721
+    = 1 * 81 * 43046721
+    ```
+
+    > [数值的整数次方（快速幂，清晰图解）](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/solution/mian-shi-ti-16-shu-zhi-de-zheng-shu-ci-fang-kuai-s/)
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+<details><summary><b>Python</b></summary>
+
+```python
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        if x == 0: 
+            return 0
+        
+        if n == 0:
+            return 1
+
+        if n < 0: 
+            x = 1 / x
+            n = -n
+
+        ret = 1
+        while n:
+            if n & 1: 
+                ret *= x
+            x *= x
+            n >>= 1
+        return ret
 ```
 
 </details>

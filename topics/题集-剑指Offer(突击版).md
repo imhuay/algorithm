@@ -14,7 +14,7 @@ Problems Index
 ### `No.0069` 山峰数组的顶部 (剑指Offer(突击版), 简单, 2021-10)
 
 
-[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分查找.md)
+[![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分法.md)
 [![剑指Offer(突击版)](https://img.shields.io/badge/剑指Offer(突击版)-lightgray.svg)](题集-剑指Offer(突击版).md)
 <!-- Tag: 二分查找 -->
 
