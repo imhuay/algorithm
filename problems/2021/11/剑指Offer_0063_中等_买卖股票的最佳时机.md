@@ -12,11 +12,7 @@
         注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格。
 ```
 
-<summary><b>思路</b></summary>
-
-- 使用两个变量分别记录价格的最小值，与利润的最大值；一次遍历即可；
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 假设把某股票的价格按照时间先后顺序存储在数组中，请问买卖该股票一次可能获得的最大利润是多少？
@@ -46,7 +42,12 @@
 </details>
 
 
-<details><summary><b>代码：一次遍历（Python）</b></summary>
+<summary><b>思路</b></summary>
+
+- 使用两个变量分别记录价格的最小值，与利润的最大值；一次遍历即可；
+
+
+<details><summary><b>Python：一次遍历</b></summary>
 
 ```python
 class Solution:

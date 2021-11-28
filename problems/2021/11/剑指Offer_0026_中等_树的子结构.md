@@ -6,18 +6,7 @@
 输入两棵二叉树A和B，判断B是不是A的子结构(约定空树不是任意一个树的子结构)
 ```
 
-<summary><b>思路</b></summary>
-
-> [树的子结构（先序遍历 + 包含判断，清晰图解）](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/solution/mian-shi-ti-26-shu-de-zi-jie-gou-xian-xu-bian-li-p/)
-
-1. 先序遍历 A，然后确定 B 是否为 A 的子结构；
-2. 如何确定子结构：
-    - 如果 B 的根节点与 A 的某子节点 C 相等；
-    - 递归判断 C 和 B 的左子节点是否相等；
-    - 递归判断 C 和 B 的右子节点是否相等；
-3. 确定尾递归；
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 输入两棵二叉树A和B，判断B是不是A的子结构。(约定空树不是任意一个树的子结构)
@@ -58,7 +47,19 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 </details>
 
 
-<details><summary><b>递归（C++）</b></summary>
+<summary><b>思路</b></summary>
+
+> [树的子结构（先序遍历 + 包含判断，清晰图解）](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/solution/mian-shi-ti-26-shu-de-zi-jie-gou-xian-xu-bian-li-p/)
+
+1. 先序遍历 A，然后确定 B 是否为 A 的子结构；
+2. 如何确定子结构：
+    - 如果 B 的根节点与 A 的某子节点 C 相等；
+    - 递归判断 C 和 B 的左子节点是否相等；
+    - 递归判断 C 和 B 的右子节点是否相等；
+3. 确定尾递归；
+
+
+<details><summary><b>C++：递归</b></summary>
 
 ```cpp
 /**

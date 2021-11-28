@@ -6,18 +6,20 @@
 xxx
 ```
 
-<summary><b>思路</b></summary>
-
-- xxx
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 ```
 
+</details>
+
+<summary><b>思路</b></summary>
+
+- xxx
+
 <!-- <div align="center"><img src="../../../_assets/xxx.png" height="300" /></div> -->
 
-</details>
+
 
 
 <details><summary><b>Python</b></summary>

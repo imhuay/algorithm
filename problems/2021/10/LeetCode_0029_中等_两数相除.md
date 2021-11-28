@@ -6,7 +6,7 @@
 不使用乘法、除法和 mod 运算符，返回两数相除的整数部分，如 10/3 返回 3。
 ```
 
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 给定两个整数，被除数 dividend 和除数 divisor。将两数相除，要求不使用乘法、除法和 mod 运算符。
@@ -37,7 +37,9 @@
 </details>
 
 
-<details><summary><b>思路：二分查找</b></summary>
+<summary><b>思路</b></summary>
+
+<details><summary><b>Python：二分查找</b></summary>
 
 ```python
 class Solution:

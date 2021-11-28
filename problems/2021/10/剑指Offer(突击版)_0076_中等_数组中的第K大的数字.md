@@ -6,7 +6,7 @@
 给定整数数组 nums 和整数 k，请返回数组中第 k 个最大的元素。
 ```
 
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 给定整数数组 nums 和整数 k，请返回数组中第 k 个最大的元素。
@@ -31,6 +31,8 @@
 
 </details>
 
+
+<summary><b>思路</b></summary>
 
 <details><summary><b>思路1：partition操作（分治）</b></summary>
 

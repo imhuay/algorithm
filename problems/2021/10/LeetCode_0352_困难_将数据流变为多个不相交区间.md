@@ -1,6 +1,6 @@
 <!-- Tag: 二分查找、模拟 -->
 
-<summary><b>问题简述</b></summary>
+<summary><b>问题描述</b></summary>
 
 ```txt
 给你一个由非负整数 a1, a2, ..., an 组成的数据流输入，请你将到目前为止看到的数字总结为不相交的区间列表。
@@ -53,7 +53,9 @@
 </details>
 
 
-<details><summary><b>思路1：暴力求解（Python）</b></summary>
+<summary><b>思路</b></summary>
+
+<details><summary><b>法1）Python：暴力求解</b></summary>
 
 - 每次 `getIntervals` 时，先对数组排序，然后依次找出每个不相交的区间；
 
@@ -85,7 +87,7 @@ class SummaryRanges:
 </details>
 
 
-<details><summary><b>思路2：分情况讨论（模拟，Python）</b></summary>
+<details><summary><b>法2）Python：模拟，分情况讨论</b></summary>
 
 - 明确每次 `addNum` 时，区间会发生那些变化：
     - 情况1：存在一个区间 `[l, r]` 满足 `l <= val <= r`；

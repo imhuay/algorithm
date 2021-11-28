@@ -9,7 +9,7 @@
 本题实际上就是模拟了**单调栈**最常见的使用场景；
 ```
 
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 
@@ -53,7 +53,9 @@ nums1 中数字 x 的下一个更大元素是指 x 在 nums2 中对应位
 </details>
 
 
-<details><summary><b>思路：单调栈（Python）</b></summary>
+<summary><b>思路</b></summary>
+
+<details><summary><b>Python：单调栈</b></summary>
 
 ```python
 class Solution:

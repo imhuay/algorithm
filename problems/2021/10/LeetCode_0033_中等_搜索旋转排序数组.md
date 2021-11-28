@@ -6,14 +6,8 @@
 在一个旋转过的有序数组中搜索某值，若存在返回下标，否则返回 -1。
 ```
 
-<summary><b>思路</b></summary>
 
-- “二分”的本质是两段性，而不是单调性；即只要二分后，左边满足某个性质，右边不满足某个性质，即可使用二分；
-- 比如本题二分后，有前半段满足 >= nums[0]，而后半段不满足；
-
-    > [LogicStack-LeetCode/33.搜索旋转排序数组（中等）](https://github.com/SharingSource/LogicStack-LeetCode/blob/main/LeetCode/31-40/33.%20搜索旋转排序数组（中等）.md#二分解法)
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 整数数组 nums 按升序排列，数组中的值 互不相同 。
@@ -50,7 +44,15 @@
 </details>
 
 
-<details><summary><b>二分查找（Python）</b></summary>
+<summary><b>思路</b></summary>
+
+- “二分”的本质是两段性，而不是单调性；即只要二分后，左边满足某个性质，右边不满足某个性质，即可使用二分；
+- 比如本题二分后，有前半段满足 >= nums[0]，而后半段不满足；
+
+    > [LogicStack-LeetCode/33.搜索旋转排序数组（中等）](https://github.com/SharingSource/LogicStack-LeetCode/blob/main/LeetCode/31-40/33.%20搜索旋转排序数组（中等）.md#二分解法)
+
+
+<details><summary><b>Python：二分查找</b></summary>
 
 - 将数组从中间分开成左右两部分时，一定有一部分的数组是有序的。
 

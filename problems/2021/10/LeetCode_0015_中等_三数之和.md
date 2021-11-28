@@ -6,14 +6,8 @@
 给定一个数组，找出该数组中所有和为 0 的三元组。
 ```
 
-<summary><b>思路</b></summary>
 
-- 排序后，问题可以简化成两数之和（LeetCode-167）；
-- 先固定一个数，然后利用首尾双指针进行对向遍历；
-- 注意跳过相同结果；
-
-
-<details><summary><b>题目描述</b></summary> 
+<details><summary><b>详细描述</b></summary> 
 
 ```text
 给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有和为 0 且不重复的三元组。
@@ -43,6 +37,12 @@
 
 </details>
 
+
+<summary><b>思路</b></summary>
+
+- 排序后，问题可以简化成两数之和（LeetCode-167）；
+- 先固定一个数，然后利用首尾双指针进行对向遍历；
+- 注意跳过相同结果；
 
 <details><summary><b>Python</b></summary> 
 

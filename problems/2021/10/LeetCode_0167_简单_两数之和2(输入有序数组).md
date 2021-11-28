@@ -8,7 +8,7 @@
 假定题目一定有一个解。
 ```
 
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 给定一个已按照 非递减顺序排列 的整数数组 numbers ，请你从数组中找出两个数满足相加之和等于目标数 target 。
@@ -44,8 +44,9 @@
 
 </details>
 
+<summary><b>思路</b></summary>
 
-<details><summary><b>双指针（Python）</b></summary>
+<details><summary><b>Python：双指针</b></summary>
 
 ```python
 class Solution:

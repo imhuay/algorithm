@@ -6,11 +6,7 @@
 找出数组中任意一个重复的数字。
 ```
 
-<summary><b>思路</b></summary>
-
-- 遍历数组，保存见过的数字，当遇到出现过的数字即返回
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 找出数组中重复的数字。
@@ -33,6 +29,10 @@
 <!-- <div align="center"><img src="../../../_assets/xxx.png" height="300" /></div> -->
 
 </details>
+
+<summary><b>思路</b></summary>
+
+- 遍历数组，保存见过的数字，当遇到出现过的数字即返回
 
 
 <details><summary><b>Python</b></summary>

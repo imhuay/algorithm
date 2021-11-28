@@ -6,15 +6,7 @@
 从尾到头打印链表（用数组返回）
 ```
 
-<summary><b>思路</b></summary>
-
-**思路1**：
-- 利用栈，顺序入栈，然后依次出栈即可
-
-**思路2**：
-- 利用深度优先遍历思想（二叉树的先序遍历）
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
@@ -36,7 +28,13 @@
 </details>
 
 
-<details><summary><b>代码：栈（Python）</b></summary>
+<summary><b>思路</b></summary>
+
+- 法1）利用栈，顺序入栈，然后依次出栈即可
+- 法2）利用深度优先遍历思想（二叉树的先序遍历）
+
+
+<details><summary><b>Python：栈</b></summary>
 
 ```python
 # Definition for singly-linked list.
@@ -61,7 +59,7 @@ class Solution:
 
 </details>
 
-<details><summary><b>代码：DFS、递归（Python）</b></summary>
+<details><summary><b>Python：DFS、递归</b></summary>
 
 ```python
 # Definition for singly-linked list.

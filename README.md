@@ -96,9 +96,10 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 算法-二分查找 (7) <a href="topics/算法-二分查找.md">¶</a></b></summary>
+<details><summary><b> 算法-二分查找 (8) <a href="topics/算法-二分查找.md">¶</a></b></summary>
 
 - [`No.0004` 二维数组中的查找 (剑指Offer, 中等, 2021-11)](topics/算法-二分查找.md#no0004-二维数组中的查找-剑指offer-中等-2021-11)
+- [`No.0011` 旋转数组的最小数字 (剑指Offer, 简单, 2021-11)](topics/算法-二分查找.md#no0011-旋转数组的最小数字-剑指offer-简单-2021-11)
 - [`No.0029` 两数相除 (LeetCode, 中等, 2021-10)](topics/算法-二分查找.md#no0029-两数相除-leetcode-中等-2021-10)
 - [`No.0033` 搜索旋转排序数组 (LeetCode, 中等, 2021-10)](topics/算法-二分查找.md#no0033-搜索旋转排序数组-leetcode-中等-2021-10)
 - [`No.0069` 山峰数组的顶部 (剑指Offer(突击版), 简单, 2021-10)](topics/算法-二分查找.md#no0069-山峰数组的顶部-剑指offer突击版-简单-2021-10)
@@ -111,9 +112,9 @@ Algorithm Studies
 <details><summary><b> 算法-动态规划(DP、记忆化搜索) (7) <a href="topics/算法-动态规划(DP、记忆化搜索).md">¶</a></b></summary>
 
 - [`No.0005` 最长回文子串 (LeetCode, 中等, 2021-10)](topics/算法-动态规划(DP、记忆化搜索).md#no0005-最长回文子串-leetcode-中等-2021-10)
-- [`No.0010` DP1-斐波那契数列 (剑指Offer, 简单, 2021-11)](topics/算法-动态规划(DP、记忆化搜索).md#no0010-dp1-斐波那契数列-剑指offer-简单-2021-11)
-- [`No.0010` DP1-斐波那契数列 (剑指Offer, 简单, 2021-11)](topics/算法-动态规划(DP、记忆化搜索).md#no0010-dp1-斐波那契数列-剑指offer-简单-2021-11)
-- [`No.0010` DP2-青蛙跳台阶问题 (剑指Offer, 简单, 2021-11)](topics/算法-动态规划(DP、记忆化搜索).md#no0010-dp2-青蛙跳台阶问题-剑指offer-简单-2021-11)
+- [`No.0010` 1-斐波那契数列 (剑指Offer, 简单, 2021-11)](topics/算法-动态规划(DP、记忆化搜索).md#no0010-1-斐波那契数列-剑指offer-简单-2021-11)
+- [`No.0010` 1-斐波那契数列 (剑指Offer, 简单, 2021-11)](topics/算法-动态规划(DP、记忆化搜索).md#no0010-1-斐波那契数列-剑指offer-简单-2021-11)
+- [`No.0010` 2-青蛙跳台阶问题 (剑指Offer, 简单, 2021-11)](topics/算法-动态规划(DP、记忆化搜索).md#no0010-2-青蛙跳台阶问题-剑指offer-简单-2021-11)
 - [`No.0042` 连续子数组的最大和 (剑指Offer, 简单, 2021-10)](topics/算法-动态规划(DP、记忆化搜索).md#no0042-连续子数组的最大和-剑指offer-简单-2021-10)
 - [`No.0047` 礼物的最大价值 (剑指Offer, 中等, 2021-11)](topics/算法-动态规划(DP、记忆化搜索).md#no0047-礼物的最大价值-剑指offer-中等-2021-11)
 - [`No.0048` 最长不含重复字符的子字符串 (剑指Offer, 中等, 2021-11)](topics/算法-动态规划(DP、记忆化搜索).md#no0048-最长不含重复字符的子字符串-剑指offer-中等-2021-11)
@@ -178,7 +179,7 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 题集-剑指Offer (20) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
+<details><summary><b> 题集-剑指Offer (21) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
 
 - [`No.0003` 数组中重复的数字 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0003-数组中重复的数字-剑指offer-简单-2021-11)
 - [`No.0004` 二维数组中的查找 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0004-二维数组中的查找-剑指offer-中等-2021-11)
@@ -186,8 +187,9 @@ Algorithm Studies
 - [`No.0006` 从尾到头打印链表 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0006-从尾到头打印链表-剑指offer-简单-2021-11)
 - [`No.0007` 重建二叉树 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0007-重建二叉树-剑指offer-中等-2021-11)
 - [`No.0009` 用两个栈实现队列 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0009-用两个栈实现队列-剑指offer-简单-2021-11)
-- [`No.0010` DP1-斐波那契数列 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0010-dp1-斐波那契数列-剑指offer-简单-2021-11)
-- [`No.0010` DP2-青蛙跳台阶问题 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0010-dp2-青蛙跳台阶问题-剑指offer-简单-2021-11)
+- [`No.0010` 1-斐波那契数列 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0010-1-斐波那契数列-剑指offer-简单-2021-11)
+- [`No.0010` 2-青蛙跳台阶问题 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0010-2-青蛙跳台阶问题-剑指offer-简单-2021-11)
+- [`No.0011` 旋转数组的最小数字 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0011-旋转数组的最小数字-剑指offer-简单-2021-11)
 - [`No.0026` 树的子结构 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0026-树的子结构-剑指offer-中等-2021-11)
 - [`No.0027` 二叉树的镜像 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0027-二叉树的镜像-剑指offer-简单-2021-11)
 - [`No.0028` 对称的二叉树 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0028-对称的二叉树-剑指offer-简单-2021-11)

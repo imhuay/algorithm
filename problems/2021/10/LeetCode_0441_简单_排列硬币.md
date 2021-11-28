@@ -23,7 +23,9 @@
 <div align="center"><img src="../../../_assets/arrangecoins1-grid.jpeg" height="150" /></div>
 
 
-<details><summary><b>思路1：二分查找</b></summary>
+<summary><b>思路</b></summary>
+
+<details><summary><b>法1）Python：二分查找</b></summary>
 
 - 因为时间复杂度为 `O(logN)`，所以直接在 `[1, n]` 的范围里找即可
 
@@ -44,7 +46,7 @@ class Solution:
 </details>
 
 
-<details><summary><b>思路2：数学</b></summary>
+<details><summary><b>法2）Python：数学公式</b></summary>
 
 - 解方程 $(1+x)*x/2 = n$；
 - 去掉小于 0 的解，保留：$x=(-1+\sqrt{8n+1})/2$

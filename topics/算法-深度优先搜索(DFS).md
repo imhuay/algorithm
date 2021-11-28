@@ -29,15 +29,7 @@ Problems Index
 从尾到头打印链表（用数组返回）
 ```
 
-<summary><b>思路</b></summary>
-
-**思路1**：
-- 利用栈，顺序入栈，然后依次出栈即可
-
-**思路2**：
-- 利用深度优先遍历思想（二叉树的先序遍历）
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
@@ -59,7 +51,13 @@ Problems Index
 </details>
 
 
-<details><summary><b>代码：栈（Python）</b></summary>
+<summary><b>思路</b></summary>
+
+- 法1）利用栈，顺序入栈，然后依次出栈即可
+- 法2）利用深度优先遍历思想（二叉树的先序遍历）
+
+
+<details><summary><b>Python：栈</b></summary>
 
 ```python
 # Definition for singly-linked list.
@@ -84,7 +82,7 @@ class Solution:
 
 </details>
 
-<details><summary><b>代码：DFS、递归（Python）</b></summary>
+<details><summary><b>Python：DFS、递归</b></summary>
 
 ```python
 # Definition for singly-linked list.
@@ -121,13 +119,7 @@ class Solution:
 给定一棵二叉搜索树，请找出其中第k大的节点。
 ```
 
-<summary><b>思路</b></summary>
-
-- 二叉搜索树的性质：中序遍历的结果为递增序列；
-- 为了得到第 K 大，需要递减序列，“反向”中序遍历即可：即按“右中左”的顺序深度搜索；
-- 利用辅助变量提前结束搜索；
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 给定一棵二叉搜索树，请找出其中第k大的节点。
@@ -164,7 +156,14 @@ class Solution:
 </details>
 
 
-<details><summary><b>思路：反向中序遍历（C++）</b></summary>
+<summary><b>思路</b></summary>
+
+- 二叉搜索树的性质：中序遍历的结果为递增序列；
+- 为了得到第 K 大，需要递减序列，“反向”中序遍历即可：即按“右中左”的顺序深度搜索；
+- 利用辅助变量提前结束搜索；
+
+
+<details><summary><b>C++：反向中序遍历</b></summary>
 
 ```cpp
 /**
@@ -209,7 +208,7 @@ public:
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 二叉树，DFS -->
 
-<summary><b>问题简述</b></summary>
+<summary><b>问题描述</b></summary>
 
 ```txt
 给定一个二叉树，找出其最小深度。
@@ -234,7 +233,7 @@ public:
 
 - 深度优先搜索，记录过程中的最小深度；
 
-<details><summary><b>深度优先搜索（Python）</b></summary>
+<details><summary><b>Python：深度优先搜索</b></summary>
 
 ```python
 # Definition for a binary tree node.
@@ -302,7 +301,9 @@ class Solution:
 <div align="center"><img src="../_assets/pathsum3-1-tree.jpeg" height="300" /></div>
 
 
-<details><summary><b>解法1：双重递归</b></summary>
+<summary><b>思路</b></summary>
+
+<details><summary><b>法1）Python：双重递归</b></summary>
 
 ```python
 # Definition for a binary tree node.
@@ -346,7 +347,7 @@ class Solution:
 ```
 </details>
 
-<details><summary><b>解法2：前缀和+DFS</b></summary>
+<details><summary><b>法2）Python：前缀和+DFS</b></summary>
 
 ```python
 from collections import defaultdict

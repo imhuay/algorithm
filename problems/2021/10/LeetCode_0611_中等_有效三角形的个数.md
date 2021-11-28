@@ -6,13 +6,7 @@
 给定一个包含非负整数的数组，你的任务是统计其中可以组成三角形三条边的三元组个数。
 ```
 
-<summary><b>思路</b></summary>
-
-- 排序 + 首尾双指针；
-- 相当于计算两数之和大于目标值的个数；
-
-
-<details><summary><b>题目描述</b></summary> 
+<details><summary><b>详细描述</b></summary> 
 
 ```text
 给定一个包含非负整数的数组，你的任务是统计其中可以组成三角形三条边的三元组个数。
@@ -37,6 +31,11 @@
 
 </details>
 
+
+<summary><b>思路</b></summary>
+
+- 排序 + 首尾双指针；
+- 相当于计算两数之和大于目标值的个数；
 
 <details><summary><b>Python</b></summary> 
 

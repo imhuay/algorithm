@@ -19,7 +19,14 @@ Problems Index
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 哈希表 -->
 
-<summary><b>问题描述</b></summary>
+<summary><b>问题简述</b></summary>
+
+```txt
+给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。
+```
+
+
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。
@@ -51,6 +58,9 @@ Problems Index
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 ```
 
+</details>
+
+<summary><b>思路</b></summary>
 
 <details><summary><b>Python3</b></summary>
 
@@ -87,11 +97,7 @@ class Solution:
 找出数组中任意一个重复的数字。
 ```
 
-<summary><b>思路</b></summary>
-
-- 遍历数组，保存见过的数字，当遇到出现过的数字即返回
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 找出数组中重复的数字。
@@ -114,6 +120,10 @@ class Solution:
 <!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
 
 </details>
+
+<summary><b>思路</b></summary>
+
+- 遍历数组，保存见过的数字，当遇到出现过的数字即返回
 
 
 <details><summary><b>Python</b></summary>
@@ -145,12 +155,7 @@ class Solution:
 找出由 ATCG 构成的字符串中所有重复且长度为 10 的子串；
 ```
 
-<summary><b>思路&考点</b></summary>
-
-- 基本思路：哈希表计数；
-- 如果直接使用子串本身作为哈希表的 key，那么时间复杂度和空间复杂度都是 `O(NL)`；而如果使用位运算+滑动窗口手动构造 key，可以把复杂度降为 `O(N)`；
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 所有 DNA 都由一系列缩写为 'A'，'C'，'G' 和 'T' 的核苷酸组成，例如："ACGAATTCCG"。在研究 DNA 时，识别 DNA 中的重复序列有时会对研究非常有帮助。
@@ -174,6 +179,11 @@ class Solution:
 ```
 
 </details>
+
+<summary><b>思路</b></summary>
+
+- 基本思路：哈希表计数；
+- 如果直接使用子串本身作为哈希表的 key，那么时间复杂度和空间复杂度都是 `O(NL)`；而如果使用位运算+滑动窗口手动构造 key，可以把复杂度降为 `O(N)`；
 
 
 <details><summary><b>子串作为 key</b></summary>

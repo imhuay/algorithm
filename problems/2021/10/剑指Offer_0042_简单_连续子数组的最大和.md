@@ -6,7 +6,7 @@
 给定一个整型数组，求其连续子数组的最大和。
 ```
 
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
@@ -30,6 +30,7 @@
 
 </details>
 
+<summary><b>思路</b></summary>
 
 <details><summary><b>代码：动态规划（Python）</b></summary>
 

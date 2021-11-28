@@ -39,7 +39,14 @@ Problems Index
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 哈希表 -->
 
-<summary><b>问题描述</b></summary>
+<summary><b>问题简述</b></summary>
+
+```txt
+给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。
+```
+
+
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。
@@ -71,6 +78,9 @@ Problems Index
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 ```
 
+</details>
+
+<summary><b>思路</b></summary>
 
 <details><summary><b>Python3</b></summary>
 
@@ -101,7 +111,15 @@ class Solution:
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 链表 -->
 
-<summary><b>问题描述</b></summary>
+<summary><b>问题简述</b></summary>
+
+```txt
+给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。
+
+请你将两个数相加，并以相同形式返回一个表示和的链表。
+```
+
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。
@@ -124,14 +142,10 @@ class Solution:
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 ```
 
-
-<details><summary><b>算法简述</b></summary>
-
-```txt
-
-```
-
 </details>
+
+
+<summary><b>思路</b></summary>
 
 <details><summary><b>代码</b></summary>
 
@@ -193,7 +207,7 @@ class Solution:
 给你一个字符串 s，找到 s 中最长的回文子串。
 ```
 
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 给你一个字符串 s，找到 s 中最长的回文子串。
@@ -223,6 +237,7 @@ class Solution:
 
 </details>
 
+<summary><b>思路</b></summary>
 
 <details><summary><b>思路1：动态规划（C++）</b></summary>
 
@@ -286,7 +301,7 @@ public:
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 双指针 -->
 
-<summary><b>问题简述</b></summary>
+<summary><b>问题描述</b></summary>
 
 ```txt
 给你 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0) 。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
@@ -348,14 +363,8 @@ class Solution:
 给定一个数组，找出该数组中所有和为 0 的三元组。
 ```
 
-<summary><b>思路</b></summary>
 
-- 排序后，问题可以简化成两数之和（LeetCode-167）；
-- 先固定一个数，然后利用首尾双指针进行对向遍历；
-- 注意跳过相同结果；
-
-
-<details><summary><b>题目描述</b></summary> 
+<details><summary><b>详细描述</b></summary> 
 
 ```text
 给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有和为 0 且不重复的三元组。
@@ -385,6 +394,12 @@ class Solution:
 
 </details>
 
+
+<summary><b>思路</b></summary>
+
+- 排序后，问题可以简化成两数之和（LeetCode-167）；
+- 先固定一个数，然后利用首尾双指针进行对向遍历；
+- 注意跳过相同结果；
 
 <details><summary><b>Python</b></summary> 
 
@@ -451,12 +466,8 @@ class Solution:
 给定一个数组，找出该数组中和最接近指定值的三元组。
 ```
 
-<summary><b>思路</b></summary> 
 
-- 思路跟三数之和基本一致；
-- 当找到比当前更接近的结果时更新；
-
-<details><summary><b>题目描述</b></summary> 
+<details><summary><b>详细描述</b></summary> 
 
 ```text
 给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。
@@ -477,6 +488,13 @@ class Solution:
 ```
 
 </details>
+
+
+<summary><b>思路</b></summary> 
+
+- 思路跟三数之和基本一致；
+- 当找到比当前更接近的结果时更新；
+
 
 <details><summary><b>Python</b></summary> 
 
@@ -580,8 +598,9 @@ class Solution:
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 ```
 
+<summary><b>思路</b></summary>
 
-<details><summary><b>递归（Python）</b></summary>
+<details><summary><b>Python：递归</b></summary>
 
 ```python
 # Definition for singly-linked list.
@@ -611,7 +630,7 @@ class Solution:
 </details>
 
 
-<details><summary><b>迭代（Python）</b></summary>
+<details><summary><b>Python：迭代</b></summary>
 
 ```python
 # Definition for singly-linked list.
@@ -660,7 +679,7 @@ class Solution:
 不使用乘法、除法和 mod 运算符，返回两数相除的整数部分，如 10/3 返回 3。
 ```
 
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 给定两个整数，被除数 dividend 和除数 divisor。将两数相除，要求不使用乘法、除法和 mod 运算符。
@@ -691,7 +710,9 @@ class Solution:
 </details>
 
 
-<details><summary><b>思路：二分查找</b></summary>
+<summary><b>思路</b></summary>
+
+<details><summary><b>Python：二分查找</b></summary>
 
 ```python
 class Solution:
@@ -748,14 +769,8 @@ class Solution:
 在一个旋转过的有序数组中搜索某值，若存在返回下标，否则返回 -1。
 ```
 
-<summary><b>思路</b></summary>
 
-- “二分”的本质是两段性，而不是单调性；即只要二分后，左边满足某个性质，右边不满足某个性质，即可使用二分；
-- 比如本题二分后，有前半段满足 >= nums[0]，而后半段不满足；
-
-    > [LogicStack-LeetCode/33.搜索旋转排序数组（中等）](https://github.com/SharingSource/LogicStack-LeetCode/blob/main/LeetCode/31-40/33.%20搜索旋转排序数组（中等）.md#二分解法)
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 整数数组 nums 按升序排列，数组中的值 互不相同 。
@@ -792,7 +807,15 @@ class Solution:
 </details>
 
 
-<details><summary><b>二分查找（Python）</b></summary>
+<summary><b>思路</b></summary>
+
+- “二分”的本质是两段性，而不是单调性；即只要二分后，左边满足某个性质，右边不满足某个性质，即可使用二分；
+- 比如本题二分后，有前半段满足 >= nums[0]，而后半段不满足；
+
+    > [LogicStack-LeetCode/33.搜索旋转排序数组（中等）](https://github.com/SharingSource/LogicStack-LeetCode/blob/main/LeetCode/31-40/33.%20搜索旋转排序数组（中等）.md#二分解法)
+
+
+<details><summary><b>Python：二分查找</b></summary>
 
 - 将数组从中间分开成左右两部分时，一定有一部分的数组是有序的。
 
@@ -837,7 +860,7 @@ class Solution:
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 双指针 -->
 
-<summary><b>问题简述</b></summary>
+<summary><b>问题描述</b></summary>
 
 ```txt
 给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。
@@ -855,7 +878,9 @@ class Solution:
 <div align="center"><img src="../_assets/rainwatertrap.png" height="150" /></div>
 
 
-<details><summary><b>思路1：双指针(Python)</b></summary>
+<summary><b>思路</b></summary>
+
+<details><summary><b>法1）Python：双指针</b></summary>
 
 ```Python
 class Solution:
@@ -886,7 +911,7 @@ class Solution:
 </details>
 
 
-<details><summary><b>思路2：左右遍历两次(C++)</b></summary>
+<details><summary><b>法2）C++：左右遍历两次</b></summary>
 
 ```C++
 class Solution {
@@ -951,13 +976,10 @@ public:
 <div align="center"><img src="../_assets/partition.jpeg" height="150" /></div>
 
 
-<details><summary><b>算法简述</b></summary>
+<summary><b>思路</b></summary>
 
-```txt
-新建两个链表，分别保存小于 x 和大于等于 x 的，最后拼接；
-```
+- 新建两个链表，分别保存小于 x 和大于等于 x 的，最后拼接；
 
-</details>
 
 <details><summary><b>Python3</b></summary>
 
@@ -1003,7 +1025,7 @@ class Solution:
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 二叉树，递归 -->
 
-<summary><b>问题简述</b></summary>
+<summary><b>问题描述</b></summary>
 
 ```txt
 给定一个二叉树，找出其最大深度。
@@ -1057,7 +1079,7 @@ class Solution:
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 二叉树，DFS -->
 
-<summary><b>问题简述</b></summary>
+<summary><b>问题描述</b></summary>
 
 ```txt
 给定一个二叉树，找出其最小深度。
@@ -1082,7 +1104,7 @@ class Solution:
 
 - 深度优先搜索，记录过程中的最小深度；
 
-<details><summary><b>深度优先搜索（Python）</b></summary>
+<details><summary><b>Python：深度优先搜索</b></summary>
 
 ```python
 # Definition for a binary tree node.
@@ -1128,7 +1150,7 @@ class Solution:
 假定题目一定有一个解。
 ```
 
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 给定一个已按照 非递减顺序排列 的整数数组 numbers ，请你从数组中找出两个数满足相加之和等于目标数 target 。
@@ -1164,8 +1186,9 @@ class Solution:
 
 </details>
 
+<summary><b>思路</b></summary>
 
-<details><summary><b>双指针（Python）</b></summary>
+<details><summary><b>Python：双指针</b></summary>
 
 ```python
 class Solution:
@@ -1201,12 +1224,7 @@ class Solution:
 找出由 ATCG 构成的字符串中所有重复且长度为 10 的子串；
 ```
 
-<summary><b>思路&考点</b></summary>
-
-- 基本思路：哈希表计数；
-- 如果直接使用子串本身作为哈希表的 key，那么时间复杂度和空间复杂度都是 `O(NL)`；而如果使用位运算+滑动窗口手动构造 key，可以把复杂度降为 `O(N)`；
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 所有 DNA 都由一系列缩写为 'A'，'C'，'G' 和 'T' 的核苷酸组成，例如："ACGAATTCCG"。在研究 DNA 时，识别 DNA 中的重复序列有时会对研究非常有帮助。
@@ -1230,6 +1248,11 @@ class Solution:
 ```
 
 </details>
+
+<summary><b>思路</b></summary>
+
+- 基本思路：哈希表计数；
+- 如果直接使用子串本身作为哈希表的 key，那么时间复杂度和空间复杂度都是 `O(NL)`；而如果使用位运算+滑动窗口手动构造 key，可以把复杂度降为 `O(N)`；
 
 
 <details><summary><b>子串作为 key</b></summary>
@@ -1341,7 +1364,7 @@ class Solution:
     每列的元素从上到下升序排列。
 ```
 
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 编写一个高效的算法来搜索 m x n 矩阵 matrix 中的一个目标值 target 。该矩阵具有以下特性：
@@ -1375,7 +1398,9 @@ class Solution:
 </details>
 
 
-<details><summary><b>思路1：二分查找（Python）</b></summary>
+<summary><b>思路</b></summary>
+
+<details><summary><b>法1）Python：二分查找</b></summary>
 
 - 时间复杂度：`O(MlogN)`
 
@@ -1418,7 +1443,7 @@ class Solution:
 </details>
 
 
-<details><summary><b>思路2：模拟二分（Python）</b></summary>
+<details><summary><b>法2）Python：模拟二分</b></summary>
 
 - **二分搜索的核心**是将搜索区域分成两个部分，且这两个部分具有相反的性质，每次可以排除一半左右搜索区域；
 - 对本题来说，如果从**右上角**开始遍历，则有：所有左边的值都比当前值小，所有下方的值都比当前值大；
@@ -1450,7 +1475,7 @@ class Solution:
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 二分查找、模拟 -->
 
-<summary><b>问题简述</b></summary>
+<summary><b>问题描述</b></summary>
 
 ```txt
 给你一个由非负整数 a1, a2, ..., an 组成的数据流输入，请你将到目前为止看到的数字总结为不相交的区间列表。
@@ -1503,7 +1528,9 @@ class Solution:
 </details>
 
 
-<details><summary><b>思路1：暴力求解（Python）</b></summary>
+<summary><b>思路</b></summary>
+
+<details><summary><b>法1）Python：暴力求解</b></summary>
 
 - 每次 `getIntervals` 时，先对数组排序，然后依次找出每个不相交的区间；
 
@@ -1535,7 +1562,7 @@ class SummaryRanges:
 </details>
 
 
-<details><summary><b>思路2：分情况讨论（模拟，Python）</b></summary>
+<details><summary><b>法2）Python：模拟，分情况讨论</b></summary>
 
 - 明确每次 `addNum` 时，区间会发生那些变化：
     - 情况1：存在一个区间 `[l, r]` 满足 `l <= val <= r`；
@@ -1633,6 +1660,7 @@ SortedDict({2: 22, 3: 33, 4: 44, 6: 66, 7: 77})
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 ```
 
+<summary><b>思路</b></summary>
 
 <details><summary><b>Python3</b></summary>
 
@@ -1691,7 +1719,9 @@ class Solution:
 <div align="center"><img src="../_assets/pathsum3-1-tree.jpeg" height="300" /></div>
 
 
-<details><summary><b>解法1：双重递归</b></summary>
+<summary><b>思路</b></summary>
+
+<details><summary><b>法1）Python：双重递归</b></summary>
 
 ```python
 # Definition for a binary tree node.
@@ -1735,7 +1765,7 @@ class Solution:
 ```
 </details>
 
-<details><summary><b>解法2：前缀和+DFS</b></summary>
+<details><summary><b>法2）Python：前缀和+DFS</b></summary>
 
 ```python
 from collections import defaultdict
@@ -1810,7 +1840,9 @@ class Solution:
 <div align="center"><img src="../_assets/arrangecoins1-grid.jpeg" height="150" /></div>
 
 
-<details><summary><b>思路1：二分查找</b></summary>
+<summary><b>思路</b></summary>
+
+<details><summary><b>法1）Python：二分查找</b></summary>
 
 - 因为时间复杂度为 `O(logN)`，所以直接在 `[1, n]` 的范围里找即可
 
@@ -1831,7 +1863,7 @@ class Solution:
 </details>
 
 
-<details><summary><b>思路2：数学</b></summary>
+<details><summary><b>法2）Python：数学公式</b></summary>
 
 - 解方程 $(1+x)*x/2 = n$；
 - 去掉小于 0 的解，保留：$x=(-1+\sqrt{8n+1})/2$
@@ -1861,7 +1893,7 @@ class Solution:
 本题实际上就是模拟了**单调栈**最常见的使用场景；
 ```
 
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 
@@ -1905,7 +1937,9 @@ nums1 中数字 x 的下一个更大元素是指 x 在 nums2 中对应位
 </details>
 
 
-<details><summary><b>思路：单调栈（Python）</b></summary>
+<summary><b>思路</b></summary>
+
+<details><summary><b>Python：单调栈</b></summary>
 
 ```python
 class Solution:
@@ -1936,13 +1970,7 @@ class Solution:
 给定一个包含非负整数的数组，你的任务是统计其中可以组成三角形三条边的三元组个数。
 ```
 
-<summary><b>思路</b></summary>
-
-- 排序 + 首尾双指针；
-- 相当于计算两数之和大于目标值的个数；
-
-
-<details><summary><b>题目描述</b></summary> 
+<details><summary><b>详细描述</b></summary> 
 
 ```text
 给定一个包含非负整数的数组，你的任务是统计其中可以组成三角形三条边的三元组个数。
@@ -1967,6 +1995,11 @@ class Solution:
 
 </details>
 
+
+<summary><b>思路</b></summary>
+
+- 排序 + 首尾双指针；
+- 相当于计算两数之和大于目标值的个数；
 
 <details><summary><b>Python</b></summary> 
 
@@ -2011,16 +2044,7 @@ class Solution:
 例如，在 "abcd" 中交换下标 0 和下标 2 的元素可以生成 "cbad" 。
 ```
 
-<summary><b>思路：分情况讨论</b></summary>
-
-- 当 `len(s) != len(goal)` 时：False
-- 当 `len(s) == len(goal)` 时：
-    - 当 `s != goal` 时：当且仅当不同的字符数量等于 2，且交换后满足条件；
-    - 当 `s == goal` 时：`s` 中存在出现至少 2 次的字符；
-
-- `s == goal` 的情况比较容易被忽略；
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 给你两个字符串 s 和 goal ，只要我们可以通过交换 s 中的两个字母得到与 goal 相等的结果，就返回 true ；否则返回 false 。
@@ -2059,6 +2083,17 @@ class Solution:
 <!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
 
 </details>
+
+
+
+<summary><b>思路：分情况讨论</b></summary>
+
+- 当 `len(s) != len(goal)` 时：False
+- 当 `len(s) == len(goal)` 时：
+    - 当 `s != goal` 时：当且仅当不同的字符数量等于 2，且交换后满足条件；
+    - 当 `s == goal` 时：`s` 中存在出现至少 2 次的字符；
+
+- `s == goal` 的情况比较容易被忽略；
 
 
 <details><summary><b>Python：模拟</b></summary>

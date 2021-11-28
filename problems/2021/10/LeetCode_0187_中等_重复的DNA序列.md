@@ -6,12 +6,7 @@
 找出由 ATCG 构成的字符串中所有重复且长度为 10 的子串；
 ```
 
-<summary><b>思路&考点</b></summary>
-
-- 基本思路：哈希表计数；
-- 如果直接使用子串本身作为哈希表的 key，那么时间复杂度和空间复杂度都是 `O(NL)`；而如果使用位运算+滑动窗口手动构造 key，可以把复杂度降为 `O(N)`；
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 所有 DNA 都由一系列缩写为 'A'，'C'，'G' 和 'T' 的核苷酸组成，例如："ACGAATTCCG"。在研究 DNA 时，识别 DNA 中的重复序列有时会对研究非常有帮助。
@@ -35,6 +30,11 @@
 ```
 
 </details>
+
+<summary><b>思路</b></summary>
+
+- 基本思路：哈希表计数；
+- 如果直接使用子串本身作为哈希表的 key，那么时间复杂度和空间复杂度都是 `O(NL)`；而如果使用位运算+滑动窗口手动构造 key，可以把复杂度降为 `O(N)`；
 
 
 <details><summary><b>子串作为 key</b></summary>

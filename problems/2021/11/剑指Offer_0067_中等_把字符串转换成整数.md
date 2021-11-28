@@ -6,12 +6,7 @@
 写一个函数 strToInt(string s)，实现把字符串转换成整数这个功能。不能使用 atoi 或者其他类似的库函数。
 ```
 
-<summary><b>思路</b></summary>
-
-- 把字符串当做数组，依次遍历每个字符，根据题目要求执行每一步操作；
-- 注意一些细节：如正负号、char 与 int 的互转、越界判断等，详见下方代码；
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 写一个函数 strToInt(string s)，实现把字符串转换成整数这个功能。不能使用 atoi 或者其他类似的库函数。
@@ -62,7 +57,13 @@
 </details>
 
 
-<details><summary><b>代码（C++）</b></summary>
+<summary><b>思路</b></summary>
+
+- 把字符串当做数组，依次遍历每个字符，根据题目要求执行每一步操作；
+- 注意一些细节：如正负号、char 与 int 的互转、越界判断等，详见下方代码；
+
+
+<details><summary><b>C++</b></summary>
 
 ```cpp
 class Solution {

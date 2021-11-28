@@ -29,13 +29,10 @@
 <div align="center"><img src="../../../_assets/partition.jpeg" height="150" /></div>
 
 
-<details><summary><b>算法简述</b></summary>
+<summary><b>思路</b></summary>
 
-```txt
-新建两个链表，分别保存小于 x 和大于等于 x 的，最后拼接；
-```
+- 新建两个链表，分别保存小于 x 和大于等于 x 的，最后拼接；
 
-</details>
 
 <details><summary><b>Python3</b></summary>
 

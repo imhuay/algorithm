@@ -6,12 +6,7 @@
 实现一个函数，把字符串 s 中的每个空格替换成"%20"。
 ```
 
-<summary><b>思路</b></summary>
-
-- Python、Java 中的字符串都是不可变类型，所以始终要申请新的容器；那么问题就很简单，替换拼接即可；
-- C++ 中 string 是可变类型，因此可以尝试原地替换；
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 请实现一个函数，把字符串 s 中的每个空格替换成"%20"。
@@ -31,6 +26,12 @@
 <!-- <div align="center"><img src="../../../_assets/xxx.png" height="300" /></div> -->
 
 </details>
+
+
+<summary><b>思路</b></summary>
+
+- Python、Java 中的字符串都是不可变类型，所以始终要申请新的容器；那么问题就很简单，替换拼接即可；
+- C++ 中 string 是可变类型，因此可以尝试原地替换；
 
 
 <details><summary><b>Python</b></summary>

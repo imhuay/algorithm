@@ -6,12 +6,7 @@
 输入一个二叉树，输出它的镜像。
 ```
 
-<summary><b>思路</b></summary>
-
-- 所谓镜像，实际上就是调换左右子树，然后递归应用到所有子树；
-- 参考 `def swap(a,b): a, b = b, a`
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 请完成一个函数，输入一个二叉树，该函数输出它的镜像。
@@ -49,7 +44,13 @@
 </details>
 
 
-<details><summary><b>递归（python）</b></summary>
+<summary><b>思路</b></summary>
+
+- 所谓镜像，实际上就是调换左右子树，然后递归应用到所有子树；
+- 参考 `def swap(a,b): a, b = b, a`
+
+
+<details><summary><b>Python</b></summary>
 
 ```python
 # Definition for a binary tree node.

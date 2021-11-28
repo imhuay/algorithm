@@ -9,7 +9,7 @@
     每列的元素从上到下升序排列。
 ```
 
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 编写一个高效的算法来搜索 m x n 矩阵 matrix 中的一个目标值 target 。该矩阵具有以下特性：
@@ -43,7 +43,9 @@
 </details>
 
 
-<details><summary><b>思路1：二分查找（Python）</b></summary>
+<summary><b>思路</b></summary>
+
+<details><summary><b>法1）Python：二分查找</b></summary>
 
 - 时间复杂度：`O(MlogN)`
 
@@ -86,7 +88,7 @@ class Solution:
 </details>
 
 
-<details><summary><b>思路2：模拟二分（Python）</b></summary>
+<details><summary><b>法2）Python：模拟二分</b></summary>
 
 - **二分搜索的核心**是将搜索区域分成两个部分，且这两个部分具有相反的性质，每次可以排除一半左右搜索区域；
 - 对本题来说，如果从**右上角**开始遍历，则有：所有左边的值都比当前值小，所有下方的值都比当前值大；

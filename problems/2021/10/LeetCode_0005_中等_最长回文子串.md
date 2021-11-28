@@ -6,7 +6,7 @@
 给你一个字符串 s，找到 s 中最长的回文子串。
 ```
 
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 给你一个字符串 s，找到 s 中最长的回文子串。
@@ -36,6 +36,7 @@
 
 </details>
 
+<summary><b>思路</b></summary>
 
 <details><summary><b>思路1：动态规划（C++）</b></summary>
 

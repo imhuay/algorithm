@@ -6,12 +6,8 @@
 给定一个数组，找出该数组中和最接近指定值的三元组。
 ```
 
-<summary><b>思路</b></summary> 
 
-- 思路跟三数之和基本一致；
-- 当找到比当前更接近的结果时更新；
-
-<details><summary><b>题目描述</b></summary> 
+<details><summary><b>详细描述</b></summary> 
 
 ```text
 给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。
@@ -32,6 +28,13 @@
 ```
 
 </details>
+
+
+<summary><b>思路</b></summary> 
+
+- 思路跟三数之和基本一致；
+- 当找到比当前更接近的结果时更新；
+
 
 <details><summary><b>Python</b></summary> 
 

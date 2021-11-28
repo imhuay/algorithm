@@ -8,16 +8,7 @@
 例如，在 "abcd" 中交换下标 0 和下标 2 的元素可以生成 "cbad" 。
 ```
 
-<summary><b>思路：分情况讨论</b></summary>
-
-- 当 `len(s) != len(goal)` 时：False
-- 当 `len(s) == len(goal)` 时：
-    - 当 `s != goal` 时：当且仅当不同的字符数量等于 2，且交换后满足条件；
-    - 当 `s == goal` 时：`s` 中存在出现至少 2 次的字符；
-
-- `s == goal` 的情况比较容易被忽略；
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 给你两个字符串 s 和 goal ，只要我们可以通过交换 s 中的两个字母得到与 goal 相等的结果，就返回 true ；否则返回 false 。
@@ -56,6 +47,17 @@
 <!-- <div align="center"><img src="../../../_assets/xxx.png" height="300" /></div> -->
 
 </details>
+
+
+
+<summary><b>思路：分情况讨论</b></summary>
+
+- 当 `len(s) != len(goal)` 时：False
+- 当 `len(s) == len(goal)` 时：
+    - 当 `s != goal` 时：当且仅当不同的字符数量等于 2，且交换后满足条件；
+    - 当 `s == goal` 时：`s` 中存在出现至少 2 次的字符；
+
+- `s == goal` 的情况比较容易被忽略；
 
 
 <details><summary><b>Python：模拟</b></summary>

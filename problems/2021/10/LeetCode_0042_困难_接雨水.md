@@ -1,6 +1,6 @@
 <!-- Tag: 双指针 -->
 
-<summary><b>问题简述</b></summary>
+<summary><b>问题描述</b></summary>
 
 ```txt
 给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。
@@ -18,7 +18,9 @@
 <div align="center"><img src="../../../_assets/rainwatertrap.png" height="150" /></div>
 
 
-<details><summary><b>思路1：双指针(Python)</b></summary>
+<summary><b>思路</b></summary>
+
+<details><summary><b>法1）Python：双指针</b></summary>
 
 ```Python
 class Solution:
@@ -49,7 +51,7 @@ class Solution:
 </details>
 
 
-<details><summary><b>思路2：左右遍历两次(C++)</b></summary>
+<details><summary><b>法2）C++：左右遍历两次</b></summary>
 
 ```C++
 class Solution {

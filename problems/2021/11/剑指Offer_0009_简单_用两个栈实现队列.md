@@ -7,12 +7,7 @@
 队列包含两个函数 appendTail 和 deleteHead(若队列中没有元素，deleteHead 操作返回 -1 )
 ```
 
-<summary><b>思路</b></summary>
-
-- 栈：先进后出；队列：先进先出；换言之，队列就是倒序输出的栈；
-- 利用双栈可实现倒序输出：维护两个栈 A 和 B，将 A 中元素依次弹出并压入栈 B，再依次弹出 B 中元素，即实现了对栈 A 元素的倒序输出，即实现了队列的性质；
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 用两个栈实现一个队列。队列的声明如下，请实现它的两个函数 appendTail 和 deleteHead ，分别完成在队列尾部插入整数和在队列头部删除整数的功能。(若队列中没有元素，deleteHead 操作返回 -1 )
@@ -42,7 +37,13 @@
 </details>
 
 
-<details><summary><b>代码（Python）</b></summary>
+<summary><b>思路</b></summary>
+
+- 栈：先进后出；队列：先进先出；换言之，队列就是倒序输出的栈；
+- 利用双栈可实现倒序输出：维护两个栈 A 和 B，将 A 中元素依次弹出并压入栈 B，再依次弹出 B 中元素，即实现了对栈 A 元素的倒序输出，即实现了队列的性质；
+
+
+<details><summary><b>Python</b></summary>
 
 ```python
 class CQueue:

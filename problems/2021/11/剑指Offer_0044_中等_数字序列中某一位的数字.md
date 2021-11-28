@@ -6,13 +6,7 @@
 数字以0123456789101112131415…的格式序列化到一个字符序列中，求任意第n位对应的数字。
 ```
 
-<summary><b>思路：找规律+迭代</b></summary>
-
-<div align="center"><img src="../../../_assets/剑指Offer_0044_中等_数字序列中某一位的数字.png" height="300" /></div>
-
-> [数字序列中某一位的数字（迭代 + 求整 / 求余，清晰图解）](https://leetcode-cn.com/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof/solution/mian-shi-ti-44-shu-zi-xu-lie-zhong-mou-yi-wei-de-6/)
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 数字以0123456789101112131415…的格式序列化到一个字符序列中。在这个序列中，第5位（从下标0开始计数）是5，第13位是1，第19位是4，等等。
@@ -39,7 +33,14 @@
 </details>
 
 
-<details><summary><b>代码：迭代+求整/求余（Python）</b></summary>
+<summary><b>思路：找规律+迭代</b></summary>
+
+<div align="center"><img src="../../../_assets/剑指Offer_0044_中等_数字序列中某一位的数字.png" height="300" /></div>
+
+> [数字序列中某一位的数字（迭代 + 求整 / 求余，清晰图解）](https://leetcode-cn.com/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof/solution/mian-shi-ti-44-shu-zi-xu-lie-zhong-mou-yi-wei-de-6/)
+
+
+<details><summary><b>Python：迭代+求整/求余</b></summary>
 
 ```python
 class Solution:

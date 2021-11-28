@@ -24,12 +24,7 @@ Problems Index
 找出山脉数组中山峰的下标（保证给出的数组是一个山脉数组）
 ```
 
-<summary><b>思路</b></summary>
-
-- 当 `N[mid] > N[mid+1]` 时，山峰必在左侧；反之，在右侧；
-- 因为从中间划分后，左右分别满足相反的性质，因此可以使用二分查找；
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 符合下列属性的数组 arr 称为 山峰数组（山脉数组） ：
@@ -72,6 +67,12 @@ Problems Index
 </details>
 
 
+<summary><b>思路</b></summary>
+
+- 当 `N[mid] > N[mid+1]` 时，山峰必在左侧；反之，在右侧；
+- 因为从中间划分后，左右分别满足相反的性质，因此可以使用二分查找；
+
+
 <details><summary><b>Python</b></summary>
 
 ```python
@@ -110,7 +111,7 @@ class Solution:
 给定整数数组 nums 和整数 k，请返回数组中第 k 个最大的元素。
 ```
 
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 给定整数数组 nums 和整数 k，请返回数组中第 k 个最大的元素。
@@ -135,6 +136,8 @@ class Solution:
 
 </details>
 
+
+<summary><b>思路</b></summary>
 
 <details><summary><b>思路1：partition操作（分治）</b></summary>
 

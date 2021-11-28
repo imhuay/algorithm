@@ -26,9 +26,9 @@
 Problems Index
 ---
 - [`No.0005` 最长回文子串 (LeetCode, 中等, 2021-10)](#no0005-最长回文子串-leetcode-中等-2021-10)
-- [`No.0010` DP1-斐波那契数列 (剑指Offer, 简单, 2021-11)](#no0010-dp1-斐波那契数列-剑指offer-简单-2021-11)
-- [`No.0010` DP1-斐波那契数列 (剑指Offer, 简单, 2021-11)](#no0010-dp1-斐波那契数列-剑指offer-简单-2021-11)
-- [`No.0010` DP2-青蛙跳台阶问题 (剑指Offer, 简单, 2021-11)](#no0010-dp2-青蛙跳台阶问题-剑指offer-简单-2021-11)
+- [`No.0010` 1-斐波那契数列 (剑指Offer, 简单, 2021-11)](#no0010-1-斐波那契数列-剑指offer-简单-2021-11)
+- [`No.0010` 1-斐波那契数列 (剑指Offer, 简单, 2021-11)](#no0010-1-斐波那契数列-剑指offer-简单-2021-11)
+- [`No.0010` 2-青蛙跳台阶问题 (剑指Offer, 简单, 2021-11)](#no0010-2-青蛙跳台阶问题-剑指offer-简单-2021-11)
 - [`No.0042` 连续子数组的最大和 (剑指Offer, 简单, 2021-10)](#no0042-连续子数组的最大和-剑指offer-简单-2021-10)
 - [`No.0047` 礼物的最大价值 (剑指Offer, 中等, 2021-11)](#no0047-礼物的最大价值-剑指offer-中等-2021-11)
 - [`No.0048` 最长不含重复字符的子字符串 (剑指Offer, 中等, 2021-11)](#no0048-最长不含重复字符的子字符串-剑指offer-中等-2021-11)
@@ -49,7 +49,7 @@ Problems Index
 给你一个字符串 s，找到 s 中最长的回文子串。
 ```
 
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 给你一个字符串 s，找到 s 中最长的回文子串。
@@ -79,6 +79,7 @@ Problems Index
 
 </details>
 
+<summary><b>思路</b></summary>
 
 <details><summary><b>思路1：动态规划（C++）</b></summary>
 
@@ -135,7 +136,7 @@ public:
 </details>
 
 ---
-### `No.0010` DP1-斐波那契数列 (剑指Offer, 简单, 2021-11)
+### `No.0010` 1-斐波那契数列 (剑指Offer, 简单, 2021-11)
 
 
 [![DP](https://img.shields.io/badge/DP-lightgray.svg)](算法-动态规划(DP、记忆化搜索).md)
@@ -149,12 +150,7 @@ public:
 输入 n ，求斐波那契（Fibonacci）数列的第 n 项
 ```
 
-<summary><b>思路</b></summary>
-
-- 法1）递归
-- 法2）DP（记忆化搜索），因为每个答案只与固定的前两个结果有关，因此可以使用滚动 DP；
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项（即 F(N)）。斐波那契数列的定义如下：
@@ -182,6 +178,12 @@ public:
 <!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
 
 </details>
+
+
+<summary><b>思路</b></summary>
+
+- 法1）递归
+- 法2）DP（记忆化搜索），因为每个答案只与固定的前两个结果有关，因此可以使用滚动 DP；
 
 
 <details><summary><b>Python：递归（会超时）</b></summary>
@@ -225,7 +227,7 @@ class Solution:
 </details>
 
 ---
-### `No.0010` DP1-斐波那契数列 (剑指Offer, 简单, 2021-11)
+### `No.0010` 1-斐波那契数列 (剑指Offer, 简单, 2021-11)
 
 
 [![DP](https://img.shields.io/badge/DP-lightgray.svg)](算法-动态规划(DP、记忆化搜索).md)
@@ -239,12 +241,7 @@ class Solution:
 输入 n ，求斐波那契（Fibonacci）数列的第 n 项
 ```
 
-<summary><b>思路</b></summary>
-
-- 法1）递归
-- 法2）DP（记忆化搜索），因为每个答案只与固定的前两个结果有关，因此可以使用滚动 DP；
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项（即 F(N)）。斐波那契数列的定义如下：
@@ -272,6 +269,12 @@ class Solution:
 <!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
 
 </details>
+
+
+<summary><b>思路</b></summary>
+
+- 法1）递归
+- 法2）DP（记忆化搜索），因为每个答案只与固定的前两个结果有关，因此可以使用滚动 DP；
 
 
 <details><summary><b>Python：递归（会超时）</b></summary>
@@ -315,7 +318,7 @@ class Solution:
 </details>
 
 ---
-### `No.0010` DP2-青蛙跳台阶问题 (剑指Offer, 简单, 2021-11)
+### `No.0010` 2-青蛙跳台阶问题 (剑指Offer, 简单, 2021-11)
 
 
 [![DP](https://img.shields.io/badge/DP-lightgray.svg)](算法-动态规划(DP、记忆化搜索).md)
@@ -328,12 +331,7 @@ class Solution:
 规定一次可以跳1级台阶或2级台阶。求跳上一个 n 级台阶总共有多少种跳法。
 ```
 
-<summary><b>思路</b></summary>
-
-- 本题实际上就是求斐波那契数列，跳上 n 级台阶的方法数 `f(n) = f(n-1) + f(n-2)`，
-- 只是初始状态不同，这里是 `f(0) = 1, f(1) = 1`；
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 一只青蛙一次可以跳上1级台阶，也可以跳上2级台阶。求该青蛙跳上一个 n 级的台阶总共有多少种跳法。
@@ -360,6 +358,12 @@ class Solution:
 <!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
 
 </details>
+
+
+<summary><b>思路</b></summary>
+
+- 本题实际上就是求斐波那契数列，跳上 n 级台阶的方法数 `f(n) = f(n-1) + f(n-2)`，
+- 只是初始状态不同，这里是 `f(0) = 1, f(1) = 1`；
 
 
 <details><summary><b>Python：动态规划</b></summary>
@@ -393,7 +397,7 @@ class Solution:
 给定一个整型数组，求其连续子数组的最大和。
 ```
 
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
@@ -417,6 +421,7 @@ class Solution:
 
 </details>
 
+<summary><b>思路</b></summary>
 
 <details><summary><b>代码：动态规划（Python）</b></summary>
 
@@ -494,20 +499,7 @@ class Solution:
     解释: 路径 1→3→5→2→1 可以拿到最多价值的礼物
 ```
 
-<summary><b>思路：动态规划（无优化）</b></summary>
-
-**状态定义**
-- 记 `dp[i][j] := 从左上角走至 (i,j) 位置时的最大值` 
-
-**转移方程**
-- `dp[i][j] = max(dp[i-1][j], dp[i][j-1]) + grid[i][j]`
-
-**初始状态**
-- `dp[0][0] = grid[0][0]`
-- `dp[i][0] = sum(grid[:i][0])`
-- `dp[0][j] = sum(grid[0][:j])`
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于 0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向右或者向下移动一格、直到到达棋盘的右下角。给定一个棋盘及其上面的礼物的价值，请计算你最多能拿到多少价值的礼物？
@@ -534,6 +526,20 @@ class Solution:
 <!-- <div align="center"><img src="./_assets/xxx.png" height="300" /></div> -->
 
 </details>
+
+
+<summary><b>思路：动态规划</b></summary>
+
+**状态定义**
+- 记 `dp[i][j] := 从左上角走至 (i,j) 位置时的最大值` 
+
+**转移方程**
+- `dp[i][j] = max(dp[i-1][j], dp[i][j-1]) + grid[i][j]`
+
+**初始状态**
+- `dp[0][0] = grid[0][0]`
+- `dp[i][0] = sum(grid[:i][0])`
+- `dp[0][j] = sum(grid[0][:j])`
 
 
 <details><summary><b>动态规划（Python）</b></summary>
@@ -575,31 +581,7 @@ class Solution:
 求字符串 s 中最长的不包含重复字符的子串，返回其长度；
 ```
 
-<summary><b>思路：动态规划</b></summary>
-
-**状态定义**
-- 记 `dp[j] := 以第 j 个字符为结尾的不含重复字符的子串的最大长度`；
-
-**转移方程**
-```
-dp[j] = dp[j-1] + 1     if dp[j-1] <  j-i
-      = j-i             if dp[j-1] >= j-i
-
-其中 i 表示字符 s[j] 上一次出现的位置；
-```
-
-- 使用一个 hash 表记录每个字符上一次出现的位置；
-- 因为当前状态只与上一个状态有关，因此可以使用一个变量代替数组（滚动）；
-
-**初始状态**
-- `dp[0] = 1`
-
-**图解**
-> [最长不含重复字符的子字符串（动态规划 / 双指针 + 哈希表，清晰图解）](https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/solution/mian-shi-ti-48-zui-chang-bu-han-zhong-fu-zi-fu-d-9/)
-
-<div align="center"><img src="../_assets/剑指Offer_0048_中等_最长不含重复字符的子字符串.png" height="300" /></div>
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 请从字符串中找出一个最长的不包含重复字符的子字符串，计算该最长子字符串的长度。
@@ -631,7 +613,32 @@ dp[j] = dp[j-1] + 1     if dp[j-1] <  j-i
 </details>
 
 
-<details><summary><b>代码：动态规划+哈希表（Python）</b></summary>
+<summary><b>思路：动态规划</b></summary>
+
+**状态定义**
+- 记 `dp[j] := 以第 j 个字符为结尾的不含重复字符的子串的最大长度`；
+
+**转移方程**
+```
+dp[j] = dp[j-1] + 1     if dp[j-1] <  j-i
+      = j-i             if dp[j-1] >= j-i
+
+其中 i 表示字符 s[j] 上一次出现的位置；
+```
+
+- 使用一个 hash 表记录每个字符上一次出现的位置；
+- 因为当前状态只与上一个状态有关，因此可以使用一个变量代替数组（滚动）；
+
+**初始状态**
+- `dp[0] = 1`
+
+**图解**
+> [最长不含重复字符的子字符串（动态规划 / 双指针 + 哈希表，清晰图解）](https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/solution/mian-shi-ti-48-zui-chang-bu-han-zhong-fu-zi-fu-d-9/)
+
+<div align="center"><img src="../_assets/剑指Offer_0048_中等_最长不含重复字符的子字符串.png" height="300" /></div>
+
+
+<details><summary><b>Python：动态规划+哈希表</b></summary>
 
 ```python
 class Solution:

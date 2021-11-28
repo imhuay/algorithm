@@ -28,7 +28,9 @@
 <div align="center"><img src="../../../_assets/pathsum3-1-tree.jpeg" height="300" /></div>
 
 
-<details><summary><b>解法1：双重递归</b></summary>
+<summary><b>思路</b></summary>
+
+<details><summary><b>法1）Python：双重递归</b></summary>
 
 ```python
 # Definition for a binary tree node.
@@ -72,7 +74,7 @@ class Solution:
 ```
 </details>
 
-<details><summary><b>解法2：前缀和+DFS</b></summary>
+<details><summary><b>法2）Python：前缀和+DFS</b></summary>
 
 ```python
 from collections import defaultdict

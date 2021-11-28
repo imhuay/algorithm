@@ -6,14 +6,7 @@
 层序遍历二叉树
 ```
 
-<summary><b>思路</b></summary>
-
-- 利用辅助队列 q；
-    1. 将树的根结点入队；
-    2. 如果 q 不为空，则将头结点出队记为 node；如果 node 的左节点不为空，则将左节点入队；如果 node 的右节点不为空，则将右节点入队；
-    3. 重复 2、3，直到 q 为空
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 从上到下打印出二叉树的每个节点，同一层的节点按照从左到右的顺序打印。
@@ -43,7 +36,15 @@
 </details>
 
 
-<details><summary><b>思路：队列（C++）</b></summary>
+<summary><b>思路</b></summary>
+
+- 利用辅助队列 q；
+    1. 将树的根结点入队；
+    2. 如果 q 不为空，则将头结点出队记为 node；如果 node 的左节点不为空，则将左节点入队；如果 node 的右节点不为空，则将右节点入队；
+    3. 重复 2、3，直到 q 为空
+
+
+<details><summary><b>C++</b></summary>
 
 ```cpp
 /**

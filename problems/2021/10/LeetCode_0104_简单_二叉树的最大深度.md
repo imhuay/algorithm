@@ -1,6 +1,6 @@
 <!-- Tag: 二叉树，递归 -->
 
-<summary><b>问题简述</b></summary>
+<summary><b>问题描述</b></summary>
 
 ```txt
 给定一个二叉树，找出其最大深度。

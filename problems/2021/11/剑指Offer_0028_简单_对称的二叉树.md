@@ -6,13 +6,7 @@
 判断一棵二叉树是不是对称的。
 ```
 
-<summary><b>思路</b></summary>
-
-- 注意除了根节点外，比较的左右子树并不是来自同一个节点；
-
-<div align="center"><img src="../../../_assets/图解对称的二叉树.png" height="200" /></div>
-
-<details><summary><b>题目描述</b></summary>
+<details><summary><b>详细描述</b></summary>
 
 ```txt
 请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。
@@ -55,7 +49,14 @@
 </details>
 
 
-<details><summary><b>递归（C++）</b></summary>
+<summary><b>思路</b></summary>
+
+- 注意除了根节点外，比较的左右子树并不是来自同一个节点；
+
+<div align="center"><img src="../../../_assets/图解对称的二叉树.png" height="200" /></div>
+
+
+<details><summary><b>C++</b></summary>
 
 ```cpp
 /**
