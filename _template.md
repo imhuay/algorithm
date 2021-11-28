@@ -15,12 +15,7 @@ xxx
 
 <summary><b>思路</b></summary>
 
-- xxx
-
 <!-- <div align="center"><img src="../../../_assets/xxx.png" height="300" /></div> -->
-
-
-
 
 <details><summary><b>Python</b></summary>
 

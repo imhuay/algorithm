@@ -127,12 +127,19 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 算法-深度优先搜索(DFS) (4) <a href="topics/算法-深度优先搜索(DFS).md">¶</a></b></summary>
+<details><summary><b> 算法-深度优先搜索(DFS) (5) <a href="topics/算法-深度优先搜索(DFS).md">¶</a></b></summary>
 
 - [`No.0006` 从尾到头打印链表 (剑指Offer, 简单, 2021-11)](topics/算法-深度优先搜索(DFS).md#no0006-从尾到头打印链表-剑指offer-简单-2021-11)
+- [`No.0012` 矩阵中的路径 (剑指Offer, 中等, 2021-11)](topics/算法-深度优先搜索(DFS).md#no0012-矩阵中的路径-剑指offer-中等-2021-11)
 - [`No.0054` 二叉搜索树的第k大节点 (剑指Offer, 简单, 2021-11)](topics/算法-深度优先搜索(DFS).md#no0054-二叉搜索树的第k大节点-剑指offer-简单-2021-11)
 - [`No.0111` 二叉树的最小深度 (LeetCode, 简单, 2021-10)](topics/算法-深度优先搜索(DFS).md#no0111-二叉树的最小深度-leetcode-简单-2021-10)
 - [`No.0437` 路径总和3 (LeetCode, 中等, 2021-10)](topics/算法-深度优先搜索(DFS).md#no0437-路径总和3-leetcode-中等-2021-10)
+
+</details>
+
+<details><summary><b> 算法-深度优先搜索+回溯 (1) <a href="topics/算法-深度优先搜索+回溯.md">¶</a></b></summary>
+
+- [`No.0012` 矩阵中的路径 (剑指Offer, 中等, 2021-11)](topics/算法-深度优先搜索+回溯.md#no0012-矩阵中的路径-剑指offer-中等-2021-11)
 
 </details>
 
@@ -179,7 +186,7 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 题集-剑指Offer (21) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
+<details><summary><b> 题集-剑指Offer (22) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
 
 - [`No.0003` 数组中重复的数字 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0003-数组中重复的数字-剑指offer-简单-2021-11)
 - [`No.0004` 二维数组中的查找 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0004-二维数组中的查找-剑指offer-中等-2021-11)
@@ -190,6 +197,7 @@ Algorithm Studies
 - [`No.0010` 1-斐波那契数列 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0010-1-斐波那契数列-剑指offer-简单-2021-11)
 - [`No.0010` 2-青蛙跳台阶问题 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0010-2-青蛙跳台阶问题-剑指offer-简单-2021-11)
 - [`No.0011` 旋转数组的最小数字 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0011-旋转数组的最小数字-剑指offer-简单-2021-11)
+- [`No.0012` 矩阵中的路径 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0012-矩阵中的路径-剑指offer-中等-2021-11)
 - [`No.0026` 树的子结构 (剑指Offer, 中等, 2021-11)](topics/题集-剑指Offer.md#no0026-树的子结构-剑指offer-中等-2021-11)
 - [`No.0027` 二叉树的镜像 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0027-二叉树的镜像-剑指offer-简单-2021-11)
 - [`No.0028` 对称的二叉树 (剑指Offer, 简单, 2021-11)](topics/题集-剑指Offer.md#no0028-对称的二叉树-剑指offer-简单-2021-11)
