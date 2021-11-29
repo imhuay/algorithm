@@ -137,13 +137,14 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 算法-深度优先搜索(DFS) (6) <a href="topics/算法-深度优先搜索(DFS).md">¶</a></b></summary>
+<details><summary><b> 算法-深度优先搜索(DFS) (7) <a href="topics/算法-深度优先搜索(DFS).md">¶</a></b></summary>
 
 - [`LeetCode No.0111 二叉树的最小深度 (简单, 2021-10)`](topics/算法-深度优先搜索(DFS).md#leetcode-no0111-二叉树的最小深度-简单-2021-10)
 - [`LeetCode No.0437 路径总和3 (中等, 2021-10)`](topics/算法-深度优先搜索(DFS).md#leetcode-no0437-路径总和3-中等-2021-10)
 - [`剑指Offer No.0006 从尾到头打印链表 (简单, 2021-11)`](topics/算法-深度优先搜索(DFS).md#剑指offer-no0006-从尾到头打印链表-简单-2021-11)
 - [`剑指Offer No.0012 矩阵中的路径 (中等, 2021-11)`](topics/算法-深度优先搜索(DFS).md#剑指offer-no0012-矩阵中的路径-中等-2021-11)
 - [`剑指Offer No.0013 机器人的运动范围 (中等, 2021-11)`](topics/算法-深度优先搜索(DFS).md#剑指offer-no0013-机器人的运动范围-中等-2021-11)
+- [`剑指Offer No.0017 打印从1到最大的n位数（全排列） (简单, 2021-11)`](topics/算法-深度优先搜索(DFS).md#剑指offer-no0017-打印从1到最大的n位数全排列-简单-2021-11)
 - [`剑指Offer No.0054 二叉搜索树的第k大节点 (简单, 2021-11)`](topics/算法-深度优先搜索(DFS).md#剑指offer-no0054-二叉搜索树的第k大节点-简单-2021-11)
 
 </details>
@@ -198,7 +199,7 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 题集-剑指Offer (26) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
+<details><summary><b> 题集-剑指Offer (27) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
 
 - [`剑指Offer No.0003 数组中重复的数字 (简单, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0003-数组中重复的数字-简单-2021-11)
 - [`剑指Offer No.0004 二维数组中的查找 (中等, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0004-二维数组中的查找-中等-2021-11)
@@ -214,6 +215,7 @@ Algorithm Studies
 - [`剑指Offer No.0014 剪绳子1 (中等, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0014-剪绳子1-中等-2021-11)
 - [`剑指Offer No.0015 二进制中1的个数 (简单, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0015-二进制中1的个数-简单-2021-11)
 - [`剑指Offer No.0016 数值的整数次方（快速幂） (中等, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0016-数值的整数次方快速幂-中等-2021-11)
+- [`剑指Offer No.0017 打印从1到最大的n位数（全排列） (简单, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0017-打印从1到最大的n位数全排列-简单-2021-11)
 - [`剑指Offer No.0026 树的子结构 (中等, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0026-树的子结构-中等-2021-11)
 - [`剑指Offer No.0027 二叉树的镜像 (简单, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0027-二叉树的镜像-简单-2021-11)
 - [`剑指Offer No.0028 对称的二叉树 (简单, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0028-对称的二叉树-简单-2021-11)
@@ -236,8 +238,9 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 题集-经典问题&代码 (1) <a href="topics/题集-经典问题&代码.md">¶</a></b></summary>
+<details><summary><b> 题集-经典问题&代码 (2) <a href="topics/题集-经典问题&代码.md">¶</a></b></summary>
 
 - [`剑指Offer No.0016 数值的整数次方（快速幂） (中等, 2021-11)`](topics/题集-经典问题&代码.md#剑指offer-no0016-数值的整数次方快速幂-中等-2021-11)
+- [`剑指Offer No.0017 打印从1到最大的n位数（全排列） (简单, 2021-11)`](topics/题集-经典问题&代码.md#剑指offer-no0017-打印从1到最大的n位数全排列-简单-2021-11)
 
 </details>
