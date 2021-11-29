@@ -753,7 +753,7 @@ class Solution:
 
 
 [![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索(DFS).md)
-[![DFS+回溯](https://img.shields.io/badge/DFS+回溯-lightgray.svg)](算法-深度优先搜索+回溯.md)
+[![DFS+回溯](https://img.shields.io/badge/DFS+回溯-lightgray.svg)](算法-深度优先搜索(DFS).md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 <!-- Tag: DFS、DFS+回溯 -->
 
@@ -1230,7 +1230,7 @@ class Solution:
 ```python
 class Solution:
     def printNumbers(self, n: int) -> List[int]:
-        
+
         ret = []
         dig = '0123456789'
         buf = [''] * n
@@ -1238,24 +1238,22 @@ class Solution:
         def process(buf):
             """去除前置0"""
             start = 0
-            while start < n and buf[start] == '0':
+            while start < n - 1 and buf[start] == '0':  # 保留至少一个 0
                 start += 1
-            
-            return ''.join(buf[start:])
+            return int(''.join(buf[start:]))  # LeetCode要求返回 int
 
         def dfs(k):
             """DFS全排列"""
             if k == n:
                 ret.append(process(buf))
                 return
-            
+
             for i in dig:  # 每一位都有 0-9 10种取法
                 buf[k] = i
                 dfs(k+1)
 
         dfs(0)
-        # LeetCode要求返回 int，ret[1:] 则是因为要求从 1 开始
-        return [int(it) for it in ret[1:]]
+        return ret[1:]  # 要求从 1 开始，故移除第一位
 ```
 
 </details>

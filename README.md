@@ -137,21 +137,16 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 算法-深度优先搜索(DFS) (7) <a href="topics/算法-深度优先搜索(DFS).md">¶</a></b></summary>
+<details><summary><b> 算法-深度优先搜索(DFS) (8) <a href="topics/算法-深度优先搜索(DFS).md">¶</a></b></summary>
 
 - [`LeetCode No.0111 二叉树的最小深度 (简单, 2021-10)`](topics/算法-深度优先搜索(DFS).md#leetcode-no0111-二叉树的最小深度-简单-2021-10)
 - [`LeetCode No.0437 路径总和3 (中等, 2021-10)`](topics/算法-深度优先搜索(DFS).md#leetcode-no0437-路径总和3-中等-2021-10)
 - [`剑指Offer No.0006 从尾到头打印链表 (简单, 2021-11)`](topics/算法-深度优先搜索(DFS).md#剑指offer-no0006-从尾到头打印链表-简单-2021-11)
 - [`剑指Offer No.0012 矩阵中的路径 (中等, 2021-11)`](topics/算法-深度优先搜索(DFS).md#剑指offer-no0012-矩阵中的路径-中等-2021-11)
+- [`剑指Offer No.0012 矩阵中的路径 (中等, 2021-11)`](topics/算法-深度优先搜索(DFS).md#剑指offer-no0012-矩阵中的路径-中等-2021-11)
 - [`剑指Offer No.0013 机器人的运动范围 (中等, 2021-11)`](topics/算法-深度优先搜索(DFS).md#剑指offer-no0013-机器人的运动范围-中等-2021-11)
 - [`剑指Offer No.0017 打印从1到最大的n位数（全排列） (简单, 2021-11)`](topics/算法-深度优先搜索(DFS).md#剑指offer-no0017-打印从1到最大的n位数全排列-简单-2021-11)
 - [`剑指Offer No.0054 二叉搜索树的第k大节点 (简单, 2021-11)`](topics/算法-深度优先搜索(DFS).md#剑指offer-no0054-二叉搜索树的第k大节点-简单-2021-11)
-
-</details>
-
-<details><summary><b> 算法-深度优先搜索+回溯 (1) <a href="topics/算法-深度优先搜索+回溯.md">¶</a></b></summary>
-
-- [`剑指Offer No.0012 矩阵中的路径 (中等, 2021-11)`](topics/算法-深度优先搜索+回溯.md#剑指offer-no0012-矩阵中的路径-中等-2021-11)
 
 </details>
 
