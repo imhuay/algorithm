@@ -238,8 +238,9 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 题集-经典问题&代码 (2) <a href="topics/题集-经典问题&代码.md">¶</a></b></summary>
+<details><summary><b> 题集-经典问题&代码 (3) <a href="topics/题集-经典问题&代码.md">¶</a></b></summary>
 
+- [`剑指Offer No.0007 重建二叉树 (中等, 2021-11)`](topics/题集-经典问题&代码.md#剑指offer-no0007-重建二叉树-中等-2021-11)
 - [`剑指Offer No.0016 数值的整数次方（快速幂） (中等, 2021-11)`](topics/题集-经典问题&代码.md#剑指offer-no0016-数值的整数次方快速幂-中等-2021-11)
 - [`剑指Offer No.0017 打印从1到最大的n位数（全排列） (简单, 2021-11)`](topics/题集-经典问题&代码.md#剑指offer-no0017-打印从1到最大的n位数全排列-简单-2021-11)
 

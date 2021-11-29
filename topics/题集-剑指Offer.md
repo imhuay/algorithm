@@ -360,8 +360,9 @@ class Solution:
 
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
 [![分治](https://img.shields.io/badge/分治-lightgray.svg)](算法-递归(迭代)、分治.md)
+[![经典](https://img.shields.io/badge/经典-lightgray.svg)](题集-经典问题&代码.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-<!-- Tag: 二叉树、分治 -->
+<!-- Tag: 二叉树、分治、经典 -->
 
 <summary><b>问题简述</b></summary>
 
