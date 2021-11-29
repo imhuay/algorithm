@@ -21,6 +21,10 @@ Problems Index
 - [`剑指Offer No.0015 二进制中1的个数 (简单, 2021-11)`](#剑指offer-no0015-二进制中1的个数-简单-2021-11)
 - [`剑指Offer No.0016 数值的整数次方（快速幂） (中等, 2021-11)`](#剑指offer-no0016-数值的整数次方快速幂-中等-2021-11)
 - [`剑指Offer No.0017 打印从1到最大的n位数（全排列） (简单, 2021-11)`](#剑指offer-no0017-打印从1到最大的n位数全排列-简单-2021-11)
+- [`剑指Offer No.0018 删除链表的节点 (简单, 2021-11)`](#剑指offer-no0018-删除链表的节点-简单-2021-11)
+- [`剑指Offer No.0021 调整数组顺序使奇数位于偶数前面 (简单, 2021-11)`](#剑指offer-no0021-调整数组顺序使奇数位于偶数前面-简单-2021-11)
+- [`剑指Offer No.0022 链表中倒数第k个节点 (简单, 2021-11)`](#剑指offer-no0022-链表中倒数第k个节点-简单-2021-11)
+- [`剑指Offer No.0024 反转链表 (简单, 2021-11)`](#剑指offer-no0024-反转链表-简单-2021-11)
 - [`剑指Offer No.0026 树的子结构 (中等, 2021-11)`](#剑指offer-no0026-树的子结构-中等-2021-11)
 - [`剑指Offer No.0027 二叉树的镜像 (简单, 2021-11)`](#剑指offer-no0027-二叉树的镜像-简单-2021-11)
 - [`剑指Offer No.0028 对称的二叉树 (简单, 2021-11)`](#剑指offer-no0028-对称的二叉树-简单-2021-11)
@@ -1254,6 +1258,347 @@ class Solution:
 
         dfs(0)
         return ret[1:]  # 要求从 1 开始，故移除第一位
+```
+
+</details>
+
+---
+### `剑指Offer No.0018 删除链表的节点 (简单, 2021-11)`
+
+
+[![链表](https://img.shields.io/badge/链表-lightgray.svg)](数据结构-链表.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 链表 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+给单向链表的头指针和要删除的节点的值（链表中的值都不相同），返回删除后的链表的头节点。
+```
+
+<details><summary><b>详细描述</b></summary>
+
+```txt
+给定单向链表的头指针和一个要删除的节点的值，定义一个函数删除该节点。
+返回删除后的链表的头节点。
+
+注意：此题对比原题有改动
+
+示例 1:
+    输入: head = [4,5,1,9], val = 5
+    输出: [4,1,9]
+    解释: 给定你链表中值为 5 的第二个节点，那么在调用了你的函数之后，该链表应变为 4 -> 1 -> 9.
+示例 2:
+    输入: head = [4,5,1,9], val = 1
+    输出: [4,5,9]
+    解释: 给定你链表中值为 1 的第三个节点，那么在调用了你的函数之后，该链表应变为 4 -> 5 -> 9.
+
+说明：
+    题目保证链表中节点的值互不相同
+    若使用 C 或 C++ 语言，你不需要 free 或 delete 被删除的节点
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+</details>
+
+<summary><b>思路</b></summary>
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+<details><summary><b>Python</b></summary>
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def deleteNode(self, head: ListNode, val: int) -> ListNode:
+        if head.val == val:  # 头结点单独处理
+            return head.next
+
+        cur = head  # 记录当前遍历的节点
+        pre = None  # 记录 cur 的前一个节点
+        while cur:
+            pre = cur
+            cur = cur.next
+            if cur.val == val:  # 移除匹配的节点
+                pre.next = cur.next
+                break
+        
+        return head
+```
+
+</details>
+
+---
+### `剑指Offer No.0021 调整数组顺序使奇数位于偶数前面 (简单, 2021-11)`
+
+
+[![数组](https://img.shields.io/badge/数组-lightgray.svg)](数据结构-字符串、数组.md)
+[![双指针](https://img.shields.io/badge/双指针-lightgray.svg)](技巧-双指针、滑动窗口.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 数组、双指针 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+给定整型数组，调整其顺序，使所有奇数在偶数之前（不要求顺序）。
+```
+
+<details><summary><b>详细描述</b></summary>
+
+```txt
+输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有奇数在数组的前半部分，所有偶数在数组的后半部分。
+
+示例：
+    输入：nums = [1,2,3,4]
+    输出：[1,3,2,4] 
+    注：[3,1,2,4] 也是正确的答案之一。
+提示：
+    0 <= nums.length <= 50000
+    0 <= nums[i] <= 10000
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+</details>
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+<summary><b>思路</b></summary>
+
+- 头尾双指针，当头指针指向偶数，尾指针指向奇数时，交换；
+- **注意边界判断**；
+
+<details><summary><b>Python</b></summary>
+
+```python
+class Solution:
+    def exchange(self, nums: List[int]) -> List[int]:
+
+        l, r = 0, len(nums) - 1
+        while l < r:
+            # 注意需要始终保持 l < r
+            while l < r and nums[l] % 2 == 1:
+                l += 1
+            while l < r and nums[r] % 2 == 0:
+                r -= 1
+            
+            nums[l], nums[r] = nums[r], nums[l]
+        
+        return nums
+```
+
+</details>
+
+---
+### `剑指Offer No.0022 链表中倒数第k个节点 (简单, 2021-11)`
+
+
+[![链表](https://img.shields.io/badge/链表-lightgray.svg)](数据结构-链表.md)
+[![双指针](https://img.shields.io/badge/双指针-lightgray.svg)](技巧-双指针、滑动窗口.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 链表、双指针 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+输入一个链表，输出该链表中倒数第k个节点。
+```
+
+<details><summary><b>详细描述</b></summary>
+
+```txt
+输入一个链表，输出该链表中倒数第k个节点。为了符合大多数人的习惯，本题从1开始计数，即链表的尾节点是倒数第1个节点。
+
+例如，一个链表有 6 个节点，从头节点开始，它们的值依次是 1、2、3、4、5、6。这个链表的倒数第 3 个节点是值为 4 的节点。
+
+示例：
+    给定一个链表: 1->2->3->4->5, 和 k = 2.
+    返回链表 4->5.
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+</details>
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+<summary><b>思路</b></summary>
+
+- 前后双指针，保持两个指针相距 k 个节点，当前指针达到链表尾时，返回后指针；
+
+<details><summary><b>Python</b></summary>
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def getKthFromEnd(self, head: ListNode, k: int) -> ListNode:
+        if head is None or k < 1:
+            return head
+
+        cur = head
+        ret = head
+
+        while k:
+            cur = cur.next
+            k -= 1
+        
+        while cur:
+            ret = ret.next
+            cur = cur.next
+
+        # 更简洁的写法，合并两个循环
+        # while cur:
+        #     if k <= 0: 
+        #         ret = ret.next
+        #     cur = cur.next
+        #     k -= 1
+
+        return ret
+```
+
+</details>
+
+---
+### `剑指Offer No.0024 反转链表 (简单, 2021-11)`
+
+
+[![链表](https://img.shields.io/badge/链表-lightgray.svg)](数据结构-链表.md)
+[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归(迭代)、分治.md)
+[![经典](https://img.shields.io/badge/经典-lightgray.svg)](题集-经典问题&代码.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 链表、递归、经典 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+输入一个链表的头节点，反转该链表。
+```
+
+<details><summary><b>详细描述</b></summary>
+
+```txt
+定义一个函数，输入一个链表的头节点，反转该链表并输出反转后链表的头节点。
+
+示例:
+    输入: 1->2->3->4->5->NULL
+    输出: 5->4->3->2->1->NULL
+
+限制：
+    0 <= 节点个数 <= 5000
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+</details>
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+<summary><b>思路</b></summary>
+
+
+<details><summary><b>Python：递归（写法1）</b></summary>
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+
+    def reverseList(self, head: ListNode) -> ListNode:
+        if not head:  # 单独处理空链表
+            return head
+        
+        self.ret = None
+
+        def dfs(cur):
+            # nonlocal ret  # 如果不使用 self.ret，而是 ret，就需要加上这句
+            
+            if cur.next is None:
+                if self.ret is None:
+                    self.ret = cur  # 尾节点，即新链表的头节点
+                return cur
+            
+            nxt = dfs(cur.next)
+            nxt.next = cur
+            return cur
+        
+        
+        head = dfs(head)
+        head.next = None  # 断开最后一个节点，容易忽略的一步
+        return self.ret
+```
+
+</details>
+
+
+<details><summary><b>Python：递归（写法2）</b></summary>
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+
+    def reverseList(self, head: ListNode) -> ListNode:
+
+        def dfs(cur, pre):  # 当前节点，上一个节点
+            if cur is None:  # 达到尾结点
+                return pre  # 返回尾结点的上一个节点
+            
+            ret = dfs(cur.next, cur)
+            cur.next = pre  # 把当前节点的 next 指向上一个节点
+            return ret
+        
+        return dfs(head, None)
+```
+
+</details>
+
+
+<details><summary><b>Python：迭代</b></summary>
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def reverseList(self, head: ListNode) -> ListNode:
+        cur, pre = head, None
+        while cur:
+            # 注意顺序
+            nxt = cur.next # 暂存后继节点 cur.next
+            cur.next = pre # 修改 next 引用指向
+            pre = cur      # pre 暂存 cur
+            cur = nxt      # cur 访问下一节点
+        return pre
 ```
 
 </details>
