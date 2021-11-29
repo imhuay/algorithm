@@ -13,9 +13,9 @@ xxx
 
 </details>
 
-<summary><b>思路</b></summary>
-
 <!-- <div align="center"><img src="../../../_assets/xxx.png" height="300" /></div> -->
+
+<summary><b>思路</b></summary>
 
 <details><summary><b>Python</b></summary>
 
