@@ -6,362 +6,16 @@
 
 Problems Index
 ---
-- [`No.0006` 从尾到头打印链表 (剑指Offer, 简单, 2021-11)](#no0006-从尾到头打印链表-剑指offer-简单-2021-11)
-- [`No.0012` 矩阵中的路径 (剑指Offer, 中等, 2021-11)](#no0012-矩阵中的路径-剑指offer-中等-2021-11)
-- [`No.0013` 机器人的运动范围 (剑指Offer, 中等, 2021-11)](#no0013-机器人的运动范围-剑指offer-中等-2021-11)
-- [`No.0054` 二叉搜索树的第k大节点 (剑指Offer, 简单, 2021-11)](#no0054-二叉搜索树的第k大节点-剑指offer-简单-2021-11)
-- [`No.0111` 二叉树的最小深度 (LeetCode, 简单, 2021-10)](#no0111-二叉树的最小深度-leetcode-简单-2021-10)
-- [`No.0437` 路径总和3 (LeetCode, 中等, 2021-10)](#no0437-路径总和3-leetcode-中等-2021-10)
+- [`LeetCode No.0111 二叉树的最小深度 (简单, 2021-10)`](#leetcode-no0111-二叉树的最小深度-简单-2021-10)
+- [`LeetCode No.0437 路径总和3 (中等, 2021-10)`](#leetcode-no0437-路径总和3-中等-2021-10)
+- [`剑指Offer No.0006 从尾到头打印链表 (简单, 2021-11)`](#剑指offer-no0006-从尾到头打印链表-简单-2021-11)
+- [`剑指Offer No.0012 矩阵中的路径 (中等, 2021-11)`](#剑指offer-no0012-矩阵中的路径-中等-2021-11)
+- [`剑指Offer No.0013 机器人的运动范围 (中等, 2021-11)`](#剑指offer-no0013-机器人的运动范围-中等-2021-11)
+- [`剑指Offer No.0054 二叉搜索树的第k大节点 (简单, 2021-11)`](#剑指offer-no0054-二叉搜索树的第k大节点-简单-2021-11)
 
 ---
 
-### `No.0006` 从尾到头打印链表 (剑指Offer, 简单, 2021-11)
-
-
-[![链表](https://img.shields.io/badge/链表-lightgray.svg)](数据结构-链表.md)
-[![栈](https://img.shields.io/badge/栈-lightgray.svg)](数据结构-栈(单调栈)、队列.md)
-[![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索(DFS).md)
-[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归(迭代)、分治.md)
-[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-<!-- Tag: 链表、栈、DFS、递归 -->
-
-<summary><b>问题简述</b></summary>
-
-```txt
-从尾到头打印链表（用数组返回）
-```
-
-<details><summary><b>详细描述</b></summary>
-
-```txt
-输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
-
-示例 1：
-    输入：head = [1,3,2]
-    输出：[2,3,1]
-
-限制：
-    0 <= 链表长度 <= 10000
-
-来源：力扣（LeetCode）
-链接：https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
-```
-
-<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
-
-</details>
-
-
-<summary><b>思路</b></summary>
-
-- 法1）利用栈，顺序入栈，然后依次出栈即可
-- 法2）利用深度优先遍历思想（二叉树的先序遍历）
-
-
-<details><summary><b>Python：栈</b></summary>
-
-```python
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
-
-class Solution:
-    def reversePrint(self, head: ListNode) -> List[int]:
-        stack = []
-        while head:
-            stack.append(head.val)
-            head = head.next
-        
-        # ret = []
-        # for _ in range(len(stack)):  # 相当于逆序遍历
-        #     ret.append(stack.pop())
-        # return ret
-        return stack[::-1]  # 与以上代码等价
-```
-
-</details>
-
-<details><summary><b>Python：DFS、递归</b></summary>
-
-```python
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
-
-class Solution:
-    def reversePrint(self, head: ListNode) -> List[int]:
-        if head is None:
-            return []
-
-        ret = self.reversePrint(head.next)
-        ret.append(head.val)
-
-        return ret
-```
-
-</details>
-
----
-### `No.0012` 矩阵中的路径 (剑指Offer, 中等, 2021-11)
-
-
-[![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索(DFS).md)
-[![DFS+回溯](https://img.shields.io/badge/DFS+回溯-lightgray.svg)](算法-深度优先搜索+回溯.md)
-[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-<!-- Tag: DFS、DFS+回溯 -->
-
-<summary><b>问题简述</b></summary>
-
-```txt
-给定一个 m x n 二维字符矩阵 board 和字符串 word。如果 word 存在于网格中，返回 true ；否则，返回 false 。
-
-其中单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。
-```
-
-<details><summary><b>详细描述</b></summary>
-
-```txt
-给定一个 m x n 二维字符网格 board 和一个字符串单词 word 。如果 word 存在于网格中，返回 true ；否则，返回 false 。
-
-单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。
-
-例如，在下面的 3×4 的矩阵中包含单词 "ABCCED"（单词中的字母已标出）。
-
-示例 1：
-    输入：board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
-    输出：true
-示例 2：
-    输入：board = [["a","b"],["c","d"]], word = "abcd"
-    输出：false
- 
-提示：
-    1 <= board.length <= 200
-    1 <= board[i].length <= 200
-    board 和 word 仅由大小写英文字母组成
- 
-
-来源：力扣（LeetCode）
-链接：https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
-```
-
-<div align="center"><img src="../_assets/剑指Offer_0012_中等_矩阵中的路径-示例.jpeg" height="200" /></div>
-
-</details>
-
-<summary><b>思路</b></summary>
-
-- 棋盘搜索，非常典型的 DFS + 回溯问题；
-
-<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
-
-<details><summary><b>Python：DFS + 回溯</b></summary>
-
-```python
-class Solution:
-    def exist(self, board: List[List[str]], word: str) -> bool:
-        if len(board) < 1:
-            return False
-
-        m, n = len(board), len(board[0])
-
-        # 使用内部函数，可以减少一些参数的传递，同时比成员方法更简洁
-        def dfs(i, j, k):  # i, j, k 分别表示 board[i][j] 和 word[k]
-            if not 0 <= i < m or not 0 <= j < n:  # 先判断是否越界
-                return False
-
-            if board[i][j] != word[k]:  # 这一步可以合并到越界判断，但会损失一些可读性，故分离出来单独判断
-                return False
-            else:  # board[i][j] == word[k]:  # 如果当前位置字符相同，继续深度搜索
-                if k == len(word) - 1:  # 如果字符已经全部匹配成功，返回 True
-                    return True
-
-                # 置空，表示该位置已访问过；一些代码中会使用一个新的矩阵记录位置是否访问，这里直接在原矩阵上标记
-                board[i][j] = ''
-                # 继续遍历 4 个方向
-                flag = dfs(i + 1, j, k + 1) or dfs(i - 1, j, k + 1) or dfs(i, j + 1, k + 1) or dfs(i, j - 1, k + 1)
-                # 这一步是容易忽略的：因为需要回溯，所以必须还原该位置的元素
-                board[i][j] = word[k]
-
-                return flag
-
-        # board 中每一个位置都可能是起始位置，所以要循环遍历
-        for i in range(m):
-            for j in range(n):
-                if dfs(i, j, 0):
-                    return True
-        return False
-```
-
-</details>
-
----
-### `No.0013` 机器人的运动范围 (剑指Offer, 中等, 2021-11)
-
-
-[![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索(DFS).md)
-[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-<!-- Tag: DFS -->
-
-<summary><b>问题描述</b></summary>
-
-```txt
-地上有一个m行n列的方格，从坐标 [0,0] 到坐标 [m-1,n-1] 。一个机器人从坐标 [0, 0] 的格子开始移动，它每次可以向左、右、上、下移动一格（不能移动到方格外），也不能进入行坐标和列坐标的数位之和大于k的格子。例如，当k为18时，机器人能够进入方格 [35, 37] ，因为3+5+3+7=18。但它不能进入方格 [35, 38]，因为3+5+3+8=19。请问该机器人能够到达多少个格子？
-
-示例 1：
-    输入：m = 2, n = 3, k = 1
-    输出：3
-示例 2：
-    输入：m = 3, n = 1, k = 0
-    输出：1
-
-提示：
-    1 <= n,m <= 100
-    0 <= k <= 20
-
-来源：力扣（LeetCode）
-链接：https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
-```
-
-<summary><b>思路</b></summary>
-
-- 本题也可以使用广度优先搜索；
-  > [机器人的运动范围（ 回溯算法，DFS / BFS ，清晰图解）](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/solution/mian-shi-ti-13-ji-qi-ren-de-yun-dong-fan-wei-dfs-b/)
-
-<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
-
-<details><summary><b>Python：DFS+回溯</b></summary>
-
-```python
-class Solution:
-    def movingCount(self, m: int, n: int, k: int) -> int:
-
-        def dig_sum(x):  # 求数位之和
-            s = 0
-            while x != 0:
-                s += x % 10
-                x = x // 10
-            return s
-
-        def dfs(i, j):
-            if not 0 <= i < m or not 0 <= j < n or dig_sum(i) + dig_sum(j) > k:
-                return 0
-
-            if (i, j) in visited:  # 如果已经访问过
-                return 0
-            else:
-                visited.add((i, j))  # 访问标记
-                return 1 + dfs(i + 1, j) + dfs(i, j + 1)  # 因为只能往左或往右，所以只需要搜索两个方向
-
-        visited = set()
-        return dfs(0, 0)
-```
-
-</details>
-
----
-### `No.0054` 二叉搜索树的第k大节点 (剑指Offer, 简单, 2021-11)
-
-
-[![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
-[![dfs](https://img.shields.io/badge/dfs-lightgray.svg)](算法-深度优先搜索(DFS).md)
-[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-<!-- Tag: 二叉树、dfs -->
-
-<summary><b>问题简述</b></summary>
-
-```txt
-给定一棵二叉搜索树，请找出其中第k大的节点。
-```
-
-<details><summary><b>详细描述</b></summary>
-
-```txt
-给定一棵二叉搜索树，请找出其中第k大的节点。
-
-示例 1:
-    输入: root = [3,1,4,null,2], k = 1
-     3
-    / \
-   1   4
-    \
-     2
-    输出: 4
-示例 2:
-    输入: root = [5,3,6,2,4,null,null,1], k = 3
-        5
-       / \
-      3   6
-     / \
-    2   4
-   /
-  1
-    输出: 4
-
-限制：
-    1 ≤ k ≤ 二叉搜索树元素个数
-
-来源：力扣（LeetCode）
-链接：https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
-```
-
-<!-- <div align="center"><img src="./_assets/xxx.png" height="300" /></div> -->
-
-</details>
-
-
-<summary><b>思路</b></summary>
-
-- 二叉搜索树的性质：中序遍历的结果为递增序列；
-- 为了得到第 K 大，需要递减序列，“反向”中序遍历即可：即按“右中左”的顺序深度搜索；
-- 利用辅助变量提前结束搜索；
-
-
-<details><summary><b>C++：反向中序遍历</b></summary>
-
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
-class Solution {
-    int k;
-    int ret;
-public:
-    int kthLargest(TreeNode* root, int k) {
-        this->k = k;
-        inOrder(root);
-        return this->ret;
-    }
-
-    void inOrder(TreeNode* node) {
-        if (node == nullptr) return;
-
-        inOrder(node->right);  // 先遍历右子树
-        if (this->k == 0) return;
-        this->k -= 1;
-        if (this->k == 0) this->ret = node->val;
-        inOrder(node->left);
-    }
-};
-```
-
-</details>
-
----
-### `No.0111` 二叉树的最小深度 (LeetCode, 简单, 2021-10)
+### `LeetCode No.0111 二叉树的最小深度 (简单, 2021-10)`
 
 
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
@@ -425,7 +79,7 @@ class Solution:
 </details>
 
 ---
-### `No.0437` 路径总和3 (LeetCode, 中等, 2021-10)
+### `LeetCode No.0437 路径总和3 (中等, 2021-10)`
 
 
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
@@ -547,6 +201,352 @@ class Solution:
         self.prefix[cur] -= 1
 
         return ret
+```
+
+</details>
+
+---
+### `剑指Offer No.0006 从尾到头打印链表 (简单, 2021-11)`
+
+
+[![链表](https://img.shields.io/badge/链表-lightgray.svg)](数据结构-链表.md)
+[![栈](https://img.shields.io/badge/栈-lightgray.svg)](数据结构-栈(单调栈)、队列.md)
+[![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索(DFS).md)
+[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归(迭代)、分治.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 链表、栈、DFS、递归 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+从尾到头打印链表（用数组返回）
+```
+
+<details><summary><b>详细描述</b></summary>
+
+```txt
+输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
+
+示例 1：
+    输入：head = [1,3,2]
+    输出：[2,3,1]
+
+限制：
+    0 <= 链表长度 <= 10000
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+</details>
+
+
+<summary><b>思路</b></summary>
+
+- 法1）利用栈，顺序入栈，然后依次出栈即可
+- 法2）利用深度优先遍历思想（二叉树的先序遍历）
+
+
+<details><summary><b>Python：栈</b></summary>
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def reversePrint(self, head: ListNode) -> List[int]:
+        stack = []
+        while head:
+            stack.append(head.val)
+            head = head.next
+        
+        # ret = []
+        # for _ in range(len(stack)):  # 相当于逆序遍历
+        #     ret.append(stack.pop())
+        # return ret
+        return stack[::-1]  # 与以上代码等价
+```
+
+</details>
+
+<details><summary><b>Python：DFS、递归</b></summary>
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def reversePrint(self, head: ListNode) -> List[int]:
+        if head is None:
+            return []
+
+        ret = self.reversePrint(head.next)
+        ret.append(head.val)
+
+        return ret
+```
+
+</details>
+
+---
+### `剑指Offer No.0012 矩阵中的路径 (中等, 2021-11)`
+
+
+[![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索(DFS).md)
+[![DFS+回溯](https://img.shields.io/badge/DFS+回溯-lightgray.svg)](算法-深度优先搜索+回溯.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: DFS、DFS+回溯 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+给定一个 m x n 二维字符矩阵 board 和字符串 word。如果 word 存在于网格中，返回 true ；否则，返回 false 。
+
+其中单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。
+```
+
+<details><summary><b>详细描述</b></summary>
+
+```txt
+给定一个 m x n 二维字符网格 board 和一个字符串单词 word 。如果 word 存在于网格中，返回 true ；否则，返回 false 。
+
+单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。
+
+例如，在下面的 3×4 的矩阵中包含单词 "ABCCED"（单词中的字母已标出）。
+
+示例 1：
+    输入：board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
+    输出：true
+示例 2：
+    输入：board = [["a","b"],["c","d"]], word = "abcd"
+    输出：false
+ 
+提示：
+    1 <= board.length <= 200
+    1 <= board[i].length <= 200
+    board 和 word 仅由大小写英文字母组成
+ 
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+<div align="center"><img src="../_assets/剑指Offer_0012_中等_矩阵中的路径-示例.jpeg" height="200" /></div>
+
+</details>
+
+<summary><b>思路</b></summary>
+
+- 棋盘搜索，非常典型的 DFS + 回溯问题；
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+<details><summary><b>Python：DFS + 回溯</b></summary>
+
+```python
+class Solution:
+    def exist(self, board: List[List[str]], word: str) -> bool:
+        if len(board) < 1:
+            return False
+
+        m, n = len(board), len(board[0])
+
+        # 使用内部函数，可以减少一些参数的传递，同时比成员方法更简洁
+        def dfs(i, j, k):  # i, j, k 分别表示 board[i][j] 和 word[k]
+            if not 0 <= i < m or not 0 <= j < n:  # 先判断是否越界
+                return False
+
+            if board[i][j] != word[k]:  # 这一步可以合并到越界判断，但会损失一些可读性，故分离出来单独判断
+                return False
+            else:  # board[i][j] == word[k]:  # 如果当前位置字符相同，继续深度搜索
+                if k == len(word) - 1:  # 如果字符已经全部匹配成功，返回 True
+                    return True
+
+                # 置空，表示该位置已访问过；一些代码中会使用一个新的矩阵记录位置是否访问，这里直接在原矩阵上标记
+                board[i][j] = ''
+                # 继续遍历 4 个方向
+                flag = dfs(i + 1, j, k + 1) or dfs(i - 1, j, k + 1) or dfs(i, j + 1, k + 1) or dfs(i, j - 1, k + 1)
+                # 这一步是容易忽略的：因为需要回溯，所以必须还原该位置的元素
+                board[i][j] = word[k]
+
+                return flag
+
+        # board 中每一个位置都可能是起始位置，所以要循环遍历
+        for i in range(m):
+            for j in range(n):
+                if dfs(i, j, 0):
+                    return True
+        return False
+```
+
+</details>
+
+---
+### `剑指Offer No.0013 机器人的运动范围 (中等, 2021-11)`
+
+
+[![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索(DFS).md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: DFS -->
+
+<summary><b>问题描述</b></summary>
+
+```txt
+地上有一个m行n列的方格，从坐标 [0,0] 到坐标 [m-1,n-1] 。一个机器人从坐标 [0, 0] 的格子开始移动，它每次可以向左、右、上、下移动一格（不能移动到方格外），也不能进入行坐标和列坐标的数位之和大于k的格子。例如，当k为18时，机器人能够进入方格 [35, 37] ，因为3+5+3+7=18。但它不能进入方格 [35, 38]，因为3+5+3+8=19。请问该机器人能够到达多少个格子？
+
+示例 1：
+    输入：m = 2, n = 3, k = 1
+    输出：3
+示例 2：
+    输入：m = 3, n = 1, k = 0
+    输出：1
+
+提示：
+    1 <= n,m <= 100
+    0 <= k <= 20
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+<summary><b>思路</b></summary>
+
+- 本题也可以使用广度优先搜索；
+  > [机器人的运动范围（ 回溯算法，DFS / BFS ，清晰图解）](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/solution/mian-shi-ti-13-ji-qi-ren-de-yun-dong-fan-wei-dfs-b/)
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+<details><summary><b>Python：DFS+回溯</b></summary>
+
+```python
+class Solution:
+    def movingCount(self, m: int, n: int, k: int) -> int:
+
+        def dig_sum(x):  # 求数位之和
+            s = 0
+            while x != 0:
+                s += x % 10
+                x = x // 10
+            return s
+
+        def dfs(i, j):
+            if not 0 <= i < m or not 0 <= j < n or dig_sum(i) + dig_sum(j) > k:
+                return 0
+
+            if (i, j) in visited:  # 如果已经访问过
+                return 0
+            else:
+                visited.add((i, j))  # 访问标记
+                return 1 + dfs(i + 1, j) + dfs(i, j + 1)  # 因为只能往左或往右，所以只需要搜索两个方向
+
+        visited = set()
+        return dfs(0, 0)
+```
+
+</details>
+
+---
+### `剑指Offer No.0054 二叉搜索树的第k大节点 (简单, 2021-11)`
+
+
+[![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
+[![dfs](https://img.shields.io/badge/dfs-lightgray.svg)](算法-深度优先搜索(DFS).md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 二叉树、dfs -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+给定一棵二叉搜索树，请找出其中第k大的节点。
+```
+
+<details><summary><b>详细描述</b></summary>
+
+```txt
+给定一棵二叉搜索树，请找出其中第k大的节点。
+
+示例 1:
+    输入: root = [3,1,4,null,2], k = 1
+     3
+    / \
+   1   4
+    \
+     2
+    输出: 4
+示例 2:
+    输入: root = [5,3,6,2,4,null,null,1], k = 3
+        5
+       / \
+      3   6
+     / \
+    2   4
+   /
+  1
+    输出: 4
+
+限制：
+    1 ≤ k ≤ 二叉搜索树元素个数
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+<!-- <div align="center"><img src="./_assets/xxx.png" height="300" /></div> -->
+
+</details>
+
+
+<summary><b>思路</b></summary>
+
+- 二叉搜索树的性质：中序遍历的结果为递增序列；
+- 为了得到第 K 大，需要递减序列，“反向”中序遍历即可：即按“右中左”的顺序深度搜索；
+- 利用辅助变量提前结束搜索；
+
+
+<details><summary><b>C++：反向中序遍历</b></summary>
+
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+    int k;
+    int ret;
+public:
+    int kthLargest(TreeNode* root, int k) {
+        this->k = k;
+        inOrder(root);
+        return this->ret;
+    }
+
+    void inOrder(TreeNode* node) {
+        if (node == nullptr) return;
+
+        inOrder(node->right);  // 先遍历右子树
+        if (this->k == 0) return;
+        this->k -= 1;
+        if (this->k == 0) this->ret = node->val;
+        inOrder(node->left);
+    }
+};
 ```
 
 </details>

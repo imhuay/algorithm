@@ -6,33 +6,33 @@
 
 Problems Index
 ---
-- [`No.0001` 两数之和 (LeetCode, 简单, 2021-10)](#no0001-两数之和-leetcode-简单-2021-10)
-- [`No.0002` 两数相加 (LeetCode, 中等, 2021-10)](#no0002-两数相加-leetcode-中等-2021-10)
-- [`No.0005` 最长回文子串 (LeetCode, 中等, 2021-10)](#no0005-最长回文子串-leetcode-中等-2021-10)
-- [`No.0011` 盛最多水的容器 (LeetCode, 中等, 2021-10)](#no0011-盛最多水的容器-leetcode-中等-2021-10)
-- [`No.0015` 三数之和 (LeetCode, 中等, 2021-10)](#no0015-三数之和-leetcode-中等-2021-10)
-- [`No.0016` 最接近的三数之和 (LeetCode, 中等, 2021-10)](#no0016-最接近的三数之和-leetcode-中等-2021-10)
-- [`No.0021` 合并两个有序链表 (LeetCode, 简单, 2021-10)](#no0021-合并两个有序链表-leetcode-简单-2021-10)
-- [`No.0029` 两数相除 (LeetCode, 中等, 2021-10)](#no0029-两数相除-leetcode-中等-2021-10)
-- [`No.0033` 搜索旋转排序数组 (LeetCode, 中等, 2021-10)](#no0033-搜索旋转排序数组-leetcode-中等-2021-10)
-- [`No.0042` 接雨水 (LeetCode, 困难, 2021-10)](#no0042-接雨水-leetcode-困难-2021-10)
-- [`No.0086` 分隔链表 (LeetCode, 中等, 2021-10)](#no0086-分隔链表-leetcode-中等-2021-10)
-- [`No.0104` 二叉树的最大深度 (LeetCode, 简单, 2021-10)](#no0104-二叉树的最大深度-leetcode-简单-2021-10)
-- [`No.0111` 二叉树的最小深度 (LeetCode, 简单, 2021-10)](#no0111-二叉树的最小深度-leetcode-简单-2021-10)
-- [`No.0167` 两数之和2(输入有序数组) (LeetCode, 简单, 2021-10)](#no0167-两数之和2输入有序数组-leetcode-简单-2021-10)
-- [`No.0187` 重复的DNA序列 (LeetCode, 中等, 2021-10)](#no0187-重复的dna序列-leetcode-中等-2021-10)
-- [`No.0240` 搜索二维矩阵2 (LeetCode, 中等, 2021-10)](#no0240-搜索二维矩阵2-leetcode-中等-2021-10)
-- [`No.0352` 将数据流变为多个不相交区间 (LeetCode, 困难, 2021-10)](#no0352-将数据流变为多个不相交区间-leetcode-困难-2021-10)
-- [`No.0434` 字符串中的单词数 (LeetCode, 简单, 2021-10)](#no0434-字符串中的单词数-leetcode-简单-2021-10)
-- [`No.0437` 路径总和3 (LeetCode, 中等, 2021-10)](#no0437-路径总和3-leetcode-中等-2021-10)
-- [`No.0441` 排列硬币 (LeetCode, 简单, 2021-10)](#no0441-排列硬币-leetcode-简单-2021-10)
-- [`No.0496` 下一个更大元素 (LeetCode, 简单, 2021-11)](#no0496-下一个更大元素-leetcode-简单-2021-11)
-- [`No.0611` 有效三角形的个数 (LeetCode, 中等, 2021-10)](#no0611-有效三角形的个数-leetcode-中等-2021-10)
-- [`No.0859` 亲密字符串 (LeetCode, 简单, 2021-11)](#no0859-亲密字符串-leetcode-简单-2021-11)
+- [`LeetCode No.0001 两数之和 (简单, 2021-10)`](#leetcode-no0001-两数之和-简单-2021-10)
+- [`LeetCode No.0002 两数相加 (中等, 2021-10)`](#leetcode-no0002-两数相加-中等-2021-10)
+- [`LeetCode No.0005 最长回文子串 (中等, 2021-10)`](#leetcode-no0005-最长回文子串-中等-2021-10)
+- [`LeetCode No.0011 盛最多水的容器 (中等, 2021-10)`](#leetcode-no0011-盛最多水的容器-中等-2021-10)
+- [`LeetCode No.0015 三数之和 (中等, 2021-10)`](#leetcode-no0015-三数之和-中等-2021-10)
+- [`LeetCode No.0016 最接近的三数之和 (中等, 2021-10)`](#leetcode-no0016-最接近的三数之和-中等-2021-10)
+- [`LeetCode No.0021 合并两个有序链表 (简单, 2021-10)`](#leetcode-no0021-合并两个有序链表-简单-2021-10)
+- [`LeetCode No.0029 两数相除 (中等, 2021-10)`](#leetcode-no0029-两数相除-中等-2021-10)
+- [`LeetCode No.0033 搜索旋转排序数组 (中等, 2021-10)`](#leetcode-no0033-搜索旋转排序数组-中等-2021-10)
+- [`LeetCode No.0042 接雨水 (困难, 2021-10)`](#leetcode-no0042-接雨水-困难-2021-10)
+- [`LeetCode No.0086 分隔链表 (中等, 2021-10)`](#leetcode-no0086-分隔链表-中等-2021-10)
+- [`LeetCode No.0104 二叉树的最大深度 (简单, 2021-10)`](#leetcode-no0104-二叉树的最大深度-简单-2021-10)
+- [`LeetCode No.0111 二叉树的最小深度 (简单, 2021-10)`](#leetcode-no0111-二叉树的最小深度-简单-2021-10)
+- [`LeetCode No.0167 两数之和2(输入有序数组) (简单, 2021-10)`](#leetcode-no0167-两数之和2输入有序数组-简单-2021-10)
+- [`LeetCode No.0187 重复的DNA序列 (中等, 2021-10)`](#leetcode-no0187-重复的dna序列-中等-2021-10)
+- [`LeetCode No.0240 搜索二维矩阵2 (中等, 2021-10)`](#leetcode-no0240-搜索二维矩阵2-中等-2021-10)
+- [`LeetCode No.0352 将数据流变为多个不相交区间 (困难, 2021-10)`](#leetcode-no0352-将数据流变为多个不相交区间-困难-2021-10)
+- [`LeetCode No.0434 字符串中的单词数 (简单, 2021-10)`](#leetcode-no0434-字符串中的单词数-简单-2021-10)
+- [`LeetCode No.0437 路径总和3 (中等, 2021-10)`](#leetcode-no0437-路径总和3-中等-2021-10)
+- [`LeetCode No.0441 排列硬币 (简单, 2021-10)`](#leetcode-no0441-排列硬币-简单-2021-10)
+- [`LeetCode No.0496 下一个更大元素 (简单, 2021-11)`](#leetcode-no0496-下一个更大元素-简单-2021-11)
+- [`LeetCode No.0611 有效三角形的个数 (中等, 2021-10)`](#leetcode-no0611-有效三角形的个数-中等-2021-10)
+- [`LeetCode No.0859 亲密字符串 (简单, 2021-11)`](#leetcode-no0859-亲密字符串-简单-2021-11)
 
 ---
 
-### `No.0001` 两数之和 (LeetCode, 简单, 2021-10)
+### `LeetCode No.0001 两数之和 (简单, 2021-10)`
 
 
 [![哈希表](https://img.shields.io/badge/哈希表-lightgray.svg)](技巧-哈希表(Hash).md)
@@ -104,7 +104,7 @@ class Solution:
 </details>
 
 ---
-### `No.0002` 两数相加 (LeetCode, 中等, 2021-10)
+### `LeetCode No.0002 两数相加 (中等, 2021-10)`
 
 
 [![链表](https://img.shields.io/badge/链表-lightgray.svg)](数据结构-链表.md)
@@ -193,7 +193,7 @@ class Solution:
 </details>
 
 ---
-### `No.0005` 最长回文子串 (LeetCode, 中等, 2021-10)
+### `LeetCode No.0005 最长回文子串 (中等, 2021-10)`
 
 
 [![DP](https://img.shields.io/badge/DP-lightgray.svg)](算法-动态规划(DP、记忆化搜索).md)
@@ -294,7 +294,7 @@ public:
 </details>
 
 ---
-### `No.0011` 盛最多水的容器 (LeetCode, 中等, 2021-10)
+### `LeetCode No.0011 盛最多水的容器 (中等, 2021-10)`
 
 
 [![双指针](https://img.shields.io/badge/双指针-lightgray.svg)](技巧-双指针、滑动窗口.md)
@@ -350,7 +350,7 @@ class Solution:
 </details>
 
 ---
-### `No.0015` 三数之和 (LeetCode, 中等, 2021-10)
+### `LeetCode No.0015 三数之和 (中等, 2021-10)`
 
 
 [![双指针](https://img.shields.io/badge/双指针-lightgray.svg)](技巧-双指针、滑动窗口.md)
@@ -453,7 +453,7 @@ class Solution:
 </details>
 
 ---
-### `No.0016` 最接近的三数之和 (LeetCode, 中等, 2021-10)
+### `LeetCode No.0016 最接近的三数之和 (中等, 2021-10)`
 
 
 [![双指针](https://img.shields.io/badge/双指针-lightgray.svg)](技巧-双指针、滑动窗口.md)
@@ -571,7 +571,7 @@ class Solution:
 </details>
 
 ---
-### `No.0021` 合并两个有序链表 (LeetCode, 简单, 2021-10)
+### `LeetCode No.0021 合并两个有序链表 (简单, 2021-10)`
 
 
 [![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归(迭代)、分治.md)
@@ -665,7 +665,7 @@ class Solution:
 </details>
 
 ---
-### `No.0029` 两数相除 (LeetCode, 中等, 2021-10)
+### `LeetCode No.0029 两数相除 (中等, 2021-10)`
 
 
 [![位运算](https://img.shields.io/badge/位运算-lightgray.svg)](技巧-位运算.md)
@@ -756,7 +756,7 @@ class Solution:
 </details>
 
 ---
-### `No.0033` 搜索旋转排序数组 (LeetCode, 中等, 2021-10)
+### `LeetCode No.0033 搜索旋转排序数组 (中等, 2021-10)`
 
 
 [![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分法.md)
@@ -853,7 +853,7 @@ class Solution:
 </details>
 
 ---
-### `No.0042` 接雨水 (LeetCode, 困难, 2021-10)
+### `LeetCode No.0042 接雨水 (困难, 2021-10)`
 
 
 [![双指针](https://img.shields.io/badge/双指针-lightgray.svg)](技巧-双指针、滑动窗口.md)
@@ -940,7 +940,7 @@ public:
 </details>
 
 ---
-### `No.0086` 分隔链表 (LeetCode, 中等, 2021-10)
+### `LeetCode No.0086 分隔链表 (中等, 2021-10)`
 
 
 [![链表](https://img.shields.io/badge/链表-lightgray.svg)](数据结构-链表.md)
@@ -1017,7 +1017,7 @@ class Solution:
 </details>
 
 ---
-### `No.0104` 二叉树的最大深度 (LeetCode, 简单, 2021-10)
+### `LeetCode No.0104 二叉树的最大深度 (简单, 2021-10)`
 
 
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
@@ -1071,7 +1071,7 @@ class Solution:
 </details>
 
 ---
-### `No.0111` 二叉树的最小深度 (LeetCode, 简单, 2021-10)
+### `LeetCode No.0111 二叉树的最小深度 (简单, 2021-10)`
 
 
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
@@ -1135,7 +1135,7 @@ class Solution:
 </details>
 
 ---
-### `No.0167` 两数之和2(输入有序数组) (LeetCode, 简单, 2021-10)
+### `LeetCode No.0167 两数之和2(输入有序数组) (简单, 2021-10)`
 
 
 [![双指针](https://img.shields.io/badge/双指针-lightgray.svg)](技巧-双指针、滑动窗口.md)
@@ -1210,7 +1210,7 @@ class Solution:
 </details>
 
 ---
-### `No.0187` 重复的DNA序列 (LeetCode, 中等, 2021-10)
+### `LeetCode No.0187 重复的DNA序列 (中等, 2021-10)`
 
 
 [![哈希表](https://img.shields.io/badge/哈希表-lightgray.svg)](技巧-哈希表(Hash).md)
@@ -1348,7 +1348,7 @@ class Solution:
 </details>
 
 ---
-### `No.0240` 搜索二维矩阵2 (LeetCode, 中等, 2021-10)
+### `LeetCode No.0240 搜索二维矩阵2 (中等, 2021-10)`
 
 
 [![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分法.md)
@@ -1467,7 +1467,7 @@ class Solution:
 </details>
 
 ---
-### `No.0352` 将数据流变为多个不相交区间 (LeetCode, 困难, 2021-10)
+### `LeetCode No.0352 将数据流变为多个不相交区间 (困难, 2021-10)`
 
 
 [![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分法.md)
@@ -1636,7 +1636,7 @@ SortedDict({2: 22, 3: 33, 4: 44, 6: 66, 7: 77})
 </details>
 
 ---
-### `No.0434` 字符串中的单词数 (LeetCode, 简单, 2021-10)
+### `LeetCode No.0434 字符串中的单词数 (简单, 2021-10)`
 
 
 [![字符串](https://img.shields.io/badge/字符串-lightgray.svg)](数据结构-字符串、数组.md)
@@ -1682,7 +1682,7 @@ class Solution:
 </details>
 
 ---
-### `No.0437` 路径总和3 (LeetCode, 中等, 2021-10)
+### `LeetCode No.0437 路径总和3 (中等, 2021-10)`
 
 
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
@@ -1809,7 +1809,7 @@ class Solution:
 </details>
 
 ---
-### `No.0441` 排列硬币 (LeetCode, 简单, 2021-10)
+### `LeetCode No.0441 排列硬币 (简单, 2021-10)`
 
 
 [![二分查找](https://img.shields.io/badge/二分查找-lightgray.svg)](算法-二分法.md)
@@ -1877,7 +1877,7 @@ class Solution:
 </details>
 
 ---
-### `No.0496` 下一个更大元素 (LeetCode, 简单, 2021-11)
+### `LeetCode No.0496 下一个更大元素 (简单, 2021-11)`
 
 
 [![单调栈](https://img.shields.io/badge/单调栈-lightgray.svg)](数据结构-栈(单调栈)、队列.md)
@@ -1957,7 +1957,7 @@ class Solution:
 </details>
 
 ---
-### `No.0611` 有效三角形的个数 (LeetCode, 中等, 2021-10)
+### `LeetCode No.0611 有效三角形的个数 (中等, 2021-10)`
 
 
 [![双指针](https://img.shields.io/badge/双指针-lightgray.svg)](技巧-双指针、滑动窗口.md)
@@ -2028,7 +2028,7 @@ class Solution:
 </details>
 
 ---
-### `No.0859` 亲密字符串 (LeetCode, 简单, 2021-11)
+### `LeetCode No.0859 亲密字符串 (简单, 2021-11)`
 
 
 [![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟、数学、找规律.md)
