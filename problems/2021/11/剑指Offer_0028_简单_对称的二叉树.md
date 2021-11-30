@@ -51,10 +51,46 @@
 
 <summary><b>思路</b></summary>
 
-- 注意除了根节点外，比较的左右子树并不是来自同一个节点；
+- 想象一左一右两条路线，沿途比较路线上的节点，如果一路相等，同时达到叶子，说明这两条路线是相同的；
+- “对称”则要求这两条路线必须从根节点的左右子节点开始；且沿途左路线往左的时候，右路线必须往右，来满足对称；
+- 递归的中止条件必须考虑全面；
 
 <div align="center"><img src="../../../_assets/图解对称的二叉树.png" height="200" /></div>
 
+> [对称的二叉树（递归，清晰图解）](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/solution/mian-shi-ti-28-dui-cheng-de-er-cha-shu-di-gui-qing/)
+
+<details><summary><b>Python</b></summary>
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def isSymmetric(self, root: TreeNode) -> bool:
+        if not root: return True  # 空树返回 True
+
+        def dfs(l, r):
+            """"""
+            # 如果能同时达到叶子节点，说明这两条路线是对称的
+            if l is None and r is None:
+                return True
+            
+            # 满足以下条件，说明不对称
+            if (l and not r) or (r and not l) or l.val != r.val:
+                return False
+            
+            # 递归深入
+            return dfs(l.left, r.right) and dfs(l.right, r.left)
+        
+        return dfs(root.left, root.right)
+
+```
+
+</details>
 
 <details><summary><b>C++</b></summary>
 
