@@ -1639,7 +1639,7 @@ SortedDict({2: 22, 3: 33, 4: 44, 6: 66, 7: 77})
 ### `LeetCode No.0434 字符串中的单词数 (简单, 2021-10)`
 
 
-[![字符串](https://img.shields.io/badge/字符串-lightgray.svg)](数据结构-字符串、数组.md)
+[![字符串](https://img.shields.io/badge/字符串-lightgray.svg)](数据结构-字符串.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 字符串 -->
 
@@ -2032,7 +2032,7 @@ class Solution:
 
 
 [![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟、数学、找规律.md)
-[![字符串](https://img.shields.io/badge/字符串-lightgray.svg)](数据结构-字符串、数组.md)
+[![字符串](https://img.shields.io/badge/字符串-lightgray.svg)](数据结构-字符串.md)
 [![LeetCode](https://img.shields.io/badge/LeetCode-lightgray.svg)](题集-LeetCode.md)
 <!-- Tag: 模拟、字符串 -->
 

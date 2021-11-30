@@ -25,9 +25,11 @@ Problems Index
 - [`剑指Offer No.0021 调整数组顺序使奇数位于偶数前面 (简单, 2021-11)`](#剑指offer-no0021-调整数组顺序使奇数位于偶数前面-简单-2021-11)
 - [`剑指Offer No.0022 链表中倒数第k个节点 (简单, 2021-11)`](#剑指offer-no0022-链表中倒数第k个节点-简单-2021-11)
 - [`剑指Offer No.0024 反转链表 (简单, 2021-11)`](#剑指offer-no0024-反转链表-简单-2021-11)
+- [`剑指Offer No.0025 合并两个排序的链表 (简单, 2021-11)`](#剑指offer-no0025-合并两个排序的链表-简单-2021-11)
 - [`剑指Offer No.0026 树的子结构 (中等, 2021-11)`](#剑指offer-no0026-树的子结构-中等-2021-11)
 - [`剑指Offer No.0027 二叉树的镜像 (简单, 2021-11)`](#剑指offer-no0027-二叉树的镜像-简单-2021-11)
 - [`剑指Offer No.0028 对称的二叉树 (简单, 2021-11)`](#剑指offer-no0028-对称的二叉树-简单-2021-11)
+- [`剑指Offer No.0029 顺时针打印矩阵 (中等, 2021-11)`](#剑指offer-no0029-顺时针打印矩阵-中等-2021-11)
 - [`剑指Offer No.0032 层序遍历二叉树 (中等, 2021-11)`](#剑指offer-no0032-层序遍历二叉树-中等-2021-11)
 - [`剑指Offer No.0042 连续子数组的最大和 (简单, 2021-10)`](#剑指offer-no0042-连续子数组的最大和-简单-2021-10)
 - [`剑指Offer No.0044 数字序列中某一位的数字 (中等, 2021-11)`](#剑指offer-no0044-数字序列中某一位的数字-中等-2021-11)
@@ -176,7 +178,7 @@ class Solution:
 ### `剑指Offer No.0005 替换空格 (简单, 2021-11)`
 
 
-[![字符串](https://img.shields.io/badge/字符串-lightgray.svg)](数据结构-字符串、数组.md)
+[![字符串](https://img.shields.io/badge/字符串-lightgray.svg)](数据结构-字符串.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 <!-- Tag: 字符串 -->
 
@@ -1340,7 +1342,7 @@ class Solution:
 ### `剑指Offer No.0021 调整数组顺序使奇数位于偶数前面 (简单, 2021-11)`
 
 
-[![数组](https://img.shields.io/badge/数组-lightgray.svg)](数据结构-字符串、数组.md)
+[![数组](https://img.shields.io/badge/数组-lightgray.svg)](数据结构-数组、矩阵(二维数组).md)
 [![双指针](https://img.shields.io/badge/双指针-lightgray.svg)](技巧-双指针、滑动窗口.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 <!-- Tag: 数组、双指针 -->
@@ -1481,9 +1483,10 @@ class Solution:
 
 [![链表](https://img.shields.io/badge/链表-lightgray.svg)](数据结构-链表.md)
 [![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归(迭代)、分治.md)
+[![迭代](https://img.shields.io/badge/迭代-lightgray.svg)](算法-递归(迭代)、分治.md)
 [![经典](https://img.shields.io/badge/经典-lightgray.svg)](题集-经典问题&代码.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-<!-- Tag: 链表、递归、经典 -->
+<!-- Tag: 链表、递归、迭代、经典 -->
 
 <summary><b>问题简述</b></summary>
 
@@ -1604,6 +1607,124 @@ class Solution:
 </details>
 
 ---
+### `剑指Offer No.0025 合并两个排序的链表 (简单, 2021-11)`
+
+
+[![链表](https://img.shields.io/badge/链表-lightgray.svg)](数据结构-链表.md)
+[![递归](https://img.shields.io/badge/递归-lightgray.svg)](算法-递归(迭代)、分治.md)
+[![迭代](https://img.shields.io/badge/迭代-lightgray.svg)](算法-递归(迭代)、分治.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 链表、递归、迭代 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+合并两个有序链表，且合并后依然有序；
+```
+
+<details><summary><b>详细描述</b></summary>
+
+```txt
+输入两个递增排序的链表，合并这两个链表并使新链表中的节点仍然是递增排序的。
+
+示例1：
+    输入：1->2->4, 1->3->4
+    输出：1->1->2->3->4->4
+
+限制：
+    0 <= 链表长度 <= 1000
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+</details>
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+<summary><b>思路1：递归</b></summary>
+
+- 递归公式：`merge(l1, l2) = li + merge(li.next, lj)`，  
+  其中当 `l1<l2` 时 `i,j = 1,2`，否则 `i,j=2,1`
+
+<details><summary><b>Python</b></summary>
+
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+        
+        def dfs(p1, p2):
+            if not p1: return p2
+            if not p2: return p1
+
+            if p1.val < p2.val:
+                p1.next = dfs(p1.next, p2)
+                return p1
+            else:
+                p2.next = dfs(p1, p2.next)
+                return p2
+
+        return dfs(l1, l2)
+```
+
+</details>
+
+<summary><b>思路2：迭代</b></summary>
+
+> [合并两个排序的链表（伪头节点，清晰图解）](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/solution/mian-shi-ti-25-he-bing-liang-ge-pai-xu-de-lian-b-2/)
+
+<details><summary><b>Python：伪头结点（推荐）</b></summary>
+
+```python
+class Solution:
+    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+        ret = cur = ListNode(0)
+
+        while l1 and l2:
+            if l1.val < l2.val:
+                cur.next, l1 = l1, l1.next
+            else:
+                cur.next, l2 = l2, l2.next
+            
+            cur = cur.next  # 这一步容易忽略
+        
+        cur.next = l1 if l1 else l2
+        return ret.next
+```
+
+</details>
+
+<details><summary><b>Python：不使用伪头结点</b></summary>
+
+```python
+class Solution:
+    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+        if not l1: return l2
+        if not l2: return l1
+
+        cur = ret = l1 if l1.val < l2.val else l2  # 
+        
+        while l1 and l2:
+            if l1.val < l2.val:  # 这两处的判断条件要一致，否则会出错
+                cur.next, l1 = l1, l1.next
+            else:
+                cur.next, l2 = l2, l2.next
+            cur = cur.next
+        
+        cur.next = l1 if l1 else l2
+        return ret
+```
+
+</details>
+
+---
 ### `剑指Offer No.0026 树的子结构 (中等, 2021-11)`
 
 
@@ -1659,19 +1780,61 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 </details>
 
 
-<summary><b>思路</b></summary>
+<summary><b>思路：递归遍历</b></summary>
 
 > [树的子结构（先序遍历 + 包含判断，清晰图解）](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/solution/mian-shi-ti-26-shu-de-zi-jie-gou-xian-xu-bian-li-p/)
 
-1. 先序遍历 A，然后确定 B 是否为 A 的子结构；
-2. 如何确定子结构：
-    - 如果 B 的根节点与 A 的某子节点 C 相等；
-    - 递归判断 C 和 B 的左子节点是否相等；
-    - 递归判断 C 和 B 的右子节点是否相等；
-3. 确定尾递归；
 
+1. 确定 b 是 a（以 a 为根节点） 的子结构：
+    - 如果 b 与 a 是否相等；
+    - 递归判断 b 和 a 的**左、右子节点是否分别相等**；
+    - 如果 b 比 a 先达到空节点，则 b 是 a 的子结构；
+2. 遍历 A 中的每个节点 a（以任意顺序遍历均可），然后确定 B 是否为 a 的子结构；
 
-<details><summary><b>C++：递归</b></summary>
+<details><summary><b>Python</b></summary>
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def isSubStructure(self, A: TreeNode, B: TreeNode) -> bool:
+        # 题目设定如果原始输入的 B 是空树，则不是 A 的子树
+        # 显然当 A 是空树是，B 也不是 A 的子树
+        if not B or not A: return False
+
+        def dfs(a, b):
+            """同时从 a 和 b 的根节点开始，判断 b 是不是 a 的子树"""
+            # 递归中止条件：
+            #   如果 b 先于 a 达到空节点，则 b 是 a 的子树；反之不是；所以需要先判断 b
+            if not b: return True
+            if not a: return False
+
+            if a.val == b.val:  # 如果当前节点值相同，分别递归判断 a 和 b 的左右子树（这里不要求顺序）
+                return dfs(a.left, b.left) and dfs(a.right, b.right)
+            else:
+                return False
+        
+        # 遍历 A 中的每个节点，判断以其作为根节点，是否包含 B
+        #   这里任意遍历顺序都可以，只要能达到 A 中每个节点
+        
+        # 先序
+        # return dfs(A, B) or self.isSubStructure(A.left, B) or self.isSubStructure(A.right, B)
+        
+        # 中序
+        # return self.isSubStructure(A.left, B) or dfs(A, B) or self.isSubStructure(A.right, B)
+        
+        # 后序
+        return self.isSubStructure(A.left, B) or self.isSubStructure(A.right, B) or dfs(A, B)
+```
+
+</details>
+
+<details><summary><b>C++</b></summary>
 
 ```cpp
 /**
@@ -1763,9 +1926,13 @@ public:
 
 <summary><b>思路</b></summary>
 
-- 所谓镜像，实际上就是调换左右子树，然后递归应用到所有子树；
-- 参考 `def swap(a,b): a, b = b, a`
-
+- 对当前节点，镜像操作，就是调换左右子树，即 `left, right = right, left`；
+- 对整个树镜像，就是将每个节点下的左右子树都调换；
+- 具体操作：**先序或后序**遍历每个节点，然后交换该节点的左右子树；
+- **为什么不可以中序遍历？**
+    - 根据中序遍历的性质，当对根节点进行操作镜像时，其左子树已经完成了镜像，右子树还没有；
+    - 此时交换左右子树，相当于把已经完成交换的左子树变成了右子树，之后在右子树上的镜像操作实际还是在对这个原来的左子树操作（相当于又把它还原了）；
+    - 所以中序遍历的最终结果，就只是仅仅交换了根节点的左右子树；
 
 <details><summary><b>Python</b></summary>
 
@@ -1854,10 +2021,46 @@ class Solution:
 
 <summary><b>思路</b></summary>
 
-- 注意除了根节点外，比较的左右子树并不是来自同一个节点；
+- 想象一左一右两条路线，沿途比较路线上的节点，如果一路相等，同时达到叶子，说明这两条路线是相同的；
+- “对称”则要求这两条路线必须从根节点的左右子节点开始；且沿途左路线往左的时候，右路线必须往右，来满足对称；
+- 递归的中止条件必须考虑全面；
 
 <div align="center"><img src="../_assets/图解对称的二叉树.png" height="200" /></div>
 
+> [对称的二叉树（递归，清晰图解）](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/solution/mian-shi-ti-28-dui-cheng-de-er-cha-shu-di-gui-qing/)
+
+<details><summary><b>Python</b></summary>
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def isSymmetric(self, root: TreeNode) -> bool:
+        if not root: return True  # 空树返回 True
+
+        def dfs(l, r):
+            """"""
+            # 如果能同时达到叶子节点，说明这两条路线是对称的
+            if l is None and r is None:
+                return True
+            
+            # 满足以下条件，说明不对称
+            if (l and not r) or (r and not l) or l.val != r.val:
+                return False
+            
+            # 递归深入
+            return dfs(l.left, r.right) and dfs(l.right, r.left)
+        
+        return dfs(root.left, root.right)
+
+```
+
+</details>
 
 <details><summary><b>C++</b></summary>
 
@@ -1894,6 +2097,147 @@ public:
 
     }
 };
+```
+
+</details>
+
+---
+### `剑指Offer No.0029 顺时针打印矩阵 (中等, 2021-11)`
+
+
+[![数组](https://img.shields.io/badge/数组-lightgray.svg)](数据结构-数组、矩阵(二维数组).md)
+[![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟、数学、找规律.md)
+[![经典](https://img.shields.io/badge/经典-lightgray.svg)](题集-经典问题&代码.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: 数组、模拟、经典 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字。
+```
+
+<details><summary><b>详细描述</b></summary>
+
+```txt
+输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字。
+
+示例 1：
+    输入：matrix = [[1,2,3],[4,5,6],[7,8,9]]
+    输出：[1,2,3,6,9,8,7,4,5]
+示例 2：
+    输入：matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+    输出：[1,2,3,4,8,12,11,10,9,5,6,7]
+
+限制：
+    0 <= matrix.length <= 100
+    0 <= matrix[i].length <= 100
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+</details>
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+<summary><b>思路1：模拟</b></summary>
+
+- 循环遍历 4 个方向的路线，中间做好边界判断（虽然思路简单，但是写起来很容易出错）；
+
+<details><summary><b>Python</b></summary>
+
+```python
+class Solution:
+    def spiralOrder(self, matrix: [[int]]) -> [int]:
+        """"""        
+        ret = []
+        if not matrix:
+            return ret
+
+        m, n = len(matrix), len(matrix[0])  # m行n列
+        # 设置左、右、上、下边界
+        l, r, t, b, = 0, n - 1, 0, m - 1
+
+        while True:
+            # 依次遍历 4 个方向
+            # 因为最后一趟遍历哪个方向都有可能，所以需要 4 个 break
+
+            # left to right, top+=1
+            for i in range(l, r + 1):
+                ret.append(matrix[t][i])
+            t += 1
+            if t > b:
+                break
+
+            # top to bottom, right-=1
+            for i in range(t, b + 1):
+                ret.append(matrix[i][r])
+            r -= 1
+            if l > r:
+                break
+
+            # right to left, bottom-=1
+            for i in range(r, l - 1, -1):  # 逆序
+                ret.append(matrix[b][i])
+            b -= 1
+            if t > b:
+                break
+
+            # bottom to top, left+=1
+            for i in range(b, t - 1, -1):  # 逆序
+                ret.append(matrix[i][l])
+            l += 1
+            if l > r:
+                break
+
+        return ret
+```
+
+</details>
+
+
+<summary><b>思路2：只遍历一个方向</b></summary>
+
+- 每次从左往右遍历完第一层后，把原来的矩阵逆时针旋转 90 度；
+- 这样下一次遍历依然只要从左往右走就可以了；
+- 而**逆时针旋转的操作在 python 中可以用一行代码完成！**
+
+<details><summary><b>Python</b></summary>
+
+```python
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        ret = []
+        while matrix:
+            ret += list(matrix.pop(0))  # zip 后的结果是一个元组，这里转成 list，不过实际上不转换也可以；
+
+            # 核心操作，逆时针旋转 90 度
+            matrix = list(zip(*matrix))[::-1]
+        
+        return ret
+```
+
+```python
+# 图解 `list(zip(*matrix))[::-1]` 这一步做了什么：
+
+# 假设已经 pop 了第一行，此时矩阵剩余的部分是：
+[4 5 6]  # 记为 l1
+[7 8 9]  # 记为 l2，如果有 n 行，则记为 ln
+
+# zip(*matrix) 包含了两个知识点：一个是 zip() 函数，一个是 * 号的作用；
+# zip(*matrix) 实际上等价于 zip(l1, l2, ..., ln)
+# 经过这一步 matrix 将转化为（相当于做了一次转置）
+[4 7]
+[5 8]
+[6 9]
+
+# 这时再将 matrix 做一次逆序，就得到了逆时针旋转 90 度的结果
+[6 9]
+[5 8]
+[4 7]
+
 ```
 
 </details>
@@ -2587,7 +2931,7 @@ class Solution:
 ### `剑指Offer No.0067 把字符串转换成整数 (中等, 2021-11)`
 
 
-[![字符串](https://img.shields.io/badge/字符串-lightgray.svg)](数据结构-字符串、数组.md)
+[![字符串](https://img.shields.io/badge/字符串-lightgray.svg)](数据结构-字符串.md)
 [![模拟](https://img.shields.io/badge/模拟-lightgray.svg)](基础-模拟、数学、找规律.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
 <!-- Tag: 字符串、模拟 -->
