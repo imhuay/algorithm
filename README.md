@@ -74,19 +74,23 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 数据结构-数组、矩阵(二维数组) (2) <a href="topics/数据结构-数组、矩阵(二维数组).md">¶</a></b></summary>
+<details><summary><b> 数据结构-数组、矩阵(二维数组) (4) <a href="topics/数据结构-数组、矩阵(二维数组).md">¶</a></b></summary>
 
 - [`剑指Offer No.0021 调整数组顺序使奇数位于偶数前面 (简单, 2021-11)`](topics/数据结构-数组、矩阵(二维数组).md#剑指offer-no0021-调整数组顺序使奇数位于偶数前面-简单-2021-11)
 - [`剑指Offer No.0029 顺时针打印矩阵 (中等, 2021-11)`](topics/数据结构-数组、矩阵(二维数组).md#剑指offer-no0029-顺时针打印矩阵-中等-2021-11)
+- [`剑指Offer No.0030 包含min函数的栈 (简单, 2021-11)`](topics/数据结构-数组、矩阵(二维数组).md#剑指offer-no0030-包含min函数的栈-简单-2021-11)
+- [`剑指Offer No.0031 栈的压入、弹出序列 (中等, 2021-11)`](topics/数据结构-数组、矩阵(二维数组).md#剑指offer-no0031-栈的压入弹出序列-中等-2021-11)
 
 </details>
 
-<details><summary><b> 数据结构-栈(单调栈)、队列 (5) <a href="topics/数据结构-栈(单调栈)、队列.md">¶</a></b></summary>
+<details><summary><b> 数据结构-栈(单调栈)、队列 (7) <a href="topics/数据结构-栈(单调栈)、队列.md">¶</a></b></summary>
 
 - [`LeetCode No.0496 下一个更大元素 (简单, 2021-11)`](topics/数据结构-栈(单调栈)、队列.md#leetcode-no0496-下一个更大元素-简单-2021-11)
 - [`剑指Offer No.0006 从尾到头打印链表 (简单, 2021-11)`](topics/数据结构-栈(单调栈)、队列.md#剑指offer-no0006-从尾到头打印链表-简单-2021-11)
 - [`剑指Offer No.0009 用两个栈实现队列 (简单, 2021-11)`](topics/数据结构-栈(单调栈)、队列.md#剑指offer-no0009-用两个栈实现队列-简单-2021-11)
 - [`剑指Offer No.0009 用两个栈实现队列 (简单, 2021-11)`](topics/数据结构-栈(单调栈)、队列.md#剑指offer-no0009-用两个栈实现队列-简单-2021-11)
+- [`剑指Offer No.0030 包含min函数的栈 (简单, 2021-11)`](topics/数据结构-栈(单调栈)、队列.md#剑指offer-no0030-包含min函数的栈-简单-2021-11)
+- [`剑指Offer No.0031 栈的压入、弹出序列 (中等, 2021-11)`](topics/数据结构-栈(单调栈)、队列.md#剑指offer-no0031-栈的压入弹出序列-中等-2021-11)
 - [`剑指Offer No.0032 层序遍历二叉树 (中等, 2021-11)`](topics/数据结构-栈(单调栈)、队列.md#剑指offer-no0032-层序遍历二叉树-中等-2021-11)
 
 </details>
@@ -212,7 +216,7 @@ Algorithm Studies
 
 </details>
 
-<details><summary><b> 题集-剑指Offer (33) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
+<details><summary><b> 题集-剑指Offer (35) <a href="topics/题集-剑指Offer.md">¶</a></b></summary>
 
 - [`剑指Offer No.0003 数组中重复的数字 (简单, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0003-数组中重复的数字-简单-2021-11)
 - [`剑指Offer No.0004 二维数组中的查找 (中等, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0004-二维数组中的查找-中等-2021-11)
@@ -238,6 +242,8 @@ Algorithm Studies
 - [`剑指Offer No.0027 二叉树的镜像 (简单, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0027-二叉树的镜像-简单-2021-11)
 - [`剑指Offer No.0028 对称的二叉树 (简单, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0028-对称的二叉树-简单-2021-11)
 - [`剑指Offer No.0029 顺时针打印矩阵 (中等, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0029-顺时针打印矩阵-中等-2021-11)
+- [`剑指Offer No.0030 包含min函数的栈 (简单, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0030-包含min函数的栈-简单-2021-11)
+- [`剑指Offer No.0031 栈的压入、弹出序列 (中等, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0031-栈的压入弹出序列-中等-2021-11)
 - [`剑指Offer No.0032 层序遍历二叉树 (中等, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0032-层序遍历二叉树-中等-2021-11)
 - [`剑指Offer No.0042 连续子数组的最大和 (简单, 2021-10)`](topics/题集-剑指Offer.md#剑指offer-no0042-连续子数组的最大和-简单-2021-10)
 - [`剑指Offer No.0044 数字序列中某一位的数字 (中等, 2021-11)`](topics/题集-剑指Offer.md#剑指offer-no0044-数字序列中某一位的数字-中等-2021-11)
