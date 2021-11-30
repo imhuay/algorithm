@@ -47,19 +47,61 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 </details>
 
 
-<summary><b>思路</b></summary>
+<summary><b>思路：递归遍历</b></summary>
 
 > [树的子结构（先序遍历 + 包含判断，清晰图解）](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/solution/mian-shi-ti-26-shu-de-zi-jie-gou-xian-xu-bian-li-p/)
 
-1. 先序遍历 A，然后确定 B 是否为 A 的子结构；
-2. 如何确定子结构：
-    - 如果 B 的根节点与 A 的某子节点 C 相等；
-    - 递归判断 C 和 B 的左子节点是否相等；
-    - 递归判断 C 和 B 的右子节点是否相等；
-3. 确定尾递归；
 
+1. 确定 b 是 a（以 a 为根节点） 的子结构：
+    - 如果 b 与 a 是否相等；
+    - 递归判断 b 和 a 的**左、右子节点是否分别相等**；
+    - 如果 b 比 a 先达到空节点，则 b 是 a 的子结构；
+2. 遍历 A 中的每个节点 a（以任意顺序遍历均可），然后确定 B 是否为 a 的子结构；
 
-<details><summary><b>C++：递归</b></summary>
+<details><summary><b>Python</b></summary>
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def isSubStructure(self, A: TreeNode, B: TreeNode) -> bool:
+        # 题目设定如果原始输入的 B 是空树，则不是 A 的子树
+        # 显然当 A 是空树是，B 也不是 A 的子树
+        if not B or not A: return False
+
+        def dfs(a, b):
+            """同时从 a 和 b 的根节点开始，判断 b 是不是 a 的子树"""
+            # 递归中止条件：
+            #   如果 b 先于 a 达到空节点，则 b 是 a 的子树；反之不是；所以需要先判断 b
+            if not b: return True
+            if not a: return False
+
+            if a.val == b.val:  # 如果当前节点值相同，分别递归判断 a 和 b 的左右子树（这里不要求顺序）
+                return dfs(a.left, b.left) and dfs(a.right, b.right)
+            else:
+                return False
+        
+        # 遍历 A 中的每个节点，判断以其作为根节点，是否包含 B
+        #   这里任意遍历顺序都可以，只要能达到 A 中每个节点
+        
+        # 先序
+        # return dfs(A, B) or self.isSubStructure(A.left, B) or self.isSubStructure(A.right, B)
+        
+        # 中序
+        # return self.isSubStructure(A.left, B) or dfs(A, B) or self.isSubStructure(A.right, B)
+        
+        # 后序
+        return self.isSubStructure(A.left, B) or self.isSubStructure(A.right, B) or dfs(A, B)
+```
+
+</details>
+
+<details><summary><b>C++</b></summary>
 
 ```cpp
 /**
