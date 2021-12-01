@@ -12,15 +12,15 @@ Problems Index
 - [`剑指Offer No.0006 从尾到头打印链表 (简单, 2021-11)`](#剑指offer-no0006-从尾到头打印链表-简单-2021-11)
 - [`剑指Offer No.0007 重建二叉树 (中等, 2021-11)`](#剑指offer-no0007-重建二叉树-中等-2021-11)
 - [`剑指Offer No.0009 用两个栈实现队列 (简单, 2021-11)`](#剑指offer-no0009-用两个栈实现队列-简单-2021-11)
-- [`剑指Offer No.0010 1-斐波那契数列 (简单, 2021-11)`](#剑指offer-no0010-1-斐波那契数列-简单-2021-11)
-- [`剑指Offer No.0010 2-青蛙跳台阶问题 (简单, 2021-11)`](#剑指offer-no0010-2-青蛙跳台阶问题-简单-2021-11)
+- [`剑指Offer No.0010 斐波那契数列-1 (简单, 2021-11)`](#剑指offer-no0010-斐波那契数列-1-简单-2021-11)
+- [`剑指Offer No.0010 斐波那契数列-2（青蛙跳台阶） (简单, 2021-11)`](#剑指offer-no0010-斐波那契数列-2青蛙跳台阶-简单-2021-11)
 - [`剑指Offer No.0011 旋转数组的最小数字 (简单, 2021-11)`](#剑指offer-no0011-旋转数组的最小数字-简单-2021-11)
 - [`剑指Offer No.0012 矩阵中的路径 (中等, 2021-11)`](#剑指offer-no0012-矩阵中的路径-中等-2021-11)
 - [`剑指Offer No.0013 机器人的运动范围 (中等, 2021-11)`](#剑指offer-no0013-机器人的运动范围-中等-2021-11)
 - [`剑指Offer No.0014 剪绳子1 (中等, 2021-11)`](#剑指offer-no0014-剪绳子1-中等-2021-11)
 - [`剑指Offer No.0015 二进制中1的个数 (简单, 2021-11)`](#剑指offer-no0015-二进制中1的个数-简单-2021-11)
 - [`剑指Offer No.0016 数值的整数次方（快速幂） (中等, 2021-11)`](#剑指offer-no0016-数值的整数次方快速幂-中等-2021-11)
-- [`剑指Offer No.0017 打印从1到最大的n位数（全排列） (简单, 2021-11)`](#剑指offer-no0017-打印从1到最大的n位数全排列-简单-2021-11)
+- [`剑指Offer No.0017 打印从1到最大的n位数（全排列） (中等, 2021-11)`](#剑指offer-no0017-打印从1到最大的n位数全排列-中等-2021-11)
 - [`剑指Offer No.0018 删除链表的节点 (简单, 2021-11)`](#剑指offer-no0018-删除链表的节点-简单-2021-11)
 - [`剑指Offer No.0021 调整数组顺序使奇数位于偶数前面 (简单, 2021-11)`](#剑指offer-no0021-调整数组顺序使奇数位于偶数前面-简单-2021-11)
 - [`剑指Offer No.0022 链表中倒数第k个节点 (简单, 2021-11)`](#剑指offer-no0022-链表中倒数第k个节点-简单-2021-11)
@@ -29,10 +29,12 @@ Problems Index
 - [`剑指Offer No.0026 树的子结构 (中等, 2021-11)`](#剑指offer-no0026-树的子结构-中等-2021-11)
 - [`剑指Offer No.0027 二叉树的镜像 (简单, 2021-11)`](#剑指offer-no0027-二叉树的镜像-简单-2021-11)
 - [`剑指Offer No.0028 对称的二叉树 (简单, 2021-11)`](#剑指offer-no0028-对称的二叉树-简单-2021-11)
-- [`剑指Offer No.0029 顺时针打印矩阵 (中等, 2021-11)`](#剑指offer-no0029-顺时针打印矩阵-中等-2021-11)
+- [`剑指Offer No.0029 顺时针打印矩阵（3种思路4个写法） (中等, 2021-11)`](#剑指offer-no0029-顺时针打印矩阵3种思路4个写法-中等-2021-11)
 - [`剑指Offer No.0030 包含min函数的栈 (简单, 2021-11)`](#剑指offer-no0030-包含min函数的栈-简单-2021-11)
 - [`剑指Offer No.0031 栈的压入、弹出序列 (中等, 2021-11)`](#剑指offer-no0031-栈的压入弹出序列-中等-2021-11)
-- [`剑指Offer No.0032 层序遍历二叉树 (中等, 2021-11)`](#剑指offer-no0032-层序遍历二叉树-中等-2021-11)
+- [`剑指Offer No.0032 层序遍历二叉树-1 (简单, 2021-11)`](#剑指offer-no0032-层序遍历二叉树-1-简单-2021-11)
+- [`剑指Offer No.0032 层序遍历二叉树-2 (简单, 2021-11)`](#剑指offer-no0032-层序遍历二叉树-2-简单-2021-11)
+- [`剑指Offer No.0032 层序遍历二叉树-3（之字形遍历） (简单, 2021-11)`](#剑指offer-no0032-层序遍历二叉树-3之字形遍历-简单-2021-11)
 - [`剑指Offer No.0042 连续子数组的最大和 (简单, 2021-10)`](#剑指offer-no0042-连续子数组的最大和-简单-2021-10)
 - [`剑指Offer No.0044 数字序列中某一位的数字 (中等, 2021-11)`](#剑指offer-no0044-数字序列中某一位的数字-中等-2021-11)
 - [`剑指Offer No.0047 礼物的最大价值 (中等, 2021-11)`](#剑指offer-no0047-礼物的最大价值-中等-2021-11)
@@ -533,7 +535,7 @@ class CQueue:
 </details>
 
 ---
-### `剑指Offer No.0010 1-斐波那契数列 (简单, 2021-11)`
+### `剑指Offer No.0010 斐波那契数列-1 (简单, 2021-11)`
 
 
 [![DP](https://img.shields.io/badge/DP-lightgray.svg)](算法-动态规划(DP、记忆化搜索).md)
@@ -624,7 +626,7 @@ class Solution:
 </details>
 
 ---
-### `剑指Offer No.0010 2-青蛙跳台阶问题 (简单, 2021-11)`
+### `剑指Offer No.0010 斐波那契数列-2（青蛙跳台阶） (简单, 2021-11)`
 
 
 [![DP](https://img.shields.io/badge/DP-lightgray.svg)](算法-动态规划(DP、记忆化搜索).md)
@@ -1178,7 +1180,7 @@ class Solution:
 </details>
 
 ---
-### `剑指Offer No.0017 打印从1到最大的n位数（全排列） (简单, 2021-11)`
+### `剑指Offer No.0017 打印从1到最大的n位数（全排列） (中等, 2021-11)`
 
 
 [![DFS](https://img.shields.io/badge/DFS-lightgray.svg)](算法-深度优先搜索(DFS).md)
@@ -2104,7 +2106,7 @@ public:
 </details>
 
 ---
-### `剑指Offer No.0029 顺时针打印矩阵 (中等, 2021-11)`
+### `剑指Offer No.0029 顺时针打印矩阵（3种思路4个写法） (中等, 2021-11)`
 
 
 [![数组](https://img.shields.io/badge/数组-lightgray.svg)](数据结构-数组、矩阵(二维数组).md)
@@ -2144,18 +2146,18 @@ public:
 
 <!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
 
-<summary><b>思路1：模拟</b></summary>
+<summary><b>思路1：螺旋遍历</b></summary>
 
 - 循环遍历 4 个方向的路线，中间做好边界判断（虽然思路简单，但是写起来很容易出错）；
 
-<details><summary><b>Python</b></summary>
+<details><summary><b>Python：写法1（更朴素）</b></summary>
 
 ```python
 class Solution:
     def spiralOrder(self, matrix: [[int]]) -> [int]:
         """"""        
         ret = []
-        if not matrix:
+        if not matrix or not matrix[0]:
             return ret
 
         m, n = len(matrix), len(matrix[0])  # m行n列
@@ -2199,11 +2201,90 @@ class Solution:
 
 </details>
 
+- 写法 1 的逻辑足够清晰，但不够通用（优雅），比如要遍历 8 个方向时；
+- 另一种写法会预先定义各方向的 **step**，详见代码；
 
-<summary><b>思路2：只遍历一个方向</b></summary>
+<details><summary><b>Python：写法2（更优雅）</b></summary>
 
-- 每次从左往右遍历完第一层后，把原来的矩阵逆时针旋转 90 度；
-- 这样下一次遍历依然只要从左往右走就可以了；
+```python
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        if not matrix or not matrix[0]:
+            return []
+
+        # 4 个方向的 step
+        steps = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+        m, n = len(matrix), len(matrix[0])
+
+        # 法1）使用一个 set 或矩阵记录已经访问过的位置
+        # visited = set()
+        # visited = [[False] * n for _ in range(m)]  # m行n列
+        # 法2）直接在 matrix 上修改访问过的位置
+        visited = 10001
+
+        ret = []
+        i, j = 0, 0  # 记录当前访问的位置
+        k = 0  # 已经访问过的位置数量
+        d = 0  # 方向标记
+        while k < m * n:
+            ret.append(matrix[i][j])
+            matrix[i][j] = visited
+            # visited.add((i, j))
+            # visited[i][j] = True
+            k += 1
+
+            # 下一个位置
+            nxt_i, nxt_j = i + steps[d][0], j + steps[d][1]
+            # 判断下一个位置是否合法，或是否访问过
+            if not 0 <= nxt_i < m or not 0 <= nxt_j < n or matrix[nxt_i][nxt_j] == visited:
+                # 如果不合法或已经访问过，进入下一个方向
+                d = (d + 1) % 4
+                nxt_i, nxt_j = i + steps[d][0], j + steps[d][1]
+            i, j = nxt_i, nxt_j
+
+        return ret
+```
+
+</details>
+
+<summary><b>思路2：层层递归</b></summary>
+
+- 每次遍历完最外圈后，递归遍历下一圈；
+
+<details><summary><b>Python</b></summary>
+
+```python
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        """"""
+        def dfs(M):
+            # 注意：这里除了要判断 M，还要判断 M[0]，因为之后代码中的切片操作可能会使行数据为空列表 []
+            if not M or not M[0]: return []
+
+            m, n = len(M), len(M[0])
+
+            # 如果最内圈是一行或一列，那么该行/列的遍历方向一定是 左→右 或 上→下
+            if m == 1:
+                return M[0]
+            if n == 1:
+                return [row[0] for row in M]
+
+            # 最外一圈的数据
+            ret = M[0] \
+                + [row[-1] for row in M[1:]] \
+                + M[-1][-2::-1] \
+                + [row[0] for row in M[-2:0:-1]]
+
+            return ret + dfs([row[1:-1] for row in M[1:-1]])
+
+        return dfs(matrix)
+```
+
+</details>
+
+<summary><b>思路3：“削苹果”</b></summary>
+
+- 每次“削去”矩阵的第一层，然后将矩阵逆时针旋转 90 度，循环削去第一层；
 - 而**逆时针旋转的操作在 python 中可以用一行代码完成！**
 
 <details><summary><b>Python</b></summary>
@@ -2338,8 +2419,9 @@ class MinStack:
 
 [![栈](https://img.shields.io/badge/栈-lightgray.svg)](数据结构-栈(单调栈)、队列.md)
 [![数组](https://img.shields.io/badge/数组-lightgray.svg)](数据结构-数组、矩阵(二维数组).md)
+[![经典](https://img.shields.io/badge/经典-lightgray.svg)](题集-经典问题&代码.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-<!-- Tag: 栈、数组 -->
+<!-- Tag: 栈、数组、经典 -->
 
 <summary><b>问题简述</b></summary>
 
@@ -2428,13 +2510,14 @@ class Solution:
 </details>
 
 ---
-### `剑指Offer No.0032 层序遍历二叉树 (中等, 2021-11)`
+### `剑指Offer No.0032 层序遍历二叉树-1 (简单, 2021-11)`
 
 
+[![BFS](https://img.shields.io/badge/BFS-lightgray.svg)](算法-广度优先搜索(BFS).md)
 [![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
 [![队列](https://img.shields.io/badge/队列-lightgray.svg)](数据结构-栈(单调栈)、队列.md)
 [![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
-<!-- Tag: 二叉树、队列 -->
+<!-- Tag: BFS、二叉树、队列 -->
 
 <summary><b>问题简述</b></summary>
 
@@ -2480,6 +2563,42 @@ class Solution:
     3. 重复 2、3，直到 q 为空
 
 
+<details><summary><b>Python</b></summary>
+
+- `list` 也可以模拟队列，为什么还要用 `collections.deque`？
+    - `list.pop(0)` 的时间复杂度为 `O(N)`；而 `deque.popleft()` 只要 `O(1)`；
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def levelOrder(self, root: TreeNode) -> List[int]:
+        from collections import deque
+
+        if not root: return []
+
+        buf = deque([root])  # 队列
+        ret = []
+        while buf:
+            cur = buf.popleft()  # 弹出队列头
+            ret.append(cur.val)
+
+            if cur.left:
+                buf.append(cur.left)
+            if cur.right:
+                buf.append(cur.right)
+        
+        return ret
+```
+
+</details>
+
+
 <details><summary><b>C++</b></summary>
 
 ```cpp
@@ -2500,7 +2619,6 @@ public:
         vector<int> ret;
         queue<TreeNode*> q;  // 辅助队列
         
-        
         if (root)
             q.push(root);
 
@@ -2520,6 +2638,233 @@ public:
         return ret;
     }
 };
+```
+
+</details>
+
+---
+### `剑指Offer No.0032 层序遍历二叉树-2 (简单, 2021-11)`
+
+
+[![BFS](https://img.shields.io/badge/BFS-lightgray.svg)](算法-广度优先搜索(BFS).md)
+[![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
+[![队列](https://img.shields.io/badge/队列-lightgray.svg)](数据结构-栈(单调栈)、队列.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: BFS、二叉树、队列 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+从上到下按层打印二叉树，同一层的节点按从左到右的顺序打印，每一层打印到一行。
+```
+
+<details><summary><b>详细描述</b></summary>
+
+```txt
+从上到下按层打印二叉树，同一层的节点按从左到右的顺序打印，每一层打印到一行。
+
+例如:
+    给定二叉树: [3,9,20,null,null,15,7],
+        3
+       / \
+      9  20
+        /  \
+       15   7
+    返回其层次遍历结果：
+    [
+        [3],
+        [9,20],
+        [15,7]
+    ]
+
+提示：
+    节点总数 <= 1000
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+</details>
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+<summary><b>思路</b></summary>
+
+- 相比 “层序遍历二叉树-1”，本题需要同时记录当前层的节点数量（写法1）；
+- 实际上每一层的节点数量包含在了保存的队列信息中，详见（写法2）；
+
+<details><summary><b>Python：写法1</b></summary>
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def levelOrder(self, root: TreeNode) -> List[List[int]]:
+        from collections import deque
+
+        if not root: return []
+
+        buf = deque([root])
+        cnt = 1  # 记录当前层的节点数量
+        ret = []
+        while buf:
+            tmp = []  # 记录层结果
+            for _ in range(cnt):  # 循环当前层节点数量的次数，期间改变 cnt 不会影响遍历次数
+                cur = buf.popleft()
+                tmp.append(cur.val)
+                cnt -= 1
+
+                if cur.left:
+                    buf.append(cur.left)
+                    cnt += 1
+                if cur.right:
+                    buf.append(cur.right)
+                    cnt += 1
+            ret.append(tmp)
+
+        return ret
+```
+
+</details>
+
+<details><summary><b>Python：写法2</b></summary>
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def levelOrder(self, root: TreeNode) -> List[List[int]]:
+        from collections import deque
+
+        if not root: return []
+
+        buf = deque([root])
+        ret = []
+        while buf:
+            tmp = []
+            for _ in range(len(buf)):
+                cur = buf.popleft()
+                tmp.append(cur.val)
+                
+                if cur.left:
+                    buf.append(cur.left)
+                if cur.right:
+                    buf.append(cur.right)
+            
+            ret.append(tmp)
+        
+        return ret
+```
+
+</details>
+
+---
+### `剑指Offer No.0032 层序遍历二叉树-3（之字形遍历） (简单, 2021-11)`
+
+
+[![BFS](https://img.shields.io/badge/BFS-lightgray.svg)](算法-广度优先搜索(BFS).md)
+[![二叉树](https://img.shields.io/badge/二叉树-lightgray.svg)](数据结构-树、二叉树.md)
+[![队列](https://img.shields.io/badge/队列-lightgray.svg)](数据结构-栈(单调栈)、队列.md)
+[![剑指Offer](https://img.shields.io/badge/剑指Offer-lightgray.svg)](题集-剑指Offer.md)
+<!-- Tag: BFS、二叉树、队列 -->
+
+<summary><b>问题简述</b></summary>
+
+```txt
+按照之字形顺序打印二叉树，即第一行按照从左到右的顺序打印，第二层按照从右到左的顺序打印，第三行再按照从左到右的顺序打印，其他行以此类推。
+```
+
+<details><summary><b>详细描述</b></summary>
+
+```txt
+请实现一个函数按照之字形顺序打印二叉树，即第一行按照从左到右的顺序打印，第二层按照从右到左的顺序打印，第三行再按照从左到右的顺序打印，其他行以此类推。
+
+例如:
+    给定二叉树: [3,9,20,null,null,15,7],
+
+        3
+       / \
+      9  20
+        /  \
+       15   7
+    返回其层次遍历结果：
+
+    [
+        [3],
+        [20,9],
+        [15,7]
+    ]
+
+提示：
+    节点总数 <= 1000
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+```
+
+</details>
+
+<!-- <div align="center"><img src="../_assets/xxx.png" height="300" /></div> -->
+
+<summary><b>思路</b></summary>
+
+- 在“层序遍历二叉树-2”的基础上，加入奇偶层的处理即可；
+
+<details><summary><b>Python</b></summary>
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def levelOrder(self, root: TreeNode) -> List[List[int]]:
+        from collections import deque
+
+        if not root: return []
+
+        buf = deque([root])
+        lv = 1  # 记录当前层数
+        cnt = 1  # 记录当前层的节点数
+        ret = []
+        while buf:
+            tmp = []
+            for _ in range(cnt):
+                cur = buf.popleft()
+                tmp.append(cur.val)
+                cnt -= 1
+
+                if cur.left:
+                    buf.append(cur.left)
+                    cnt += 1
+                if cur.right:
+                    buf.append(cur.right)
+                    cnt += 1
+            
+            # 上面的代码跟 层序遍历二叉树-2 完全相同，
+            # 在将 tmp 加入 ret 时，对偶数层的 tmp 做一下倒序
+            if lv & 1:  # 奇数层
+                ret.append(tmp)
+            else:
+                ret.append(tmp[::-1])
+            lv += 1
+        
+        return ret
 ```
 
 </details>
