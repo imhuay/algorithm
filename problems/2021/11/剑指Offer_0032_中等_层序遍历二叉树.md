@@ -44,6 +44,37 @@
     3. 重复 2、3，直到 q 为空
 
 
+<details><summary><b>Python</b></summary>
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def levelOrder(self, root: TreeNode) -> List[int]:
+        if not root: return []
+
+        buf = [root]  # 模拟队列
+        ret = []
+        while buf:
+            cur = buf.pop(0)  # 弹出队列头
+            ret.append(cur.val)
+
+            if cur.left:
+                buf.append(cur.left)
+            if cur.right:
+                buf.append(cur.right)
+        
+        return ret
+```
+
+</details>
+
+
 <details><summary><b>C++</b></summary>
 
 ```cpp
@@ -63,7 +94,6 @@ public:
         
         vector<int> ret;
         queue<TreeNode*> q;  // 辅助队列
-        
         
         if (root)
             q.push(root);
@@ -87,4 +117,3 @@ public:
 ```
 
 </details>
-
