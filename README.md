@@ -1,4 +1,4 @@
-The New: [studies/algorithms](https://github.com/imhuay/studies/tree/master/algorithms)
+** New: [studies/algorithms](https://github.com/imhuay/studies/tree/master/algorithms) **
 ===
 
 Algorithm Studies
