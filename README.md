@@ -1,5 +1,8 @@
-Algorithm Studies
+The New: [studies/algorithms](https://github.com/imhuay/studies/tree/master/algorithms)
 ===
+
+Algorithm Studies
+---
 
 <font color="LightGrey"><i> `This README is Auto-generated` </i></font>
 
